@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<style type="text/css">img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">WSFA &#8211; Estab. Patient -Back Pain</h1>
+            </div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script>                var dngJsonData = {
+                  'HPI': [
+                    {
+                      'radioButtons': {
+                        'sentence': 'Reason for Office Visit: {ENTRY}.',
+                        'label': 'Justification for Office Visit',
+                        'options': [
+                          { 'label': 'New Patient', 'value': 'New Patient' },
+                          { 'label': 'Estab. Patient New Condition', 'value': 'Estab. Patient New Condition' },
+                          {
+                            'label': '4-6 Weeks Since Last Visit',
+                            'value': 'Estab. Patient 4-6 weeks since last Visit',
+                          },
+                          {
+                            'label': 'Estab. Patient Releasing from Care',
+                            'value': 'Estab. Patient Releasing from Care',
+                          },
+                          { 'label': 'Estab. Patient Prescibing Herb', 'value': 'Estab. Patient Prescribing Herbs' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Chief Complaint and Symptoms are: {ENTRY}.',
+                        'label': 'CC: Low Back Pain and Symptoms',
+                        'options': [
+                          { 'label': 'Low Back Pain', 'value': 'Low Back Pain' },
+                          { 'label': 'Left', 'value': 'Left' },
+                          { 'label': 'Right', 'value': 'Right' },
+                          { 'label': 'Sciatica L', 'value': 'Sciatica L' },
+                          { 'label': 'Sciatica R', 'value': 'Sciatica R' },
+                          { 'label': 'Numbness in Leg', 'value': 'Numbness in Leg' },
+                          { 'label': 'Sacral Pain', 'value': 'Sacral Pain' },
+                          { 'label': 'Muscle Spasms', 'value': 'Muscle Spasms' },
+                          { 'label': 'Glut(s) Pain', 'value': 'Glut(s) Pain' },
+                          { 'label': 'Hip Pain', 'value': 'Hip Pain' },
+                          { 'label': 'SI Joint Pain', 'value': 'SI Joint Pain' },
+                          { 'label': 'Edema in Leg', 'value': 'Edema in Leg' },
+                          { 'label': 'Knee Pain', 'value': 'knee pain' },
+                          { 'label': 'Cause Fall', 'value': 'Cause was a fall' },
+                          { 'label': 'Cause MVA', 'value': 'Cause was MVA' },
+                          { 'label': 'Cause Lifting', 'value': 'Cause was a Strain (lifting / Activity)' },
+                          { 'label': 'Injury', 'value': 'injury' },
+                          { 'label': 'Woke up with it', 'value': 'Woke up with it' },
+                          { 'label': 'Unknown Cause', 'value': 'Unknown Cause' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has associated symptoms of {ENTRY}.',
+                        'label': 'Associated Symptoms',
+                        'options': [
+                          { 'label': 'Thoracic Pain', 'value': 'Thoracic Pain' },
+                          { 'label': 'Sleep', 'value': 'Sleep' },
+                          { 'label': 'Urination', 'value': 'Urination' },
+                          { 'label': 'BM', 'value': 'Bowel Movements' },
+                          { 'label': 'Consentration', 'value': 'Concentration' },
+                          { 'label': 'work', 'value': 'unable to work' },
+                          {
+                            'label': 'Walking, Standing, Sitting',
+                            'value': 'pain with walking, sitting, and standing',
+                          },
+                          { 'label': 'Weakness', 'value': 'weakness' },
+                          { 'label': 'Shooting Pain Down Leg', 'value': 'shooting pain down leg' },
+                          { 'label': 'Groin Pain', 'value': 'Groin Pain' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Pain is {ENTRY} in severity.',
+                        'label': 'Severity',
+                        'options': [
+                          { 'label': 'Mild', 'value': 'mild' },
+                          { 'label': 'Moderate', 'value': 'moderate' },
+                          { 'label': 'Severe', 'value': 'severe' },
+                          { 'label': '1', 'value': '1/10' },
+                          { 'label': '2', 'value': '2/10' },
+                          { 'label': '3', 'value': '3/10' },
+                          { 'label': '4', 'value': '4/10' },
+                          { 'label': '5', 'value': '5/10' },
+                          { 'label': '6', 'value': '6/10' },
+                          { 'label': '7', 'value': '7/10' },
+                          { 'label': '8', 'value': '8/10' },
+                          { 'label': '9', 'value': '9/10' },
+                          { 'label': '10', 'value': '10/10' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has {ENTRY}.', 'label': 'History?', 'options': [
+                          { 'label': 'Denies Any Trauma', 'value': 'had no reported trauma to the neck' },
+                          { 'label': 'No Prior Issues of Pain', 'value': 'no prior history of pain at this site' },
+                          { 'label': 'Prior Back Surgery', 'value': 'history of prior back surgery' },
+                          { 'label': 'Prior Cervical Surgery', 'value': 'Prior Cervical Surgery' },
+                          { 'label': 'No Prior Back Surg', 'value': 'had no prior back surgeries' },
+                          { 'label': 'No Prior Cervical Surgery', 'value': 'No Prior Cervical Surgery' },
+                          { 'label': 'Prior Herniated Disc', 'value': 'has history of prior herniated disc' },
+                          { 'label': 'Prior Radicular Symptoms', 'value': 'has history of prior radicular symptoms' },
+                          { 'label': 'DDD', 'value': 'has history of DDD' },
+                          { 'label': 'Stenosis', 'value': 'has diagnosis of Stenosis' },
+                          { 'label': 'MVA', 'value': 'has history of MVA' },
+                          { 'label': 'Fall', 'value': 'has history of a fall' },
+                          { 'label': 'Work Trauma', 'value': 'is a work related trauma' },
+                          { 'label': 'Arthritis', 'value': 'has diagnosis of arthritis' }],
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'Onset of symptoms was {ENTRY} ago.', 'label': 'Onset of Symptoms' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient describes {ENTRY} pain.', 'label': 'Location of Pain/Injury', 'options': [
+                          { 'label': 'R Sciatica', 'value': 'R Sciatica' },
+                          { 'label': 'L Sciatica', 'value': 'L Sciatica' },
+                          { 'label': 'Left', 'value': 'left' },
+                          { 'label': 'Right', 'value': 'right' },
+                          { 'label': 'Low', 'value': 'Low' },
+                          { 'label': 'Middle', 'value': 'middle' },
+                          { 'label': 'Back', 'value': 'back' },
+                          { 'label': 'Cervical', 'value': 'cervical' },
+                          { 'label': 'Thoracic', 'value': 'thoracic' },
+                          { 'label': 'Lumbar', 'value': 'lumbar' },
+                          { 'label': 'Mid', 'value': 'mid' },
+                          { 'label': 'Flank', 'value': 'flank' },
+                          { 'label': 'Groin', 'value': 'groin' },
+                          { 'label': 'Shoulder', 'value': 'shoulder' },
+                          { 'label': 'Upper Arm', 'value': 'upper arm' },
+                          { 'label': 'Forearm', 'value': 'forearm' },
+                          { 'label': 'Wrist', 'value': 'wrist' },
+                          { 'label': 'Hand', 'value': 'hand' },
+                          { 'label': 'Finger', 'value': 'finger' },
+                          { 'label': 'Hip', 'value': 'hip' },
+                          { 'label': 'Knee', 'value': 'knee' },
+                          { 'label': 'Lower Leg', 'value': 'lower leg' },
+                          { 'label': 'Ankle', 'value': 'ankle' },
+                          { 'label': 'Foot', 'value': 'foot' },
+                          { 'label': 'Toe', 'value': 'toe' },
+                          { 'label': 'Nail', 'value': 'nail' },
+                          { 'label': 'Tailbone', 'value': 'tailbone' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatment prior to arrival includes {ENTRY}.',
+                        'label': 'Treatment Prior to Arrival',
+                        'options': [
+                          { 'label': 'None', 'value': 'nothing' },
+                          { 'label': 'Nsaids', 'value': 'Nsaids' },
+                          { 'label': 'Muscle Relaxer', 'value': 'muscle relaxer' },
+                          { 'label': 'Hydrocodone', 'value': 'hydrocodone' },
+                          { 'label': 'Oxycodone', 'value': 'oxycodone' },
+                          { 'label': 'Steroid Injections', 'value': 'Steriod Injections' },
+                          { 'label': 'PT', 'value': 'Physical Therapy' },
+                          { 'label': 'Massage', 'value': 'Massage' },
+                          { 'label': 'Chiropractic', 'value': 'Chiropratic' },
+                          { 'label': 'Orthopedic MD', 'value': 'Othropedic MD' },
+                          { 'label': 'Rest', 'value': 'rest' },
+                          { 'label': 'Heat', 'value': 'heat' },
+                          { 'label': 'Ice', 'value': 'ice' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Family History: {ENTRY}',
+                        'label': 'Family History',
+                        'options': [
+                          { 'label': 'no pertinent family history', 'value': 'no pertinent family history' },
+                          { 'label': 'HTN', 'value': 'HTN' },
+                          { 'label': 'HLD', 'value': 'HLD' },
+                          { 'label': 'DM', 'value': 'DM' },
+                          { 'label': 'CAD', 'value': 'CAD' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'cancer', 'value': 'cancer' },
+                          { 'label': 'stroke', 'value': 'stroke' },
+                          { 'label': 'depression', 'value': 'depression' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Medical History: {ENTRY}',
+                        'label': 'Past Medical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'HTN', 'value': 'hypertension' },
+                          { 'label': 'HLD', 'value': 'hyperlipidemia' },
+                          { 'label': 'DM', 'value': 'diabetes' },
+                          { 'label': 'hypothyroidism', 'value': 'hypothyroidism' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': 'anxiety', 'value': 'anxiety' },
+                          { 'label': 'headaches', 'value': 'headaches' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'CAD', 'value': 'CAD' },
+                          { 'label': 'CHF', 'value': 'CHF' },
+                          { 'label': 'COPD', 'value': 'COPD' },
+                          { 'label': 'asthma', 'value': 'asthma' },
+                          { 'label': 'neck pain', 'value': 'neck pain' },
+                          { 'label': 'back pain', 'value': 'back pain' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Surgical History: {ENTRY}',
+                        'label': 'Past Surgical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'appendectomy', 'value': 'appendectomy' },
+                          { 'label': 'cholecystectomy', 'value': 'cholecystectomy' },
+                          { 'label': 'tonsillectomy', 'value': 'tonsillectomy' },
+                          { 'label': 'joint replacement', 'value': 'joint replacement' },
+                          { 'label': 'cesarean section', 'value': 'cesarean section' },
+                          { 'label': 'hysterectomy', 'value': 'hysterectomy' },
+                          { 'label': 'CABG', 'value': 'CABG' },
+                          { 'label': 'stents', 'value': 'stent placement' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'General:',
+                        'options': [
+                          {
+                            'label': 'All ROS Negative',
+                            'value': 'All other systems reviewed and are negative',
+                          }, { 'label': 'Vital Signs Reviewed', 'value': 'vital signs reviewed' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': 'Review of Symptoms: {ENTRY}',
+                        'label': 'Review of Systems',
+                        'value': '<br>&#10;<br>&#10;Review&#32;of&#32;Systems:&#10;',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Constitution: Positive for {ENTRY}.',
+                        'label': 'Constitution Positives',
+                        'options': [
+                          { 'label': 'activity change', 'value': 'activity change' },
+                          { 'label': 'appetite change', 'value': 'appetite change' },
+                          { 'label': 'fevers', 'value': 'fevers' },
+                          { 'label': 'chills', 'value': 'chills' },
+                          { 'label': 'diaphoresis', 'value': 'diaphoresis' },
+                          { 'label': 'fatigue', 'value': 'fatigue' },
+                          { 'label': 'wt change', 'value': 'wt change' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Constitution: Negative for {ENTRY}.',
+                        'label': 'Constitution Negatives',
+                        'options': [
+                          { 'label': 'activity change', 'value': 'activity change' },
+                          { 'label': 'appetite change', 'value': 'appetite change' },
+                          { 'label': 'fevers', 'value': 'fevers' },
+                          { 'label': 'chills', 'value': 'chills' },
+                          { 'label': 'diaphoresis', 'value': 'diaphoresis' },
+                          { 'label': 'fatigue', 'value': 'fatigue' },
+                          { 'label': 'wt change', 'value': 'wt change' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'GU: Positive for {ENTRY}.',
+                        'label': 'GU Positives',
+                        'options': [
+                          { 'label': 'Painful Urination', 'value': 'Painful Urination' },
+                          { 'label': 'Hx of Kidney Dx', 'value': 'Hx of Kidney Dx' },
+                          { 'label': 'Diabetic', 'value': 'Diabetic' },
+                          { 'label': 'Hx of UTI', 'value': 'Hx of UTI' },
+                          { 'label': 'On Dialysis', 'value': 'On Dialysis' },
+                          { 'label': 'urgency / frequency', 'value': 'urgency / frequency' },
+                          { 'label': 'hematuria', 'value': 'hematuria' },
+                          { 'label': 'genital sores', 'value': 'genital sores' },
+                          { 'label': 'flank pain', 'value': 'flank pain' },
+                          { 'label': 'pelvic pain', 'value': 'pelvic pain' },
+                          { 'label': 'vaginal bleeding', 'value': 'vaginal bleeding' },
+                          { 'label': 'vaginal discharge', 'value': 'vaginal discharge' },
+                          { 'label': 'vaginal pain', 'value': 'vaginal pain' },
+                          { 'label': 'New Checkbox', 'value': 'new checkbox' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'GU: Negative for {ENTRY}.',
+                        'label': 'GU Negatives',
+                        'options': [
+                          { 'label': 'dysuria', 'value': 'dysuria' },
+                          { 'label': 'frequency', 'value': 'frequency' },
+                          { 'label': 'urgency', 'value': 'urgency' },
+                          { 'label': 'hematuria', 'value': 'hematuria' },
+                          { 'label': 'flank pain', 'value': 'flank pain' },
+                          { 'label': 'genital sores', 'value': 'genital sores' },
+                          { 'label': 'pelvic pain', 'value': 'pelvic pain' },
+                          { 'label': 'vaginal bleeding', 'value': 'vaginal bleeding' },
+                          { 'label': 'vaginal discharge', 'value': 'vaginal discharge' },
+                          { 'label': 'vaginal pain', 'value': 'vaginal pain' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'GI: Positive for {ENTRY}.',
+                        'label': 'GI Positives',
+                        'options': [
+                          { 'label': 'abdominal pain', 'value': 'abdominal pain' },
+                          { 'label': 'abdominal distention', 'value': 'abdominal distention' },
+                          { 'label': 'bloody stools', 'value': 'bloody stools' },
+                          { 'label': 'constipation', 'value': 'constipation' },
+                          { 'label': 'diarrhea', 'value': 'diarrhea' },
+                          { 'label': 'nausea', 'value': 'nausea' },
+                          { 'label': 'vomiting', 'value': 'vomiting' },
+                          { 'label': 'poor appetite', 'value': 'poor appetite' },
+                          { 'label': 'rectal pain', 'value': 'rectal pain' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'GI: Negative for {ENTRY}.',
+                        'label': 'GI Negatives',
+                        'options': [
+                          { 'label': 'abdominal pain', 'value': 'abdominal pain' },
+                          { 'label': 'abdominal distention', 'value': 'abdominal distention' },
+                          { 'label': 'bloody stools', 'value': 'bloody stools' },
+                          { 'label': 'constipation', 'value': 'constipation' },
+                          { 'label': 'diarrhea', 'value': 'diarrhea' },
+                          { 'label': 'nausea', 'value': 'nausea' },
+                          { 'label': 'vomiting', 'value': 'vomiting' },
+                          { 'label': 'poor appetite', 'value': 'poor appetite' },
+                          { 'label': 'rectal pain', 'value': 'rectal pain' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Respiratory: Positive for {ENTRY}.',
+                        'label': 'Respiratory Positives',
+                        'options': [
+                          { 'label': 'cough', 'value': 'cough' },
+                          { 'label': 'shortness of breath', 'value': 'shortness of breath' },
+                          { 'label': 'stridor', 'value': 'stridor' },
+                          { 'label': 'wheezing', 'value': 'wheezing' },
+                          { 'label': 'sputum production', 'value': 'sputum production' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Respiratory: Negative for {ENTRY}.',
+                        'label': 'Respiratory Negatives',
+                        'options': [
+                          { 'label': 'cough', 'value': 'cough' },
+                          { 'label': 'shortness of breath', 'value': 'shortness of breath' },
+                          { 'label': 'stridor', 'value': 'stridor' },
+                          { 'label': 'wheezing', 'value': 'wheezing' },
+                          { 'label': 'sputum production', 'value': 'sputum production' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Musc: Positive for {ENTRY}.',
+                        'label': 'Musculoskeletal Positives',
+                        'options': [
+                          { 'label': 'back pain', 'value': 'back pain' },
+                          { 'label': 'neck pain', 'value': 'neck pain' },
+                          { 'label': 'arthralgias', 'value': 'arthralgias' },
+                          { 'label': 'joint swelling', 'value': 'joint swelling' },
+                          { 'label': 'myalgias', 'value': 'myalgias' },
+                          { 'label': 'stiffness', 'value': 'stiffness' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Musc: Negative for {ENTRY}.',
+                        'label': 'Musculoskeletal Negatives',
+                        'options': [
+                          { 'label': 'back pain', 'value': 'back pain' },
+                          { 'label': 'neck pain', 'value': 'neck pain' },
+                          { 'label': 'arthralgias', 'value': 'arthralgias' },
+                          { 'label': 'joint swelling', 'value': 'joint swelling' },
+                          { 'label': 'myalgias', 'value': 'myalgias' },
+                          { 'label': 'stiffness', 'value': 'stiffness' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Skin: Positive for {ENTRY}.',
+                        'label': 'Skin Positives',
+                        'options': [
+                          { 'label': 'rash', 'value': 'rash' },
+                          { 'label': 'color change', 'value': 'color change' },
+                          { 'label': 'pallor', 'value': 'pallor' },
+                          { 'label': 'wound', 'value': 'wound' },
+                          { 'label': 'laceration', 'value': 'laceration' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Skin: Negative for {ENTRY}.',
+                        'label': 'Skin Negatives',
+                        'options': [
+                          { 'label': 'rash', 'value': 'rash' },
+                          { 'label': 'color change', 'value': 'color change' },
+                          { 'label': 'pallor', 'value': 'pallor' },
+                          { 'label': 'wound', 'value': 'wound' },
+                          { 'label': 'laceration', 'value': 'laceration' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Neurologic: Negative for {ENTRY}.',
+                        'label': 'Neurologic Negatives',
+                        'options': [
+                          { 'label': 'weakness', 'value': 'weakness' },
+                          { 'label': 'dizziness', 'value': 'dizziness' },
+                          { 'label': 'headache', 'value': 'headache' },
+                          { 'label': 'numbness', 'value': 'numbness' },
+                          { 'label': 'speech problem', 'value': 'speech problem' },
+                          { 'label': 'facial weakness', 'value': 'facial weakness' },
+                          { 'label': 'vision change', 'value': 'vision change' },
+                          { 'label': 'confusion', 'value': 'confusion' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Neurologic: Positive for {ENTRY}.',
+                        'label': 'Neurologic Positives',
+                        'options': [
+                          { 'label': 'weakness', 'value': 'weakness' },
+                          { 'label': 'dizziness', 'value': 'dizziness' },
+                          { 'label': 'headache', 'value': 'headache' },
+                          { 'label': 'numbness', 'value': 'numbness' },
+                          { 'label': 'speech problem', 'value': 'speech problem' },
+                          { 'label': 'facial weakness', 'value': 'facial weakness' },
+                          { 'label': 'vision change', 'value': 'vision change' },
+                          { 'label': 'confusion', 'value': 'confusion' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Psychiatric: Positive for {ENTRY}.',
+                        'label': 'Psychiatric Positives',
+                        'options': [
+                          { 'label': 'suicidal ideas', 'value': 'suicidal ideas' },
+                          { 'label': 'homicidal ideas', 'value': 'homicidal ideas' },
+                          { 'label': 'depressed mood', 'value': 'depressed mood' },
+                          { 'label': 'anxiety', 'value': 'anxiety' },
+                          { 'label': 'agitated mood', 'value': 'agitated mood' },
+                          { 'label': 'hallucinations', 'value': 'hallucinations' },
+                          { 'label': 'hyperactivity', 'value': 'hyperactivity' },
+                          { 'label': 'self injury', 'value': 'self injury' },
+                          { 'label': 'poor sleep', 'value': 'poor sleep' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Psychiatric: Negative for {ENTRY}.',
+                        'label': 'Psychiatric Negatives',
+                        'options': [
+                          { 'label': 'suicidal ideas', 'value': 'suicidal ideas' },
+                          { 'label': 'homicidal ideas', 'value': 'homicidal ideas' },
+                          { 'label': 'depressed mood', 'value': 'depressed mood' },
+                          { 'label': 'anxiety', 'value': 'anxiety' },
+                          { 'label': 'agitated mood', 'value': 'agitated mood' },
+                          { 'label': 'hallucinations', 'value': 'hallucinations' },
+                          { 'label': 'hyperactivity', 'value': 'hyperactivity' },
+                          { 'label': 'self injury', 'value': 'self injury' },
+                          { 'label': 'poor sleep', 'value': 'poor sleep' }],
+                      },
+                    }], 'Body': [
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': 'Physical Exam:', 'value': 'Physical&#32;Exam' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Palpatory exam found one or more of the following: irritation, inflammation, strain, and/or pain, in these areas: {ENTRY}',
+                        'label': 'LB Physical Palpatory Exam',
+                        'options': [
+                          { 'label': 'Bilaterally affected', 'value': 'Bilaterally affected' },
+                          { 'label': 'R side primarily affected', 'value': 'R side primarily affected' },
+                          { 'label': 'L side primarily affected', 'value': 'L Side primaarily affected' },
+                          { 'label': 'L4-L5-S1', 'value': 'L4-L5-S1' },
+                          { 'label': 'R SI Joint', 'value': 'R SI Joint' },
+                          { 'label': 'L SI Joint', 'value': 'L SI Joint' },
+                          { 'label': 'Pain R Iliac Crest', 'value': 'pain along R  iliac crest' },
+                          { 'label': 'Pain L iliac crest', 'value': 'pain along L iliac crest' },
+                          { 'label': 'R Glut Medius', 'value': 'R Glut Medius' },
+                          { 'label': 'L Glut Medius', 'value': 'L Glut Medius' },
+                          { 'label': 'Found Back Mice', 'value': 'Found nodules / back mice' },
+                          { 'label': 'Pain GB30', 'value': 'Pain GB30' },
+                          { 'label': 'R Hip Bursa', 'value': 'R hip bursa' },
+                          { 'label': 'L Hip Bursa', 'value': 'L Hip bursa' },
+                          { 'label': 'R Origin IT Band', 'value': 'R Origin IT Band' },
+                          { 'label': 'L Origin IT Band', 'value': 'L Origin IT Band' },
+                          { 'label': 'R QL', 'value': 'R QL' },
+                          { 'label': 'L QL', 'value': 'L QL' },
+                          { 'label': 'Focused Pain R Sacrum', 'value': 'Focused Pain R Sacrum' },
+                          { 'label': 'Focused Pain L Sacrum', 'value': 'Focused Pain L Sacrum' },
+                          { 'label': 'Focused Pain R L5 Triangle', 'value': 'Focused Pain R L5 Triangle' },
+                          { 'label': 'Focused Pain L L5 Triangle', 'value': 'Focused Pain L L5 Triangle' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Genitourinary/rectal {ENTRY}',
+                        'label': 'Genitourinary/rectal',
+                        'options': [
+                          { 'label': 'Reports Urine Pain', 'value': 'Reports pain on urination' },
+                          { 'label': 'Denies Urine Pain', 'value': 'Denies pain upon urination' },
+                          { 'label': 'Reports Flank Pain', 'value': 'Reports Flank Pain' },
+                          { 'label': 'Denies Flank Pain', 'value': 'Denies Flank Pain' },
+                          { 'label': 'Report Hx UTI', 'value': 'Reports Hx of UTI' },
+                          { 'label': 'Denies Hx UTI', 'value': 'Denis Hx of UTI' },
+                          { 'label': 'Reports Hernia', 'value': 'Reports Hernia and/or hernia surgery' },
+                          { 'label': 'Denies Hernia', 'value': 'Denies Hernia' },
+                          { 'label': 'Reports Hx of Pelvic Pain', 'value': 'Reports Hx of Pelvic Pain' },
+                          { 'label': 'Denies Hx of Pelvic Pain', 'value': 'Denies ' },
+                          { 'label': 'Reports Hx of Menstrual Pain', 'value': 'Reports Hx of Minstral Pain' },
+                          { 'label': 'Denies Hx of Menstrual Pain', 'value': 'Denies ' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Respiratory: {ENTRY}',
+                        'label': 'Respiratory',
+                        'options': [
+                          { 'label': 'effort nl', 'value': 'effort normal' },
+                          { 'label': 'breath sounds nl', 'value': 'breath sounds normal' },
+                          { 'label': 'resp distress', 'value': 'respiratory distress' },
+                          { 'label': 'wheezes', 'value': 'wheezes' },
+                          { 'label': 'rales', 'value': 'rales' },
+                          { 'label': 'crackles', 'value': 'crackles' },
+                          { 'label': 'chest tenderness', 'value': 'chest tenderness' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Abdominal: {ENTRY}', 'label': 'Abdominal', 'options': [
+                          { 'label': 'soft', 'value': 'soft' },
+                          { 'label': 'nontender', 'value': 'nontender' },
+                          { 'label': 'bowel sounds nl', 'value': 'bowel sounds normal' },
+                          { 'label': 'no rebound or guarding', 'value': 'no rebound or guarding' },
+                          { 'label': 'distended', 'value': 'distended' },
+                          { 'label': 'tenderness', 'value': 'tenderness' },
+                          { 'label': 'tenderness RUQ', 'value': 'tenderness RUQ' },
+                          { 'label': 'tenderness RLQ', 'value': 'tenderness RLQ' },
+                          { 'label': 'tenderness LLQ', 'value': 'tenderness LLQ' },
+                          { 'label': 'tenderness LUQ', 'value': 'tenderness LUQ' },
+                          { 'label': 'tenderness epigastric', 'value': 'tenderness epigastric' },
+                          { 'label': 'tenderness suprapubic', 'value': 'tenderness suprapubic' },
+                          { 'label': 'rebound', 'value': 'rebound' },
+                          { 'label': 'guarding', 'value': 'guarding' },
+                          { 'label': '+ Murphy\'s', 'value': 'positive Murphy\'s sign' },
+                          { 'label': '- Murphy\'s', 'value': 'negative Murphy\'s sign' },
+                          { 'label': '+ McBurney\'s', 'value': 'positive McBurney\'s tenderness' },
+                          { 'label': '- McBurney\'s', 'value': 'positive McBurney\'s tenderness' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Skin: {ENTRY}',
+                        'label': 'Skin',
+                        'options': [
+                          { 'label': 'warm', 'value': 'warm' },
+                          { 'label': 'dry', 'value': 'dry' },
+                          { 'label': 'rash', 'value': 'rash' },
+                          { 'label': 'wound', 'value': 'wound' },
+                          { 'label': 'laceration', 'value': 'laceration' },
+                          { 'label': 'erythema', 'value': 'erythema' }],
+                      },
+                    }], 'MDM': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for evaluation of {ENTRY}.',
+                        'label': 'Chief Complaint',
+                        'options': [
+                          { 'label': 'Back Pain', 'value': 'back pain' },
+                          { 'label': 'Leg Pain', 'value': 'Leg Pain' },
+                          { 'label': 'Thoracic Pain', 'value': 'Thoracic Pain' },
+                          { 'label': 'Hip Pain', 'value': 'Hip Pain' },
+                          { 'label': 'Groin Pain', 'value': 'Groin Pain' },
+                          { 'label': 'Buttock Pain', 'value': 'Buttock Pain' },
+                          { 'label': 'Sacral Pain', 'value': 'Sacral Pain' },
+                          { 'label': 'Abdominal Pain', 'value': 'Abdominal Pain' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'These other conditions affect the patient {ENTRY}',
+                        'label': 'Other Conditions Complicating CC',
+                        'options': [
+                          { 'label': 'Prior Surgery', 'value': 'Prior back surgery' },
+                          { 'label': 'Age', 'value': 'Age ' },
+                          { 'label': 'Statin Drugs', 'value': 'Statin Drugs' },
+                          { 'label': 'Previous MVA', 'value': 'Previous MVA' },
+                          { 'label': 'Continued Work Load', 'value': 'Continued Work Load' },
+                          { 'label': 'Continued Exercise', 'value': 'Continued Exercise' },
+                          { 'label': 'Extensive Back Pain Hx', 'value': 'Extensive Back Pain Hx' },
+                          { 'label': 'Diabetes', 'value': 'Diabetes' },
+                          { 'label': 'Inactivity', 'value': 'Inactivity' },
+                          { 'label': 'Obesity / Overweight', 'value': 'Obesity / Overweight' },
+                          { 'label': 'Stress', 'value': 'Stress' },
+                          { 'label': 'Poor Sleep', 'value': 'Poor Sleep' },
+                          { 'label': 'Knee Pain', 'value': 'Knee Pain' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Diagnosis(s)  {ENTRY}.', 'label': 'Diagnosis', 'options': [
+                          { 'label': 'Back Pain', 'value': 'back pain' },
+                          { 'label': 'Lumbar Strain', 'value': 'lumbar strain' },
+                          { 'label': 'Muscle Spasm', 'value': 'muscle spasm' },
+                          { 'label': 'Lumbar Radiculopathy', 'value': 'Lumbar radiculopathy' },
+                          { 'label': 'R Sciatica', 'value': 'R Sciatica' },
+                          { 'label': 'L Sciatica', 'value': 'L Sciatica' },
+                          { 'label': 'Myofascial Pain', 'value': 'Myofascial Pain' },
+                          { 'label': 'Piriformis Syndrome', 'value': 'Periformis Syndrome' },
+                          { 'label': 'Glut Medius Strain R', 'value': 'Glut Medius Strain R' },
+                          { 'label': 'Glut Medius Strain L', 'value': 'Glut Medius Strain L' },
+                          { 'label': 'Trochanteric Bursitis L', 'value': 'Trochanteric Bursitis L' },
+                          { 'label': 'Trochanteric Bursitis R', 'value': 'Trochanteric Bursitis R' },
+                          { 'label': 'Strain of the QL', 'value': 'Strain of the QL' },
+                          { 'label': 'Pain Kidney', 'value': 'Pain Radiating Around the Kidneys' },
+                          { 'label': 'Abdominal Pain Radiating to Back', 'value': 'Abdominal Pain Radiating to Back' },
+                          { 'label': 'Kidney Infection / UTI', 'value': 'Kidney Infection / UTI' },
+                          { 'label': 'Pelvic Pain', 'value': 'Pelvic Pain' },
+                          { 'label': 'Sacral Pain', 'value': 'Sacral Pain' },
+                          { 'label': 'Internal Organ Pain', 'value': 'Internal Organ Pain' },
+                          { 'label': 'Menstrual Pain', 'value': 'Menstrual Pain' },
+                          { 'label': 'Cluneal Nerve Entrapment', 'value': 'Cluneal Nerve Entrapment' },
+                          { 'label': 'Sacroiliitis R', 'value': 'Sacroiliitis R' },
+                          { 'label': 'Sacroiliitis L', 'value': 'Sacroiliitis L' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Diagnostic testing performed: {ENTRY}.',
+                        'label': 'Diagnostic Testing',
+                        'options': [
+                          {
+                            'label': 'None',
+                            'value': 'Based on history and exam, discussed that further testing at this time would likely not be of benefit and therefore no further testing was performed',
+                          },
+                          { 'label': 'X ray Neg', 'value': 'Xray imaging shows no evidence of fracture' },
+                          { 'label': 'X Ray Confirms Diagnosis', 'value': 'Xray Confirms Diagnosis' },
+                          { 'label': 'MRI negative', 'value': 'MRI shows no acute findings' },
+                          {
+                            'label': 'Palpatory Exam Confirms Diagnosis',
+                            'value': 'Palpatory Exam Confirms Diagnosis',
+                          },
+                          { 'label': 'Fortin Test Confirms SI Joint', 'value': 'Fortin Test Confirms SI Joint' },
+                          {
+                            'label': 'Positive Straight Leg (Sciatica)',
+                            'value': 'Positive Straight Leg Test ( Sciatica)',
+                          },
+                          { 'label': 'Tongue Exam Confirms Diagnosis', 'value': 'Tongue Exam confirms diagnosis' },
+                          { 'label': 'TCM Pulse Confirms Diagnosis', 'value': 'TCM Pulse confirms diagnosis' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Plan:',
+                        'options': [
+                          {
+                            'label': 'Gen Symptomatic Cares',
+                            'value': 'Rest, fluids, and over-the-counter symptomatic treatments were recommended.',
+                            'sentence': '{ENTRY}',
+                          },
+                          {
+                            'label': 'Tylenol/Ibuprofen',
+                            'value': 'Recommend over the counter Tylenol and Ibuprofen for fever/general discomfort.',
+                            'sentence': '{ENTRY}',
+                          },
+                          {
+                            'label': 'RICE',
+                            'value': 'Recommend rest, ice, elevation, and compression.',
+                            'sentence': '{ENTRY}',
+                          },
+                          {
+                            'label': 'Monitor',
+                            'value': 'Monitor for new or worsening symptoms.',
+                            'sentence': '{ENTRY}',
+                          },
+                          { 'label': 'FU Ortho', 'value': 'Follow up with orthopedic povider', 'sentence': '{ENTRY}' },
+                          {
+                            'label': 'Moist Heat',
+                            'value': 'Use Moist Heat',
+                            'sentence': 'Apply Moist Heat for Pain Releif as needed {ENTRY}',
+                          }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Plan of care for patient is acupuncture and or other modalities {ENTRY}.',
+                        'label': 'Plan of Care',
+                        'options': [
+                          { 'label': '1x week for four weeks', 'value': '1x Week for four weeks' },
+                          { 'label': '1x week for six weeks', 'value': '1x week for six weeks' },
+                          { 'label': '2x week for two weeks', 'value': '2x week for two weeks' },
+                          { 'label': '1x Every other Week', 'value': '1 x Every Other Week' },
+                          { 'label': '1x Month Maintenance', 'value': '1x month Maintenance' },
+                          { 'label': 'Refer back to PCP', 'value': 'Referring to their PCP' },
+                          {
+                            'label': 'Referring to ER with worsening symptoms',
+                            'value': 'Referring to ER with new or worsening symptoms',
+                          },
+                          { 'label': 'Refer to Ortho', 'value': 'Refer to orthopedic provider' },
+                          { 'label': 'Use Massage', 'value': 'Massage' },
+                          { 'label': 'Release from care', 'value': 'Release from care' },
+                          { 'label': 'Order Lab work', 'value': 'Order Lab work' },
+                          { 'label': 'Imaging', 'value': 'Order Imaging' },
+                          { 'label': 'PT', 'value': 'Refer to PT' },
+                          { 'label': 'Re-Eval week 2 of Tx', 'value': 'Re-Evaluate week two of Tx' },
+                          { 'label': 'Re-Eval week 4 of Tx', 'value': 'Re-Evaluate week four of  Tx' },
+                          { 'label': 'Re-Eval week 6 of Tx', 'value': 'Re-Evaluate week six of Tx' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient prescribed {ENTRY}.',
+                        'label': 'Prescriptions',
+                        'options': [
+                          { 'label': 'Tylenol', 'value': 'Tylenol' },
+                          { 'label': 'Ibuprofen', 'value': 'Ibuprofen' },
+                          { 'label': 'Naproxen', 'value': 'Naproxen' },
+                          { 'label': 'Physical Therapy', 'value': 'physical therapy' },
+                          { 'label': 'Medicinal Herbs', 'value': 'Medicinal Herbs' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatment(s) provided for today {ENTRY}',
+                        'label': 'Treatment Provided',
+                        'options': [
+                          { 'label': 'Moist Heat', 'value': 'Application of Moist Heat' },
+                          { 'label': 'Massage', 'value': 'Massage of affected area' },
+                          { 'label': 'Acupuncture 1', 'value': 'Acupuncture in one area' },
+                          { 'label': 'Acupuncture 2', 'value': 'Acupuncture in two areas' },
+                          { 'label': 'Acupuncture 3', 'value': 'Acupuncture in three areas' },
+                          { 'label': 'Acupuncture 4', 'value': 'Acupuncture in four areas' },
+                          { 'label': 'EAM', 'value': 'Electrical Acupuncture Medicine' },
+                          { 'label': 'Counseling', 'value': 'Counseling' },
+                          { 'label': 'Myofascial Release', 'value': 'Myafacial Release' },
+                          { 'label': 'Trigger Point Acupuncture', 'value': 'Trigger Point Acupuncture' },
+                          { 'label': 'Cupping', 'value': 'Cupping affected area' },
+                          { 'label': 'Moxa', 'value': 'Application of moxa for condition' },
+                          { 'label': 'Trigger Injections 1', 'value': 'Trigger Point Injection in one area' },
+                          { 'label': 'Trigger Injections 2', 'value': 'Trigger Point Injection in two areas' },
+                          { 'label': 'Trigger Injections 3', 'value': 'Trigger Point Injection in three areas' },
+                          { 'label': 'Trigger Injections 4', 'value': 'Trigger Point Injection in four areas' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': 'Acupuncture Set 1{ENTRY}',
+                        'label': 'Acupuncture Set 1',
+                        'value': 'Acupuncture&#32;Set&#32;1&#32;-&#32;',
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': 'Acupuncture Set 2  {ENTRY}',
+                        'label': 'Acupuncture Set 2',
+                        'value': 'Acupuncture&#32;Set&#32;2&#32;-&#32;',
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': 'Acupuncture Set 3  {ENTRY}',
+                        'label': 'Acupuncture Set 3',
+                        'value': 'Acupuncture&#32;Set&#32;3&#32;-&#32;',
+                      },
+                    }],
+                }                </script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

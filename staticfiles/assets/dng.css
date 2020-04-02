@@ -1,0 +1,1199 @@
+/*!
+ * Cheatsheet by Chiedo Labs (http://chie.do)
+ * Version: 1.5
+ * Description: An Object oriented stylesheet
+ * License: For use on this site only. Not free to distribute or use on other projects.
+ */
+
+@import url(https://fonts.googleapis.com/css?family=PT+Sans:400,700);
+
+/*! normalize.css v2.1.2 | MIT License | git.io/normalize */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+	display: block
+}
+audio,
+canvas,
+video {
+	display: inline-block
+}
+audio:not([controls]) {
+	display: none;
+	height: 0
+}
+[hidden] {
+	display: none
+}
+html {
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%
+}
+body {
+	margin: 0
+}
+a:active,
+a:hover {
+	outline: 0
+}
+h1 {
+	font-size: 2em;
+	margin: 0.67em 0
+}
+abbr[title] {
+	border-bottom: 1px dotted
+}
+b,
+strong {
+	font-weight: bold
+}
+dfn {
+	font-style: italic
+}
+hr {
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+	height: 0
+}
+mark {
+	background: #ff0;
+	color: #000
+}
+code,
+kbd,
+pre,
+samp {
+	font-family: monospace, serif;
+	font-size: 1em
+}
+pre {
+	white-space: pre-wrap
+}
+q {
+	quotes: "\201C""\201D""\2018""\2019"
+}
+small {
+	font-size: 80%
+}
+sub,
+sup {
+	font-size: 75%;
+	line-height: 0;
+	position: relative;
+	vertical-align: baseline
+}
+sup {
+	top: -0.5em
+}
+sub {
+	bottom: -0.25em
+}
+img {
+	border: 0
+}
+svg:not(:root) {
+	overflow: hidden
+}
+figure {
+	margin: 0
+}
+fieldset {
+	border: 1px solid #c0c0c0;
+	margin: 0 2px;
+	padding: 0.35em 0.625em 0.75em
+}
+legend {
+	border: 0;
+	padding: 0
+}
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 17px;
+	margin: 0
+}
+button,
+input {
+	line-height: normal
+}
+button,
+select {
+	text-transform: none
+}
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	-webkit-appearance: button;
+	cursor: pointer
+}
+button[disabled],
+html input[disabled] {
+	cursor: default
+}
+input[type="checkbox"],
+input[type="radio"] {
+	box-sizing: border-box;
+	padding: 0
+}
+input[type="search"] {
+	-webkit-appearance: textfield;
+	-moz-box-sizing: content-box;
+	-webkit-box-sizing: content-box;
+	box-sizing: content-box
+}
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+	-webkit-appearance: none
+}
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+	border: 0;
+	padding: 0
+}
+textarea {
+	overflow: auto;
+	vertical-align: top
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+html {
+	height: 100%;
+	font-family: 'PT Sans'
+}
+body {
+	margin: 0;
+	padding: 0
+}
+ul,
+ol {
+	list-style: none;
+	margin: 0;
+	padding: 0
+}
+li {
+	display: inline
+}
+a,
+a:hover,
+a:active,
+a:visited {
+	text-decoration: none
+}
+.userInput h1,
+.userInput h2,
+.userInput h3,
+.userInput h4,
+.userInput h5,
+.userInput h6,
+.userInput .h1,
+.userInput .h2,
+.userInput .h3,
+.userInput .h4,
+.userInput .h5,
+.userInput .h6,
+.wp-editor h1,
+.wp-editor h2,
+.wp-editor h3,
+.wp-editor h4,
+.wp-editor h5,
+.wp-editor h6,
+.wp-editor .h1,
+.wp-editor .h2,
+.wp-editor .h3,
+.wp-editor .h4,
+.wp-editor .h5,
+.wp-editor .h6 {
+	margin-bottom: 10px
+}
+.userInput li,
+.wp-editor li {
+	display: list-item
+}
+.userInput ul,
+.wp-editor ul {
+	margin-left: 40px;
+	margin-bottom: 20px
+}
+.userInput ul li,
+.wp-editor ul li {
+	list-style: disc
+}
+.userInput ol,
+.wp-editor ol {
+	margin-left: 40px;
+	margin-bottom: 20px
+}
+.userInput ol li,
+.wp-editor ol li {
+	list-style: decimal
+}
+.userInput p,
+.wp-editor p {
+	margin-bottom: 20px
+}
+.userInput strong,
+.userInput b,
+.wp-editor strong,
+.wp-editor b {
+	font-weight: bold
+}
+.userInput u,
+.wp-editor u {
+	text-decoration: underline
+}
+.userInput blockquote,
+.wp-editor blockquote {
+	margin-left: 40px
+}
+.userInput i,
+.wp-editor i {
+	text-decoration: italic
+}
+.mobBlock {
+	display: none
+}
+.dngBackSearch {
+	border: solid black;
+	background: #666666;
+	color: white !important;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	float: right;
+	width: 150px;
+	margin-top: 30px;
+	display: inline-block
+}
+.dngBackSearch:hover {
+	background: #edb059
+}
+.dngContent {
+	font-size: 14px;
+	position: relative
+}
+.dngRightContent {
+	left: inherit;
+}
+.dngOutputContent {
+	border: 1px solid #ced4da;
+	min-height: 200px;
+	max-width: 100%;
+	display: block;
+	padding: 10px;
+	height: 500px;
+	border-radius: 0.25rem;
+}
+.favorite_add,
+.favorite_delete{
+	border: solid black;
+	background: #666666;
+	text-align: center;
+	width: auto;
+	padding: 0 10px;
+	color: white !important;
+	float: right;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 10px
+}
+.favorite_add{
+	background: #edb059
+}
+.email-sent-success{
+	clear: both;
+    color: green;
+    font-size: 16px;
+}
+.dngTitleContainer {
+	background: #a5d4ff;
+	margin-bottom: 0px
+}
+.dngTitle {
+	color: black;
+	font-weight: normal;
+	padding-left: 10px;
+	display: inline-block;
+	margin: 1px 0
+}
+.dngSwitchContainer {
+	display: inline-block;
+	height: 30px;
+	width: 70px;
+	background: white;
+	float: right;
+	margin: 1px;
+	background: black
+}
+.dngSwitchButton {
+	height: 30px;
+	width: 35px;
+	background: #edb059;
+	border-left: solid black 3px;
+	border-right: solid black 3px;
+	display: inline-block;
+	position: relative;
+	z-index: 1
+}
+.dngSwitchButton:hover {
+	cursor: pointer
+}
+.dngSwitchLeft,
+.dngSwitchRight {
+	height: 30px;
+	width: 25px;
+	display: inline-block
+}
+.dngSwitchLeft {
+	background: white;
+	margin-right: -9px
+}
+.dngSwitchRight {
+	background: white;
+	margin-left: -9px
+}
+.HPI,
+.Body,
+.MDM {
+	padding-left: 15px;
+	margin-bottom: 30px
+}
+.dngCheckBoxes label,
+.dngCheckBoxesMultiline label,
+.dngRadioButtons label {
+	padding-left: 5px;
+	margin-bottom: 0;
+}
+.dngRadioButtons,
+.dngCheckBoxes,
+.dngCheckBoxesMultiline,
+.dngTextArea,
+.dngTimeFrame {
+	margin-bottom: 5px
+}
+.dngReminderText {
+	width: 90%
+}
+.dngRadioButton,
+.dngCheckBox,
+.dngCheckBoxMultiline {
+	background: #efefef;
+	display: inline-block;
+	padding: 9px;
+	border-right: solid 1px #d0d0d0;
+	margin-top: 5px
+}
+.dngRadioButton:last-child,
+.dngCheckBox:last-child,
+.dngCheckBoxMultiline:last-child {
+	border-right: 0
+}
+.dngLabel {
+	font-weight: bold;
+	font-size: 12.5px;
+	padding: 5px 0;
+}
+.dngEditButton {
+	display: inline-block;
+	border: solid black;
+	background: #666666;
+	text-align: center;
+	width: 150px;
+	color: white !important;
+	float: right;
+	font-weight: bold;
+	font-size: 18px;
+	margin-top: 30px
+}
+.dngEditButton:hover {
+	cursor: pointer;
+	background: #edb059
+}
+.dngReminder {
+	margin-top: 10px;
+	margin-bottom: 5px;
+	padding: 10px;
+	background: #efefef
+}
+.dngReminder .dngLabel {
+	padding-top: 0
+}
+.dngSearchPage {
+	width: 850px;
+	margin: 0 auto
+}
+.dngSearch {
+	width: 100%;
+	margin-top: 50px
+}
+.dngSearch .dngSearchBox {
+	width: 655px;
+	min-height: 50px;
+	font-size: 20px;
+	border: 2px solid black;
+	color: #666666;
+	padding: 5px 10px;
+	background-color: white
+}
+.dngSearchFilters {
+	display: inline-block;
+	width: 130px
+}
+.dngSearchFilters .selected {
+	background: #edb059
+}
+.dngSearchFilter {
+	font-size: 18px;
+	border: 2px solid black;
+	border-top: none;
+	width: 100%;
+	min-height: 50px;
+	vertical-align: top;
+	text-align: center;
+	background: #666666;
+	color: white;
+	font-weight: bold;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center
+}
+.dngSearchFilter:first-child {
+	border-top: 2px solid black
+}
+.dngSearchFilter:hover {
+	background: #edb059;
+	cursor: pointer
+}
+.dngSearchRight {
+	display: inline-block;
+	width: 565px;
+	margin-left: 15px;
+	vertical-align: top
+}
+.dngResults {
+	width: 680px;
+	margin-top: 10px
+}
+.dngResults .dngBlueBG {
+	background: #666666
+}
+.dngResults .dngWhiteBG {
+	background: black
+}
+.dngResults .selected {
+	background: #edb059
+}
+.dngResult {
+	border: solid black;
+	margin-bottom: -3px;
+	color: white
+}
+.dngResult .title {
+	display: block;
+	font-size: 22px;
+	font-weight: bold;
+	color: white
+}
+.dngResult .author {
+	display: block;
+	font-size: 14px;
+	color: white
+}
+.dngResult:hover {
+	background: #edb059;
+	color: black
+}
+.dngEditorPage {
+	min-height: 650px;
+	width: 850px;
+	position: relative
+}
+.dngPostCatContainer {
+	text-align: center;
+	margin-top: 10px
+}
+.dngPostCatContainer .dngEditorCatTitle {
+	background: black;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px
+}
+.dngPostCatContainer .dngPostCategory {
+	background: #666;
+	border: solid black;
+	text-align: center;
+	margin-top: -4px;
+	color: white
+}
+.dngPostCatContainer .dngPostCategory:hover {
+	cursor: pointer
+}
+.dngPostCatContainer .selected {
+	background: #edb059;
+	font-weight: bold
+}
+.dngPostTitleEdit {
+	font-size: 34px;
+	width: 100%;
+	margin-top: 15px;
+	margin-bottom: 22.780px
+}
+.dngEntryUse {
+	font-weight: bold;
+	padding-bottom: 10px;
+	font-size: 16px
+}
+.dngPostContent {
+	width: 600px;
+	vertical-align: top;
+	display: inline-block
+}
+.dngEditorCreateNewPage,
+.dngEditorUpdatePage {
+	border: solid black;
+	text-align: center;
+	background: #666;
+	font-weight: bold;
+	margin-bottom: 10px;
+	color: white
+}
+.dngEditorCreateNewPage:hover,
+.dngEditorUpdatePage:hover {
+	cursor: pointer;
+	background: #edb059
+}
+.dngEditorButtons {
+	right: 0px;
+	top: 100px;
+	position: absolute;
+	width: 180px;
+	margin-left: 40px
+}
+.dngEditorButtons .dngBackSearch {
+	width: 100%;
+	margin-bottom: 10px;
+	display: block;
+	float: none;
+	font-size: 15px
+}
+.dngEditorBodyButtons .dngEditorBodyTitle {
+	background: black;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px
+}
+.dngEditorBodyButtons .dngEditorBodyButton {
+	display: block;
+	border: solid black;
+	margin-top: -3px;
+	text-align: center;
+	background: #666;
+	color: white
+}
+.dngEditorBodyButtons .dngEditorBodyButton:hover {
+	background: #edb059;
+	cursor: pointer
+}
+.dngEditorBodyButtons .selected {
+	background: #edb059;
+	font-weight: bold
+}
+.dngEditorFieldButtons {
+	padding-top: 20px
+}
+.dngEditorFieldTitle {
+	background: black;
+	color: white;
+	font-weight: bold;
+	text-align: center;
+	font-size: 16px
+}
+.dngEditorFieldButton {
+	display: block;
+	border: solid black;
+	margin-top: -3px;
+	text-align: center;
+	background: #666;
+	color: white
+}
+.dngEditorFieldButton:hover {
+	background: #edb059;
+	cursor: pointer
+}
+.dngEditorContainer {
+	border: solid;
+	margin-bottom: 5px
+}
+.dngEditorHeader {
+	background: #666666;
+	height: 25px;
+	color: white
+}
+.dngEditorHeader:hover {
+	cursor: pointer
+}
+.dngEditorTitle {
+	display: inline-block;
+	font-weight: bold
+}
+.dngEditorTitle:hover {
+	cursor: pointer
+}
+.dngDeleteElement {
+	display: inline-block;
+	float: right;
+	margin: 1px;
+	font-weight: bold
+}
+.dngDeleteElement:hover {
+	cursor: pointer
+}
+.dngArrow {
+	height: 15px;
+	width: 15px;
+	display: inline-block;
+	margin: 4px 3px;
+	float: right
+}
+.dngArrow:hover {
+	cursor: pointer
+}
+.dngUpArrow {
+	background: url("images/whiteUpArrow.png");
+	background-size: auto 100%;
+	margin-right: 5px
+}
+.dngDownArrow {
+	background: url("images/whiteDownArrow.png");
+	background-size: auto 100%
+}
+.dngEditorContainer .dngCheckBoxes,
+.dngEditorContainer .dngCheckBoxesMultiline,
+.dngEditorContainer .dngRadioButtons,
+.dngEditorContainer .dngTextArea,
+.dngEditorContainer .dngTimeFrame,
+.dngEditorContainer .dngReminder {
+	padding-left: 10px;
+	padding-bottom: 5px
+}
+.dngEditorContainer .dngCheckBoxesEditorContainer,
+.dngEditorContainer .dngCheckBoxesMultilineEditorContainer,
+.dngEditorContainer .dngRadioButtonsEditorContainer,
+.dngEditorContainer .dngTextAreaEditorContainer,
+.dngEditorContainer .dngTimeFrameEditorContainer,
+.dngEditorContainer .dngReminderEditorContainer {
+	padding-left: 10px;
+	padding-bottom: 5px
+}
+.dngEditorContainer .dngAdd {
+	text-align: right;
+	font-weight: bold;
+	padding-right: 5px
+}
+.dngEditorContainer .dngCheckBoxesSentence,
+.dngEditorContainer .dngRadioButtonsSentence,
+.dngEditorContainer .dngTextAreaSentence,
+.dngEditorContainer .dngTimeFrameSentence {
+	width: 475px;
+	margin-left: 10px;
+	margin-bottom: 5px
+}
+.dngEditorContainer .dngCheckBoxesMultilineSentence {
+	width: 414px;
+	margin-top: 3px
+}
+.dngEditorContainer .dngCheckBoxesLabel,
+.dngEditorContainer .dngCheckBoxesMultilineLabel,
+.dngEditorContainer .dngRadioButtonsLabel,
+.dngEditorContainer .dngTextAreaLabel,
+.dngEditorContainer .dngTimeFrameLabel {
+	width: 475px;
+	margin-left: 10px;
+	margin-bottom: 5px
+}
+.dngEditorContainer .dngCheckBoxesSentenceTitle,
+.dngEditorContainer .dngRadioButtonsTitle,
+.dngEditorContainer .dngTextAreaSentenceTitle,
+.dngEditorContainer .dngTimeFrameSentenceTitle {
+	margin-left: 10px
+}
+.dngEditorContainer .dngCheckBoxValue,
+.dngEditorContainer .dngCheckBoxHolder,
+.dngEditorContainer .dngCheckBoxMultilineValue,
+.dngEditorContainer .dngCheckBoxMultilineHolder,
+.dngEditorContainer .dngRadioValue,
+.dngEditorContainer .dngRadioHolder {
+	display: inline-block
+}
+.dngEditorContainer .dngTextAreaValueTitle {
+	margin-left: 10px;
+	font-weight: bold
+}
+.dngEditorContainer .dngTextAreaValue {
+	margin-left: 10px;
+	width: 475px;
+	margin-bottom: 5px
+}
+.dngEditorContainer .dngCheckBoxesLabelTitle,
+.dngEditorContainer .dngCheckBoxesMultilineLabelTitle,
+.dngEditorContainer .dngRadioButtonsLabelTitle,
+.dngEditorContainer .dngTextAreaLabelTitle,
+.dngEditorContainer .dngTimeFrameLabelTitle {
+	font-weight: bold;
+	margin-left: 10px
+}
+.dngEditorContainer .dngCheckBoxesCreator,
+.dngEditorContainer .dngCheckBoxesMultilineCreator,
+.dngEditorContainer .dngRadioButtonsCreator {
+	padding: 5px 0 0 20px
+}
+.dngEditorContainer .dngDeleteCheckBox,
+.dngEditorContainer .dngDeleteCheckBoxMultiLine,
+.dngEditorContainer .dngDeleteRadioButton {
+	display: inline-block;
+	font-weight: bold;
+	font-size: 17px
+}
+.dngEditorContainer .dngDeleteCheckBox:hover,
+.dngEditorContainer .dngDeleteCheckBoxMultiLine:hover,
+.dngEditorContainer .dngDeleteRadioButton:hover {
+	cursor: pointer
+}
+.dngEditorContainer .dngDownArrowElement,
+.dngEditorContainer .dngUpArrowElement {
+	height: 10px;
+	width: 10px;
+	display: inline-block
+}
+.dngEditorContainer .dngDownArrowElement:hover,
+.dngEditorContainer .dngUpArrowElement:hover {
+	cursor: pointer
+}
+.dngEditorContainer .dngDownArrowElement {
+	background: url("images/grayDownArrow.png");
+	background-size: auto 100%
+}
+.dngEditorContainer .dngUpArrowElement {
+	background: url("images/grayUpArrow.png");
+	background-size: auto 100%
+}
+.dngEditorContainer .dngCheckBoxCreator,
+.dngEditorContainer .dngCheckBoxMultilineCreator,
+.dngEditorContainer .dngRadioButtonCreator {
+	padding-bottom: 5px
+}
+.box1.mar {
+	margin-bottom: 10px
+}
+.box1.mar.mar2 {
+	margin-bottom: 10px
+}
+.box1>.pad {
+	padding: 10px
+}
+.box1>.pad.pad2 {
+	padding: 10px
+}
+.box1 h1 {
+	font-size: 40px
+}
+.box1>.content,
+.box1>.pad>.content {
+	font-size: 12px;
+	font-weight: 300
+}
+.book1 {
+	width: 10px;
+	height: 10px
+}
+.book1.mar {
+	margin-bottom: 10px
+}
+.book1.mar.mar2 {
+	margin-bottom: 10px
+}
+.book1>.pad {
+	padding-bottom: 10px
+}
+.book1>.pad.pad2 {
+	padding-bottom: 10px
+}
+.book1>.content,
+.book1>.pad>.content {
+	font-size: 12px;
+	font-weight: 300
+}
+.alignLeft,
+.fl {
+	float: left
+}
+.alignRight,
+.fr {
+	float: right
+}
+.clear {
+	clear: both
+}
+.hidden {
+	display: none
+}
+.block {
+	display: block
+}
+.inline {
+	display: inline-block
+}
+.ctr {
+	text-align: center
+}
+.ie7 .inline,
+.ie7 nav.mainmenu ul li {
+	display: inline
+}
+@media (max-width: 1100px) {
+	.tabBlock {
+		display: block
+	}
+	.tabInline {
+		display: inline-block
+	}
+	.tabHidden {
+		display: none
+	}
+	.tabCtr {
+		text-align: center
+	}
+	.dngContent .centercontent {
+		width: 100%
+	}
+	.dngLeftContent {
+		width: 100%
+	}
+	.dngRightContent {
+		display: block;
+		position: initial;
+		width: 98%;
+		margin-left: 15px
+	}
+	.dngOutputBar {
+		position: initial !important;
+		top: initial !important;
+		width: 100%
+	}
+	.dngOutputContent {
+		height: auto;
+		min-height: 0;
+	}
+	.dngOutputComplete,
+	.dngCopyToClipboard {
+		margin-bottom: 10px;
+		margin-right: 1%
+	}
+	.dngSearchPage {
+		width: 100%
+	}
+	.dngSearch .dngSearchBox {
+		width: 100%
+	}
+	.dngSearchRight {
+		width: 75%
+	}
+	.dngResults {
+		width: 105%
+	}
+	.dngEditorPage {
+		width: 100%
+	}
+	.dngEditorButtons {
+		position: initial;
+		width: 100%;
+		margin-left: 0px;
+		margin-bottom: 20px
+	}
+	.dngEditorButtons .dngBackSearch {
+		width: 99%
+	}
+	.dngEditorSidebar {
+		position: initial !important;
+		top: initial !important
+	}
+	.dngEditorBodyButtons .dngEditorBodyTitle {
+		width: 100%
+	}
+	.dngEditorBodyButtons .dngEditorBodyButton {
+		width: 32.4%;
+		margin-left: -4px;
+		display: inline-block
+	}
+	.dngEditorBodyButtons #HPI {
+		margin-left: 0
+	}
+	.dngPostContent {
+		width: 100%
+	}
+}
+@media (max-width: 767px) {
+	.mobBlock {
+		display: block
+	}
+	.mobInline {
+		display: inline-block
+	}
+	.mobHidden {
+		display: none
+	}
+	.mobCtr {
+		text-align: center
+	}
+	.dngRightContent {
+		width: 100%;
+		margin-left: 0px
+	}
+	.dngSearchPage {
+		width: 100%
+	}
+	.dngSearch .dngSearchBox {
+		margin-top: 20px;
+		width: 95%
+	}
+	.dngMobCatButton {
+		border: solid black;
+		width: 100%;
+		background: #666;
+		color: white;
+		font-weight: bold;
+		text-align: center;
+		font-size: 24px;
+		height: 30px;
+		padding-top: 5px
+	}
+	.dngClicked {
+		background: #edb059
+	}
+	.dngSearchFilters {
+		width: 100%
+	}
+	.dngSearchFilters .selected {
+		font-weight: bold
+	}
+	.dngSearchFilter {
+		font-weight: normal;
+		padding: 2px 0;
+		height: auto
+	}
+	.dngSearchRight {
+		margin-left: 0px;
+		width: 100%
+	}
+	.dngEditorBodyButtons .dngEditorBodyButton {
+		width: 31.8%
+	}
+	.dngEditorContainer .dngCheckBoxesSentence,
+	.dngEditorContainer .dngRadioButtonsSentence,
+	.dngEditorContainer .dngTextAreaSentence,
+	.dngEditorContainer .dngTimeFrameSentence,
+	.dngEditorContainer .dngTextAreaValue {
+		width: 90%
+	}
+	.dngEditorContainer .dngCheckBoxesLabel,
+	.dngEditorContainer .dngRadioButtonsLabel,
+	.dngEditorContainer .dngTextAreaLabel,
+	.dngEditorContainer .dngTimeFrameLabel,
+	.dngEditorContainer .dngCheckBoxesMultilineLabel {
+		width: 90%
+	}
+	.dngEditorContainer .dngCheckBoxesMultilineSentence {
+		width: 73%
+	}
+	.dngEditorContainer .dngCheckBoxValue,
+	.dngEditorContainer .dngCheckBoxMultilineValue,
+	.dngEditorContainer .dngRadioValue {
+		width: 100%
+	}
+	.dngEditorContainer .dngCheckBoxValue input,
+	.dngEditorContainer .dngCheckBoxMultilineValue input,
+	.dngEditorContainer .dngRadioValue input {
+		width: 80%
+	}
+	.dngEditorContainer .dngCheckBoxHolder,
+	.dngEditorContainer .dngCheckBoxMultilineHolder,
+	.dngEditorContainer .dngRadioHolder {
+		width: 82%
+	}
+	.dngEditorContainer .dngCheckBoxHolder input,
+	.dngEditorContainer .dngCheckBoxMultilineHolder input,
+	.dngEditorContainer .dngRadioHolder input {
+		width: 67%
+	}
+}
+.dngIcon:before {
+	font-family: "ETmodules" !important;
+	font-weight: normal;
+	font-style: normal;
+	font-variant: normal;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	line-height: 1;
+	text-transform: none;
+	speak: none;
+	padding-right: 5px
+}
+.dngIcon.search:before {
+	content: "\55"
+}
+.dngIcon.copy-text:before {
+	content: "\69"
+}
+@media (max-width: 479px) {
+	.dngContentTitle {
+		text-align: center;
+		display: block
+	}
+	.dngBackSearch {
+		margin-top: 0px;
+		float: none
+	}
+	.dngEditButton {
+		margin-top: 0px
+	}
+	.dngEditorBodyButtons .dngEditorBodyButton {
+		width: 31.1%
+	}
+	.dngEditorContainer .dngCheckBoxesMultilineSentence {
+		width: 93%
+	}
+	.dngEditorContainer .dngCheckBoxValue,
+	.dngEditorContainer .dngCheckBoxMultilineValue,
+	.dngEditorContainer .dngRadioValue {
+		width: 100%
+	}
+	.dngEditorContainer .dngCheckBoxValue input,
+	.dngEditorContainer .dngCheckBoxMultilineValue input,
+	.dngEditorContainer .dngRadioValue input {
+		width: 93%
+	}
+	.dngEditorContainer .dngCheckBoxHolder,
+	.dngEditorContainer .dngCheckBoxMultilineHolder,
+	.dngEditorContainer .dngRadioHolder {
+		width: 82%
+	}
+	.dngEditorContainer .dngCheckBoxHolder input,
+	.dngEditorContainer .dngCheckBoxMultilineHolder input,
+	.dngEditorContainer .dngRadioHolder input {
+		width: 98%
+	}
+}
+.dngContent .page-top-controls .dngBackSearch,
+.dngContent .page-top-controls .dngEditButton {
+	margin-bottom: 20px
+}
+@media (min-width: 1101px) {
+	.dngContent .page-top-controls .dngBackSearch,
+	.dngContent .page-top-controls .dngEditButton {
+		margin-top: 0;
+		margin-bottom: 20px
+	}
+}
+@media (min-width: 1101px) and (max-height: 599px) {
+	.dngRightContent {
+		position: absolute;
+		top: initial
+	}
+}
+@media (min-width: 1101px) and (min-height: 600px) {
+	.dngContent .dngRightContent textarea.dngOutputContent {
+		height: 1100%;
+	}
+}
+@media (min-width: 1101px) and (min-height: 700px) {
+	.dngContent .dngRightContent textarea.dngOutputContent {
+		height: 400px
+	}
+}
+@media (min-width: 1101px) and (min-height: 800px) {
+	.dngContent .dngRightContent textarea.dngOutputContent {
+		height: 500px
+	}
+}
+@media (min-width: 1101px) and (min-height: 1000px) {
+	.dngContent .dngRightContent textarea.dngOutputContent {
+		height: 500px
+	}
+}
+/*# sourceMappingURL=dng.css.map */
+
+.material-icons {
+	font-family: 'Material Icons';
+	font-weight: normal;
+	font-style: normal;
+	font-size: 24px;  /* Preferred icon size */
+	display: inline-block;
+	line-height: 1;
+	text-transform: none;
+	letter-spacing: normal;
+	word-wrap: normal;
+	white-space: nowrap;
+	direction: ltr;
+
+	/* Support for all WebKit browsers. */
+	-webkit-font-smoothing: antialiased;
+	/* Support for Safari and Chrome. */
+	text-rendering: optimizeLegibility;
+	/* Support for Firefox. */
+	-moz-osx-font-smoothing: grayscale;
+	/* Support for IE. */
+	font-feature-settings: 'liga';
+}
+
+/* Rules for sizing the icon. */
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+
+/* Rules for using icons as black on a light background. */
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+/* Rules for using icons as white on a dark background. */
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+a.rotate .material-icons {
+	transition: all .3s linear;
+	-webkit-transition: all .3s linear;
+	-moz-transition: all .3s linear;
+}
+
+a.rotate.collapsed .material-icons {
+	transform: rotate(-90deg);
+	-webkit-transform: rotate(-90deg);
+	-ms-transform: rotate(-90deg);
+}
+
+.bg-primary-light {
+	background-color: rgba(0, 123, 255, 0.1) !important;
+}

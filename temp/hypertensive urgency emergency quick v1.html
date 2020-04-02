@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent">
+                <h1 class="dngContentTitle">Hypertensive Urgency / Emergency &#8211; Quick V1</h1>
+            </div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for evaluation of {ENTRY}.',
+                        'label': 'Main Symptoms',
+                        'options': [
+                          { 'label': 'Hypertension', 'value': 'hypertension' },
+                          { 'label': 'Chest Pain', 'value': 'chest pain' },
+                          { 'label': 'Chest Pressure', 'value': 'chest pressure' },
+                          { 'label': 'Chest Wall Pain', 'value': 'chest wall pain' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'Nausea', 'value': 'nausea' },
+                          { 'label': 'Vomiting', 'value': 'vomiting' },
+                          { 'label': 'Diaphoresis', 'value': 'diaphoresis' },
+                          { 'label': 'Cough', 'value': 'cough' },
+                          { 'label': 'Abd Pain', 'value': 'abdominal pain' },
+                          { 'label': 'Vision Changes', 'value': 'vision changes' },
+                          { 'label': 'Palpitations', 'value': 'palpitations' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    { 'timeFrame': { 'sentence': 'Onset of symptoms was {ENTRY} ago.', 'label': 'Onset of Symptoms' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient {ENTRY}.',
+                        'label': 'HTN History?',
+                        'options': [
+                          { 'label': 'Has Hx of HTN', 'value': 'has a history of hypertension' },
+                          { 'label': 'No Hx of HTN', 'value': 'has no history of hypertension' },
+                          { 'label': 'Compliant with Meds', 'value': 'is compliant with medications' },
+                          { 'label': 'Non Compliant', 'value': 'is non-compliant with medications' },
+                          { 'label': 'Not on Meds', 'value': 'is not on medications' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has associated symptoms of {ENTRY}.',
+                        'label': 'Associated Symptoms',
+                        'options': [
+                          { 'label': 'Chest Pain', 'value': 'chest pain' },
+                          { 'label': 'Nausea', 'value': 'nausea' },
+                          { 'label': 'Vomiting', 'value': 'vomiting' },
+                          { 'label': 'Diaphoresis', 'value': 'diaphoresis' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'Lightheadedness', 'value': 'lightheadedness' },
+                          { 'label': 'Abd Pain', 'value': 'abdominal pain' },
+                          { 'label': 'Belching', 'value': 'belching' },
+                          { 'label': 'Abd Discomfort', 'value': 'abd discomfort' },
+                          { 'label': 'Leg Swelling', 'value': 'leg swelling' },
+                          { 'label': 'Leg Pain', 'value': 'leg pain' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient does not have symptoms of {ENTRY}.',
+                        'label': 'Denies Symptoms',
+                        'options': [
+                          { 'label': 'Chest Pain', 'value': 'chest pain' },
+                          { 'label': 'Nausea', 'value': 'nausea' },
+                          { 'label': 'Vomiting', 'value': 'vomiting' },
+                          { 'label': 'Diaphoresis', 'value': 'diaphoresis' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'Lightheadedness', 'value': 'lightheadedness' },
+                          { 'label': 'Abd Pain', 'value': 'abdominal pain' },
+                          { 'label': 'Vision Changes', 'value': 'vision changes' },
+                          { 'label': 'Numbness, Weakness, Tingling', 'value': 'numbness, weakness, tingling' },
+                          { 'label': 'Leg Swelling', 'value': 'leg swelling' },
+                          { 'label': 'Leg Pain', 'value': 'leg pain' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatment prior to arrival includes {ENTRY}.',
+                        'label': 'Treatment Prior to Arrival',
+                        'options': [
+                          { 'label': 'None', 'value': 'nothing' },
+                          { 'label': 'HTN Meds', 'value': 'hypertensive medications' },
+                          { 'label': 'Rest', 'value': 'rest' },
+                          { 'label': 'ASA', 'value': 'aspirin' },
+                          { 'label': 'Nitroglycerin', 'value': 'nitroglycerin' },
+                          { 'label': 'GERD Meds', 'value': 'acid reflux medications' },
+                          { 'label': 'OTC Meds', 'value': 'OTC Medications' },
+                          { 'label': 'W/ Improvement', 'value': 'with improvement' },
+                          { 'label': 'W/O Improvement', 'value': 'without improvement' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has history of {ENTRY}.',
+                        'label': 'Cardiac Risk Factors',
+                        'options': [
+                          { 'label': 'None', 'value': 'none of the major cardiac risk factors' },
+                          { 'label': 'CAD', 'value': 'coronary artery disease' },
+                          { 'label': 'HTN', 'value': 'hypertension' },
+                          { 'label': 'HLD', 'value': 'hyperlipidemia' },
+                          { 'label': 'Tobacco Use', 'value': 'tobacco use' },
+                          { 'label': 'Family History', 'value': 'family history of coronary disease' }],
+                      },
+                    }], 'Body': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Review of Systems: {ENTRY}', 'label': '', 'options': [
+                          { 'label': 'All ROS Negative', 'value': 'All other systems reviewed and are negative' },
+                          { 'label': 'Vital Signs Reviewed', 'value': 'vital signs reviewed' },
+                          { 'label': 'No CP', 'value': 'denies chest pain' },
+                          { 'label': 'No SOB', 'value': 'denies shortness of breath' },
+                          { 'label': 'No DOE', 'value': 'denies dyspnea on exertion' },
+                          { 'label': 'No HA', 'value': 'denies headache' },
+                          { 'label': 'No Vision Changes', 'value': 'denies vision changes' },
+                          { 'label': 'No Lightheadedness', 'value': 'denies lightheadedness' },
+                          { 'label': 'No Abd Pain', 'value': 'denies abdominal pain' },
+                          { 'label': 'No Back Pain', 'value': 'denies back pain' },
+                          { 'label': 'No Urinary Symptoms', 'value': 'denies urinary symptoms' },
+                          { 'label': 'No Leg Swelling', 'value': 'denies leg swelling' },
+                          { 'label': 'No Fever', 'value': 'denies fever' },
+                          { 'label': 'No Chills/Sweats', 'value': 'denies chills/sweats' },
+                          { 'label': 'No Wt Gain', 'value': 'denies weight gain' },
+                          { 'label': 'No Wt Loss', 'value': 'denies weight loss' },
+                          { 'label': 'No Sore Throat', 'value': 'denies sore throat' },
+                          { 'label': 'No Cough', 'value': 'denies cough' },
+                          { 'label': 'No Suicidal Thoughts', 'value': 'denies suicidal thoughts' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Physical Exam:',
+                        'value': 'Physical&#32;Exam:&#10;Constitutional:&#32;&#32;No&#32;acute&#32;distress&#10;HEENT:&#32;&#32;Head&#32;normocephalic&#32;and&#32;atraumatic.&#10;Abdomen:&#32;&#32;Soft,&#32;non-tender.&#10;Extremities:&#32;&#32;Non-tender.&#32;No&#32;pedal&#32;edema.&#32;&#10;Back:&#32;&#32;No&#32;tenderness&#10;Neuro:&#32;&#32;No&#32;gross&#32;motor&#32;deficits',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Cardiovascular: {ENTRY}',
+                        'label': 'Cardiovascular Exam:',
+                        'options': [
+                          {
+                            'label': 'Normal',
+                            'value': 'Regular&#032;rate&#032;and&#032;rhythm.&#032;No&#032;murmur.&#032;',
+                          },
+                          { 'label': 'Regular Rate', 'value': 'regular&#032;rate' },
+                          { 'label': 'Tachycardia', 'value': 'tachycardia' },
+                          { 'label': 'Bradycardia', 'value': 'bradycardia' },
+                          { 'label': 'Irregularly Irregular', 'value': 'irregularly&#032;irregular&#032;rhythm' },
+                          { 'label': 'No Murmur', 'value': 'no&#032;murmur&#032;present' },
+                          { 'label': 'Murmur', 'value': 'murmur&#032;present' },
+                          { 'label': 'No Gallops or Rubs', 'value': 'no&#032;gallops&#032;or&#032;rubs' },
+                          { 'label': 'Intact Pulses', 'value': 'intact&#032;distal&#032;pulses' },
+                          { 'label': 'Normal Cap Refill', 'value': 'normal&#032;capillary&#032;refill' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}', 'label': 'Respiratory Exam:', 'options': [
+                          {
+                            'label': 'Normal',
+                            'value': 'Lungs&#032;clear&#032;to&#032;auscultation&#032;bilaterally.&#032;&#032;No&#032;wheeze,&#032;crackles,&#032;or&#032;rales.',
+                          },
+                          { 'label': 'L Lung Normal', 'value': 'left&#032;lung&#032;clear' },
+                          { 'label': 'R Lung Normal', 'value': 'right&#032;lung&#032;clear' },
+                          { 'label': 'Left Lung', 'value': 'left&#032;lung' },
+                          { 'label': 'Right Lung', 'value': 'right&#032;lung' },
+                          { 'label': 'Bilateral', 'value': 'bilateral' },
+                          { 'label': 'Upper', 'value': 'upper&#032;lobe' },
+                          { 'label': 'Middle', 'value': 'middle&#032;lobe' },
+                          { 'label': 'Lower', 'value': 'lower&#032;lobe' },
+                          { 'label': 'Crackles', 'value': 'crackles' },
+                          { 'label': 'Wheeze', 'value': 'wheeze' },
+                          { 'label': 'Rales', 'value': 'rales' },
+                          { 'label': 'Stridor', 'value': 'stridor' },
+                          { 'label': 'Chest Wall Tenderness', 'value': 'chest&#032;wall&#032;tenderness' },
+                          { 'label': 'Accessory Muscle Use', 'value': 'accessory&#032;muscle&#032;use' },
+                          { 'label': 'No Accessory Muscle Use', 'value': 'no&#032;accessory&#032;muscle&#032;use' },
+                          { 'label': 'Respiratory Distress', 'value': 'respiratory&#032;distress' },
+                          { 'label': 'No Respiratory Distress', 'value': 'no&#032;respiratory&#032;distress' },
+                          {
+                            'label': 'Speaking in Full Sentences',
+                            'value': 'speaking&#032;in&#032;full&#032;sentence',
+                          }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Medical History: {ENTRY}',
+                        'label': 'Past Medical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'HTN', 'value': 'hypertension' },
+                          { 'label': 'HLD', 'value': 'hyperlipidemia' },
+                          { 'label': 'DM', 'value': 'diabetes' },
+                          { 'label': 'hypothyroidism', 'value': 'hypothyroidism' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': 'anxiety', 'value': 'anxiety' },
+                          { 'label': 'headaches', 'value': 'headaches' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'CAD', 'value': 'CAD' },
+                          { 'label': 'CHF', 'value': 'CHF' },
+                          { 'label': 'COPD', 'value': 'COPD' },
+                          { 'label': 'asthma', 'value': 'asthma' },
+                          { 'label': 'neck pain', 'value': 'neck pain' },
+                          { 'label': 'back pain', 'value': 'back pain' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Surgical History: {ENTRY}',
+                        'label': 'Past Surgical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'appendectomy', 'value': 'appendectomy' },
+                          { 'label': 'cholecystectomy', 'value': 'cholecystectomy' },
+                          { 'label': 'tonsillectomy', 'value': 'tonsillectomy' },
+                          { 'label': 'joint replacement', 'value': 'joint replacement' },
+                          { 'label': 'cesarean section', 'value': 'cesarean section' },
+                          { 'label': 'hysterectomy', 'value': 'hysterectomy' },
+                          { 'label': 'CABG', 'value': 'CABG' },
+                          { 'label': 'stents', 'value': 'stent placement' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Social History: {ENTRY}',
+                        'label': 'Social History',
+                        'options': [
+                          { 'label': 'no tobacco use', 'value': 'no tobacco use' },
+                          { 'label': 'tobacco use', 'value': 'tobacco use' },
+                          { 'label': 'no ETOH use', 'value': 'no alcohol use' },
+                          { 'label': 'occasional ETOH use', 'value': 'occasional alcohol use' },
+                          { 'label': 'frequent ETOH use', 'value': 'frequent alcohol use' },
+                          { 'label': 'drug use', 'value': 'drug use' },
+                          { 'label': 'no drug use', 'value': 'no drug use' },
+                          { 'label': 'married', 'value': 'married' },
+                          { 'label': 'unmarried', 'value': 'unmarried' },
+                          { 'label': 'sexually active', 'value': 'sexually active' },
+                          { 'label': 'not sexually active', 'value': 'not sexually active' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Family History: {ENTRY}',
+                        'label': 'Family History (most common - can use free text)',
+                        'options': [
+                          { 'label': 'no pertinent family history', 'value': 'no pertinent family history' },
+                          { 'label': 'HTN', 'value': 'hypertension' },
+                          { 'label': 'HLD', 'value': 'hyperlipidemia' },
+                          { 'label': 'DM', 'value': 'diabetes' },
+                          { 'label': 'CAD', 'value': 'coronary artery disease' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'cancer', 'value': 'cancer' },
+                          { 'label': 'stroke', 'value': 'stroke' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } }], 'MDM': [
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': '',
+                        'value': 'Patient&#32;presenting&#32;for&#32;evaluation&#32;of&#32;hypertension.&#32;',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Diagnostic testing performed: {ENTRY}.',
+                        'label': 'Diagnostic Testing',
+                        'options': [
+                          {
+                            'label': 'None',
+                            'value': 'Based on history and exam, discussed that further testing at this time would likely not be of benefit and therefore no further testing was performed',
+                          },
+                          {
+                            'label': 'EKG Normal',
+                            'value': 'EKG shows normal sinus rhythm without acute ST elevation/depression.  No acute T-wave changes',
+                          },
+                          {
+                            'label': 'CXR Neg',
+                            'value': 'Chest Xray reveals no evidence of pneumonia or other acute process',
+                          },
+                          { 'label': 'CT Chest Neg', 'value': 'CT of the chest shows no acute findings' },
+                          { 'label': 'WBC Elevated', 'value': 'WBC elevated' },
+                          { 'label': 'WBC Nl', 'value': 'WBC normal' },
+                          { 'label': 'BMP Nl', 'value': 'metabolic panel normal' },
+                          { 'label': 'D-Dimer Elevated', 'value': 'D-Dimer Elevated' },
+                          { 'label': 'D-Dimer Nl', 'value': 'D-Dimer normal' },
+                          { 'label': 'Troponin Nl', 'value': 'troponin normal' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient provided {ENTRY}.',
+                        'label': 'Patient Provided',
+                        'options': [
+                          {
+                            'label': 'Nothing',
+                            'value': 'no medications as rapidly lowering blood pressure unnecessary in asymptomatic patient.',
+                          },
+                          { 'label': 'labetalol', 'value': 'labetalol' },
+                          { 'label': 'nitroglycerin', 'value': 'nitroglycerin' },
+                          { 'label': 'metoprolol', 'value': 'metoprolol' },
+                          { 'label': 'hydralazine', 'value': 'hydralazine' },
+                          { 'label': 'diltiazem', 'value': 'diltiazem' },
+                          { 'label': 'hydrochlorothiazide', 'value': 'hydrochlorothiazide' },
+                          { 'label': 'lisinopril', 'value': 'lisinopril' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient prescribed {ENTRY}.',
+                        'label': 'Prescriptions',
+                        'options': [
+                          { 'label': 'hydrochlorothiazide', 'value': 'hydrochlorothiazide' },
+                          { 'label': 'lisinopril', 'value': 'lisinopril' },
+                          { 'label': 'metoprolol', 'value': 'metoprolol' },
+                          { 'label': 'labetalol', 'value': 'labetalol' },
+                          { 'label': 'diltiazem', 'value': 'diltiazem' },
+                          { 'label': 'drowsy', 'value': 'hydralazine' },
+                          { 'label': 'aspirin', 'value': 'aspirin' },
+                          { 'label': 'nitroglycerin', 'value': 'nitroglycerin' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Follow Up',
+                        'options': [
+                          { 'label': '1 - 2 days', 'value': 'Follow up in one or two days' },
+                          { 'label': '3 - 5', 'value': 'Follow up in three to five days' },
+                          { 'label': '7', 'value': 'Follow up in one week' },
+                          { 'label': 'As needed', 'value': 'Follow up as needed' },
+                          {
+                            'label': 'R/T to clinic/UC with worsening symptoms',
+                            'value': 'return to clinic or urgent care with new or worsening symptoms',
+                          },
+                          {
+                            'label': 'Present to ER with worsening symptoms',
+                            'value': 'present to ER with new or worsening symptoms',
+                          },
+                          { 'label': 'Follow up with Cardiology', 'value': 'follow up with cardiology' }],
+                      },
+                    }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

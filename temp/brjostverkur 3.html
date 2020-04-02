@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">Brjóstverkur</h1></div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'timeFrame': {
+                        'sentence': 'Verkurinn byrjaði fyrir {ENTRY} síðan.',
+                        'label': 'Tími frá því að verkur byrjaði',
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': 'Verkurinn er eins og {ENTRY}.',
+                        'label': 'Verkjalýsing',
+                        'options': [
+                          { 'label': 'þyngsli', 'value': 'þyngsli' },
+                          { 'label': 'þrýstingur', 'value': 'þrýstingsverkur' },
+                          { 'label': 'sviði', 'value': 'sviði' },
+                          { 'label': 'stunga', 'value': 'stunga' },
+                          { 'label': 'rífandi', 'value': 'eitthvað sé að rifna' },
+                          { 'label': 'ónot', 'value': 'ónot' },
+                          { 'label': 'verkur', 'value': 'sjúklingur getur ekki lýst karakter verkjar' }],
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': 'Verkurinn er {ENTRY} á skala  0-10 (NRS)',
+                        'label': 'Verkjaskali núna',
+                        'options': [
+                          { 'label': '1', 'value': '1' },
+                          { 'label': '2', 'value': '2' },
+                          { 'label': '3', 'value': '3' },
+                          { 'label': '4', 'value': '4' },
+                          { 'label': '5', 'value': '5' },
+                          { 'label': '6', 'value': '6' },
+                          { 'label': '7', 'value': '7' },
+                          { 'label': '8', 'value': '8' },
+                          { 'label': '9', 'value': '9' },
+                          { 'label': '10', 'value': '10' },
+                          {
+                            'label': 'Getur ekki valið tölu',
+                            'value': 'Sjúklingur getur ekki sagt til um hve slæmur verkurinn er',
+                          }],
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': 'Verkurinn var {ENTRY} á skala 0-10 (NRS) þegar hann var verstur.',
+                        'label': 'Verkjaskali þegar verkurinn var verstur.',
+                        'options': [
+                          { 'label': 'Test A', 'value': 'test A' },
+                          { 'label': 'Test B', 'value': 'test B' },
+                          { 'label': 'Test C', 'value': 'test C' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Leiðni',
+                        'options': [
+                          { 'label': 'Ekkert', 'value': 'Verkurinn leiðir ekkert', 'sentence': '{ENTRY}' },
+                          { 'label': 'Leiðir (velja fyrst)', 'value': 'Vekurinn leiðir', 'sentence': '{ENTRY}' },
+                          { 'label': 'Vinstri handlegg', 'value': 'út í vinstri handlegg', 'sentence': '{ENTRY}' },
+                          { 'label': 'háls/kjálka', 'value': 'upp í háls/kjálka', 'sentence': '{ENTRY}' },
+                          { 'label': 'bak', 'value': 'aftur í bak', 'sentence': '{ENTRY}' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Hvað gerir verkinn betri eða verri',
+                        'options': [
+                          {
+                            'label': 'Verkurinn versnar við',
+                            'value': 'Verkurinn versnar við',
+                            'sentence': '{ENTRY}',
+                          },
+                          { 'label': 'djúp öndun', 'value': 'að draga djúpt andann', 'sentence': '{ENTRY}' },
+                          { 'label': 'áreynsla', 'value': 'áreynslu', 'sentence': 'This is sentence : {ENTRY}' },
+                          {
+                            'label': 'ekkert',
+                            'value': 'Það er ekkert sem gerir verkinn betri eða verri.',
+                            'sentence': '{ENTRY}',
+                          },
+                          { 'label': 'skánar við nítró', 'value': 'Verkurinn skánar við nítró', 'sentence': '{ENTRY}' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Önnur einkenni (jákvæð)',
+                        'options': [
+                          {
+                            'label': 'Önnur einkenni (alltaf velja ef önnur einkenni)',
+                            'value': 'Sjúklingur finnur einnig fyrir',
+                            'sentence': '{ENTRY}',
+                          },
+                          { 'label': 'ógleði', 'value': 'ógleði', 'sentence': '{ENTRY}' },
+                          { 'label': 'svitnar', 'value': 'að hann svitnar', 'sentence': '{ENTRY}' },
+                          { 'label': 'mæði', 'value': 'mæði', 'sentence': '{ENTRY}' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Sjúklingur neitar:',
+                        'options': [
+                          {
+                            'label': 'Sjúklingur neitar (alltaf velja)',
+                            'value': 'Sjúklingur neitar',
+                            'sentence': '{ENTRY}',
+                          },
+                          { 'label': 'ógleði', 'value': 'ógleði', 'sentence': '{ENTRY}' },
+                          { 'label': 'mæði', 'value': 'mæði', 'sentence': '{ENTRY}' },
+                          { 'label': 'svitnar', 'value': 'því að svitna', 'sentence': '{ENTRY}' },
+                          { 'label': 'New Test', 'value': 'new test', 'sentence': 'This is a new sentence: {ENTRY}' }],
+                      },
+                    }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

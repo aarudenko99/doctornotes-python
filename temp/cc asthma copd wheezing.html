@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">CC &#8211; Asthma / COPD / Wheezing</h1>
+            </div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for evaluation of {ENTRY}.',
+                        'label': 'Main Symptoms',
+                        'options': [
+                          { 'label': 'Cough', 'value': 'cough' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'Wheezing', 'value': 'wheezing' },
+                          { 'label': 'Chest Tightness', 'value': 'chest tightness' },
+                          { 'label': 'Chest Pain', 'value': 'chest pain' },
+                          { 'label': 'Pleuritic CP', 'value': 'pleuritic chest pain' },
+                          { 'label': 'Fever', 'value': 'fever' },
+                          { 'label': 'Asthma', 'value': 'asthma symptoms' },
+                          { 'label': 'COPD', 'value': 'COPD Symptoms' },
+                          { 'label': 'Respiratory Distress', 'value': 'respiratory distress' }],
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'Onset of symptoms was {ENTRY} ago.', 'label': 'Onset of Symptoms' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient reports pain and symptoms of {ENTRY}.',
+                        'label': 'Associated Symptoms',
+                        'options': [
+                          { 'label': 'Cough', 'value': 'cough' },
+                          { 'label': 'Sputum Production', 'value': 'sputum production' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'Fever', 'value': 'fever' },
+                          { 'label': 'CP', 'value': 'chest pain' },
+                          { 'label': 'CP w/ Cough', 'value': 'chest pain with cough' },
+                          { 'label': 'Wheezing', 'value': 'wheezing' },
+                          { 'label': 'Postnasal Drip', 'value': 'postnasal drip' },
+                          { 'label': 'DOE', 'value': 'dyspnea on exertion' },
+                          { 'label': 'Hemoptysis', 'value': 'hemoptysis' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient denies symptoms of {ENTRY}.',
+                        'label': 'Denies Symptoms',
+                        'options': [
+                          {
+                            'label': 'All',
+                            'value': 'dyspnea, fever, chest pain, wheezing, postnasal drip, night sweats, weight loss, hemoptysis',
+                          },
+                          { 'label': 'SOB', 'value': 'dyspnea' },
+                          { 'label': 'Fever', 'value': 'fever' },
+                          { 'label': 'CP', 'value': 'chest pain' },
+                          { 'label': 'Wheezing', 'value': 'wheezing' },
+                          { 'label': 'Postnasal Drip', 'value': 'postnasal drip' },
+                          { 'label': 'DOE', 'value': 'DOE' },
+                          { 'label': 'Hemoptysis', 'value': 'hemoptysis' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Aggrevating symptoms include {ENTRY}.',
+                        'label': 'Aggrevating Symptoms',
+                        'options': [
+                          { 'label': 'None', 'value': 'nothing' },
+                          { 'label': 'Exercise', 'value': 'exercise' },
+                          { 'label': 'Dust', 'value': 'dust' },
+                          { 'label': 'Pets', 'value': 'pets' },
+                          { 'label': 'Pollen', 'value': 'pollen' },
+                          { 'label': 'Cold Air', 'value': 'cold air' },
+                          { 'label': 'URIs', 'value': 'upper respiratory infections' },
+                          { 'label': 'Smoke', 'value': 'smoke' },
+                          { 'label': 'Odors', 'value': 'odors' },
+                          { 'label': 'Deep Breaths', 'value': 'deep breaths' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatment prior to arrival includes {ENTRY}.',
+                        'label': 'Treatment Prior to Arrival',
+                        'options': [
+                          { 'label': 'None', 'value': 'nothing' },
+                          { 'label': 'Inhalers', 'value': 'inhalers' },
+                          { 'label': 'Nebs', 'value': 'nebulizer treatments' },
+                          { 'label': 'OTC meds', 'value': 'OTC cough medications' },
+                          { 'label': 'Steroids', 'value': 'steroids' },
+                          { 'label': 'Tylenol/Ibuprofen', 'value': 'Tylenol/Ibuprofen' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Current treatment regimen includes {ENTRY}.',
+                        'label': 'Current SOB Treatment Regimen',
+                        'options': [
+                          { 'label': 'Nothing', 'value': 'nothing' },
+                          { 'label': 'Albuterol prn', 'value': 'albuterol prn' },
+                          { 'label': 'ipratropium inhaler', 'value': 'ipratropium inhaler' },
+                          { 'label': 'inhaled corticosteroid', 'value': 'inhaled corticosteroid' },
+                          { 'label': 'inhaled LABA', 'value': 'inhaled LABA' },
+                          { 'label': 'leukotriene modifier', 'value': 'leukotriene modifier' },
+                          { 'label': 'oral steroids', 'value': 'oral steroids' }],
+                      },
+                    }], 'Body': [
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': '',
+                        'value': 'ROS:&#32;All&#32;review&#32;of&#32;systems&#32;reviewed&#32;and&#32;are&#32;negative.&#32;&#10;&#10;Past&#32;Medical&#32;History:&#32;None&#10;Past&#32;Surgical&#32;History:&#32;None&#10;Medications:&#32;None&#10;Social&#32;History:&#32;No&#32;tobacco&#32;use&#10;Family&#32;History:&#32;No&#32;pertinent&#32;family&#32;history',
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': '',
+                        'value': 'PHYSICAL&#32;EXAM:&#10;Constitutional&#32;:&#32;&#32;Non&#32;toxic&#32;appearing&#10;Vital&#32;signs&#32;and&#32;nursing&#32;notes&#32;reviewed&#10;HEENT:&#32;Mucous&#32;membranes&#32;moist&#10;CV:&#32;&#32;Regular&#32;rate&#32;and&#32;rhythm,&#32;no&#32;murmur.&#32;',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Respiratory: {ENTRY}',
+                        'label': 'Respiratory',
+                        'options': [
+                          { 'label': 'effort nl', 'value': 'effort normal' },
+                          { 'label': 'breath sounds nl', 'value': 'breath sounds normal' },
+                          { 'label': 'resp distress', 'value': 'respiratory distress' },
+                          { 'label': 'no resp distress', 'value': 'no respiratory distress' },
+                          { 'label': 'speaking in full sentences', 'value': 'speaking in full sentences' },
+                          { 'label': 'wheezes', 'value': 'wheezes' },
+                          { 'label': 'rales', 'value': 'rales' },
+                          { 'label': 'crackles', 'value': 'crackles' },
+                          { 'label': 'chest tenderness', 'value': 'chest tenderness' },
+                          { 'label': 'acc muscle use', 'value': 'accessory muscle use' },
+                          { 'label': 'no acc muscle use', 'value': 'no accessory muscle use' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': '',
+                        'value': 'Abdomen:&#32;&#32;Soft,&#32;non-tender,&#32;non-distended.&#32;&#32;Bowel&#32;sounds&#32;normal&#10;Back:&#32;&#32;No&#32;tenderness&#10;Skin:&#32;&#32;Normal&#32;color,&#32;warm&#32;and&#32;dry&#10;Extremities:&#32;&#32;Non-tender,&#32;no&#32;pedal&#32;edema.&#10;Neuro:&#32;&#32;No&#32;deficits',
+                      },
+                    }], 'MDM': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for evaluation of {ENTRY}.',
+                        'label': 'Main Symptoms',
+                        'options': [
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'Cough', 'value': 'cough' },
+                          { 'label': 'Wheezing', 'value': 'wheezing' },
+                          { 'label': 'Chest Tightness', 'value': 'chest tightness' },
+                          { 'label': 'Chest Pain', 'value': 'chest pain' },
+                          { 'label': 'Pleuritic CP', 'value': 'pleuritic chest pain' },
+                          { 'label': 'Fever', 'value': 'fever' },
+                          { 'label': 'Asthma', 'value': 'asthma symptoms' },
+                          { 'label': 'COPD', 'value': 'COPD Symptoms' },
+                          { 'label': 'Respiratory Distress', 'value': 'respiratory&#032;distress' },
+                          { 'label': 'Sputum Production', 'value': 'sputum&#032;production' },
+                          { 'label': 'Extertional Dyspnea', 'value': 'extertional&#032;dyspnea' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Vital signs revealed {ENTRY}.',
+                        'label': 'Vital signs',
+                        'options': [
+                          { 'label': 'WNL', 'value': 'no major abnormalities' },
+                          { 'label': 'No Fever', 'value': 'no fever' },
+                          { 'label': 'Fever', 'value': 'fever' },
+                          { 'label': 'No Hypoxia', 'value': 'no hypoxia' },
+                          { 'label': 'Hypoxia', 'value': 'hypoxia' },
+                          { 'label': 'No Tachycardia', 'value': 'no tachycardia' },
+                          { 'label': 'Tachycardia', 'value': 'tachycardia' },
+                          { 'label': 'No Tachypnea', 'value': 'no tachypnea' },
+                          { 'label': 'Hypotension', 'value': 'hypotension' },
+                          { 'label': 'No Hypotension', 'value': 'no hypotension' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Diagnosis at this time is most consistent with {ENTRY}.',
+                        'label': 'Diagnosis',
+                        'options': [
+                          { 'label': 'Shortness of Breath', 'value': 'shortness of breath' },
+                          { 'label': 'Bronchitis', 'value': 'Bronchitis' },
+                          { 'label': 'Viral Bronchitis', 'value': 'viral bronchitis' },
+                          { 'label': 'Cough', 'value': 'Cough' },
+                          { 'label': 'Asthma Exacerbation', 'value': 'Asthma Exacerbation' },
+                          { 'label': 'COPD Exacerbation', 'value': 'COPD Exacerbation' },
+                          { 'label': 'Pneumonia', 'value': 'Pneumonia' },
+                          { 'label': 'Bronchospasm', 'value': 'bronchospasm' },
+                          { 'label': 'Reactive Airway Disease', 'value': 'reactive airway disease' },
+                          { 'label': 'CHF', 'value': 'CHF' },
+                          { 'label': 'Pulmonary embolus', 'value': 'Pulmonary embolus' },
+                          { 'label': 'Croup', 'value': 'Croup' },
+                          { 'label': 'ACS', 'value': 'ACS' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Differential diagnosis considered including {ENTRY}.',
+                        'label': 'Differential Diagnosis',
+                        'options': [
+                          { 'label': 'Shortness of Breath', 'value': 'shortness of breath' },
+                          { 'label': 'Bronchitis', 'value': 'Bronchitis' },
+                          { 'label': 'Viral Bronchitis', 'value': 'viral bronchitis' },
+                          { 'label': 'Cough', 'value': 'Cough' },
+                          { 'label': 'Asthma Exacerbation', 'value': 'Asthma Exacerbation' },
+                          { 'label': 'COPD Exacerbation', 'value': 'COPD Exacerbation' },
+                          { 'label': 'Pneumonia', 'value': 'Pneumonia' },
+                          { 'label': 'Bronchospasm', 'value': 'bronchospasm' },
+                          { 'label': 'Reactive Airway Disease', 'value': 'reactive airway disease' },
+                          { 'label': 'CHF', 'value': 'CHF' },
+                          { 'label': 'Pulmonary embolus', 'value': 'Pulmonary embolus' },
+                          { 'label': 'Croup', 'value': 'Croup' },
+                          { 'label': 'ACS', 'value': 'ACS' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Diagnostic testing performed: {ENTRY}.',
+                        'label': 'Diagnostic Testing',
+                        'options': [
+                          {
+                            'label': 'None',
+                            'value': 'Based on history and exam, discussed that further testing at this time would likely not be of benefit and therefore no further testing was performed',
+                          },
+                          {
+                            'label': 'EKG Normal',
+                            'value': 'EKG shows normal sinus rhythm without acute ST elevation/depression.',
+                          },
+                          { 'label': 'WBC Elevated', 'value': 'WBC elevated' },
+                          { 'label': 'WBC Nl', 'value': 'WBC normal' },
+                          { 'label': 'CMP Nl', 'value': 'metabolic panel normal' },
+                          { 'label': 'Lipase Nl', 'value': 'lipase normal' },
+                          { 'label': 'LFTs Nl', 'value': 'liver function tests normal' },
+                          { 'label': 'Urine Infected', 'value': 'urinalysis shows signs of infection' },
+                          { 'label': 'Urine No Infection', 'value': 'urinalysis does not show infection' },
+                          { 'label': 'CT Chest Neg', 'value': 'CT of the chest shows no acute findings' },
+                          {
+                            'label': 'CT Chest shows diagnosis',
+                            'value': 'CT of the chest showed pathology consitent with that of the diagnosis',
+                          },
+                          {
+                            'label': 'Chest Xray Neg',
+                            'value': 'Chest Xray reveals no evidence of pneumonia or other acute process',
+                          },
+                          { 'label': 'Chest Xray Pneumonia', 'value': 'Chest Xray reveals pneumonia' },
+                          { 'label': 'Lactate Nl', 'value': 'lactate normal' },
+                          { 'label': 'Procalcitonin Nl', 'value': 'procalcitonin normal' },
+                          { 'label': 'Troponin Nl', 'value': 'troponin normal' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatments provided included {ENTRY}.',
+                        'label': 'Treatments Provided',
+                        'options': [
+                          { 'label': 'Oxygen', 'value': 'oxygen' },
+                          { 'label': 'Duoneb', 'value': 'duoneb' },
+                          { 'label': 'Albuterol Nebulizer', 'value': 'albuterol nebulizer' },
+                          { 'label': 'Racemic Epi ', 'value': 'racemic epinephrine' },
+                          { 'label': 'Magnesium', 'value': 'Magnesium' },
+                          { 'label': 'Methylprednisolone:', 'value': 'Methylprednisolone' },
+                          { 'label': 'Prednisone', 'value': 'Prednisone' },
+                          { 'label': 'Ibuprofen', 'value': 'ibuprofen' },
+                          { 'label': 'Tylenol', 'value': 'tylenol' },
+                          { 'label': 'W/ Improvement', 'value': 'with improvement in symptoms' },
+                          { 'label': 'W/O Improvement', 'value': 'without improvement in symptoms' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Plan:',
+                        'options': [
+                          {
+                            'label': 'Admit',
+                            'value': 'Patient will be admitted.  Discussed case with Dr. *** who will admit.',
+                            'sentence': '{ENTRY}',
+                          },
+                          {
+                            'label': 'Tylenol/Ibuprofen',
+                            'value': 'Recommend over the counter Tylenol and Ibuprofen for fever/general discomfort.',
+                            'sentence': '{ENTRY}',
+                          },
+                          {
+                            'label': 'Monitor',
+                            'value': 'Monitor for new or worsening symptoms.',
+                            'sentence': '{ENTRY}',
+                          }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient prescribed {ENTRY}.',
+                        'label': 'Prescriptions',
+                        'options': [
+                          { 'label': 'Albuterol Inhaler', 'value': 'albuterol inhaler' },
+                          { 'label': 'Albuterol Neb', 'value': 'albuterol nebulizer' },
+                          { 'label': 'Ipratropium Bromide Neb', 'value': 'Ipratropium bromide nebulizer' },
+                          { 'label': 'Prednisone', 'value': 'Prednisone' },
+                          { 'label': 'Prednisone Taper', 'value': 'Prednisone Taper' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient prescribed {ENTRY}.',
+                        'label': 'Antibiotics',
+                        'options': [
+                          { 'label': 'Azithromycin', 'value': 'Azithromycin' },
+                          { 'label': 'Doxy', 'value': 'Doxycycline' },
+                          {
+                            'label': 'Amoxicillin–clavulanate (Augmentin)',
+                            'value': 'Amoxicillin–clavulanate (Augmentin)',
+                          },
+                          { 'label': 'Levofloxacin', 'value': 'Levofloxacin' },
+                          { 'label': 'Ciprofloxacin', 'value': 'Ciprofloxacin' },
+                          { 'label': 'Amoxicillin', 'value': 'Amoxicillin' },
+                          { 'label': 'Cefpodoxime', 'value': 'Cefpodoxime' },
+                          { 'label': 'Keflex', 'value': 'Keflex' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Follow Up',
+                        'options': [
+                          { 'label': '1 - 2 days', 'value': 'Follow up in one or two days' },
+                          { 'label': '3 - 5', 'value': 'Follow up in three to five days' },
+                          { 'label': '7', 'value': 'Follow up in one week' },
+                          { 'label': 'As needed', 'value': 'Follow up as needed' },
+                          {
+                            'label': 'R/T to clinic/UC with worsening symptoms',
+                            'value': 'return to clinic or urgent care with new or worsening symptoms',
+                          },
+                          {
+                            'label': 'Present to ER with worsening symptoms',
+                            'value': 'present to ER with new or worsening symptoms',
+                          }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

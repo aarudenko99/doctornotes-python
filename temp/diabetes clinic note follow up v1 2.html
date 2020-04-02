@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">Diabetes Clinic Note Follow Up &#8211; V1</h1>
+            </div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for {ENTRY}.',
+                        'label': 'Reason for Visit',
+                        'options': [
+                          { 'label': 'Diabetes F/U', 'value': 'diabetes follow up' },
+                          { 'label': 'Diabetes Initial', 'value': 'diabetes initial visit' },
+                          { 'label': 'Prediabetes', 'value': 'prediabetes evaluation' },
+                          { 'label': 'Annual Exam', 'value': 'annual exam' },
+                          { 'label': 'Physical', 'value': 'physical exam' },
+                          { 'label': 'Med Refill', 'value': 'medication refill' },
+                          { 'label': 'Acute Visit', 'value': 'acute visit' },
+                          { 'label': 'Pre-Op', 'value': 'preoperative exam' },
+                          { 'label': 'Hypertension', 'value': 'hypertension check' },
+                          { 'label': 'Hyperlipidemia', 'value': 'hyperlipidemia check' },
+                          { 'label': 'Obesity', 'value': 'obesity evaluation' },
+                          { 'label': 'Asthma', 'value': 'asthma evaluation' },
+                          { 'label': 'COPD', 'value': 'COPD evaluation' },
+                          { 'label': 'Tobacco Cessation', 'value': 'tobacco cessation' },
+                          { 'label': 'Chronic Pain', 'value': 'chronic pain' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has symptoms of {ENTRY}.',
+                        'label': 'Symptoms',
+                        'options': [
+                          {
+                            'label': 'None',
+                            'value': 'none of the following; no polyuria or polydipsia, chest pain or shortness of breath, hypoglycemic episodes, weight gain/loss, peripheral extremity tingling/pain, vision changes, medication side effects',
+                          },
+                          { 'label': 'Polyuria', 'value': 'polyuria' },
+                          { 'label': 'Polydipsia', 'value': 'polydipsia' },
+                          { 'label': 'CP', 'value': 'chest pain' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'Hypoglycemia Episodes', 'value': 'hypoglycemic episodes' },
+                          { 'label': 'Wt Gain', 'value': 'weight gain' },
+                          { 'label': 'Wt Loss', 'value': 'weight loss' },
+                          { 'label': 'Extremity Tingling', 'value': 'extremity tingling/pain' },
+                          { 'label': 'Vision Changes', 'value': 'vision changes' },
+                          { 'label': 'Med Side Effects', 'value': 'medication side effects' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient reports {ENTRY}.',
+                        'label': 'Compliance with Medications and Diet',
+                        'options': [
+                          { 'label': 'Good - Meds', 'value': 'good compliance with medications' },
+                          { 'label': 'Frequent', 'value': 'frequent compliance with medications' },
+                          { 'label': 'Occasional', 'value': 'occasional compliance with medications' },
+                          { 'label': 'Poor', 'value': 'poor compliance with medications' },
+                          { 'label': 'Noncompliance ', 'value': 'noncompliance with medications' },
+                          { 'label': 'Good - Diet', 'value': 'good compliance with diabetic diet' },
+                          { 'label': 'Frequent', 'value': 'frequent compliance with diabetic diet' },
+                          { 'label': 'Occasional', 'value': 'occasional compliance with diabetic diet' },
+                          { 'label': 'Poor', 'value': 'poor compliance with diabetic diet' },
+                          { 'label': 'Noncompliance', 'value': 'noncompliance with diabetic diet' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Current treatments include {ENTRY}.',
+                        'label': 'Treatments',
+                        'options': [
+                          { 'label': 'DM Diet', 'value': 'diabetic diet' },
+                          { 'label': 'Metformin', 'value': 'Metformin' },
+                          { 'label': 'Insulin', 'value': 'Insulin' },
+                          { 'label': 'glyburide', 'value': 'glyburide' },
+                          { 'label': 'glipizide', 'value': 'glipizide' },
+                          { 'label': 'Avandia', 'value': 'Avandia' },
+                          { 'label': 'Actos', 'value': 'Actos' },
+                          { 'label': 'Byetta', 'value': 'Byetta' },
+                          { 'label': 'Victoza', 'value': 'Victoza' },
+                          { 'label': 'Invokana', 'value': 'Invokana' },
+                          { 'label': 'Insulin lispro (Humalog)', 'value': 'Insulin lispro (Humalog)' },
+                          { 'label': 'Insulin aspart (Novolog)', 'value': 'Insulin aspart (Novolog)' },
+                          { 'label': 'Insulin glargine (Lantus)', 'value': 'Insulin glargine (Lantus)' },
+                          { 'label': 'Insulin detemir (Levemir)', 'value': 'Insulin detemir (Levemir)' },
+                          { 'label': 'Insulin isophane (Humulin)', 'value': 'Insulin isophane (Humulin)' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient reports blood glucose most frequently {ENTRY} on home checks.',
+                        'label': 'Blood Glucose Averages at Home',
+                        'options': [
+                          { 'label': '80-120', 'value': '80-120' },
+                          { 'label': '100-200', 'value': '100-200' },
+                          { 'label': '200-300', 'value': '200-300' },
+                          { 'label': '300-400', 'value': '300-400' },
+                          { 'label': '400-500', 'value': '400-500' },
+                          { 'label': '500+', 'value': '500+' }],
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'Last eye exam was {ENTRY} ago.', 'label': 'Last Eye Exam' } },
+                    {
+                      'textArea': {
+                        'sentence': 'Review of Symptoms: {ENTRY}',
+                        'label': 'Review of Systems',
+                        'value': '<br>&#10;<br>&#10;Review&#32;of&#32;Systems:&#10;',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'General:',
+                        'options': [
+                          {
+                            'label': 'All ROS Negative',
+                            'value': 'All other systems reviewed and are negative',
+                          }, { 'label': 'Vital Signs Reviewed', 'value': 'vital signs reviewed' }],
+                      },
+                    }], 'Body': [
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Physical Exam:',
+                        'value': 'Physical&#32;Exam:&#10;Constitutional:&#32;&#32;No&#32;acute&#32;distress&#10;HEENT:&#32;&#32;Head&#32;normocephalic&#32;and&#32;atraumatic.&#10;CV:&#32;&#32;Regular&#32;rate&#32;and&#32;rhythm.&#32;No&#32;murmur.&#32;&#10;Respiratory:&#32;&#32;Lungs&#32;clear&#32;to&#32;auscultation&#32;bilaterally&#10;Abdomen:&#32;&#32;Soft,&#32;non-tender.&#10;Skin:&#32;&#32;Normal&#32;color.&#32;Warm&#32;and&#32;Dry&#10;Foot:&#32;Normal&#32;sensation&#32;and&#32;pulses&#10;Extremities:&#32;&#32;Non-tender.&#32;No&#32;pedal&#32;edema.&#32;&#10;Neuro:&#32;&#32;No&#32;gross&#32;motor&#32;deficits',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Medical History: {ENTRY}',
+                        'label': 'Past Medical History (most common - can use free text)',
+                        'options': [
+                          { 'label': 'none', 'value': 'None' },
+                          { 'label': 'HTN', 'value': 'hypertension' },
+                          { 'label': 'HLD', 'value': 'hyperlipidemia' },
+                          { 'label': 'DM', 'value': 'diabetes' },
+                          { 'label': 'hypothyroidism', 'value': 'hypothyroidism' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': 'anxiety', 'value': 'anxiety' },
+                          { 'label': 'headaches', 'value': 'headaches' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'CAD', 'value': 'CAD' },
+                          { 'label': 'CHF', 'value': 'CHF' },
+                          { 'label': 'COPD', 'value': 'COPD' },
+                          { 'label': 'asthma', 'value': 'asthma' },
+                          { 'label': 'neck pain', 'value': 'neck pain' },
+                          { 'label': 'back pain', 'value': 'back pain' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Surgical History: {ENTRY}',
+                        'label': 'Past Surgical History (most common - can use free text)',
+                        'options': [
+                          { 'label': 'none', 'value': 'None' },
+                          { 'label': 'appendectomy', 'value': 'appendectomy' },
+                          { 'label': 'cholecystectomy', 'value': 'cholecystectomy' },
+                          { 'label': 'tonsillectomy', 'value': 'tonsillectomy' },
+                          { 'label': 'joint replacement', 'value': 'joint replacement' },
+                          { 'label': 'cesarean section', 'value': 'cesarean section' },
+                          { 'label': 'hysterectomy', 'value': 'hysterectomy' },
+                          { 'label': 'CABG', 'value': 'CABG' },
+                          { 'label': 'stents', 'value': 'stent placement' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Social History: {ENTRY}',
+                        'label': 'Social History (most common - can use free text)',
+                        'options': [
+                          { 'label': 'no tobacco use', 'value': 'no tobacco use' },
+                          { 'label': 'tobacco use', 'value': 'tobacco use' },
+                          { 'label': 'no ETOH use', 'value': 'no alcohol use' },
+                          { 'label': 'occasional ETOH use', 'value': 'occasional alcohol use' },
+                          { 'label': 'frequent ETOH use', 'value': 'frequent alcohol use' },
+                          { 'label': 'drug use', 'value': 'drug use' },
+                          { 'label': 'no drug use', 'value': 'no drug use' },
+                          { 'label': 'married', 'value': 'married' },
+                          { 'label': 'unmarried', 'value': 'unmarried' },
+                          { 'label': 'sexually active', 'value': 'sexually active' },
+                          { 'label': 'not sexually active', 'value': 'not sexually active' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Family History: {ENTRY}',
+                        'label': 'Family History (most common - can use free text above)',
+                        'options': [
+                          { 'label': 'no pertinent family history', 'value': 'no pertinent family history' },
+                          { 'label': 'HTN', 'value': 'HTN' },
+                          { 'label': 'HLD', 'value': 'HLD' },
+                          { 'label': 'DM', 'value': 'DM' },
+                          { 'label': 'CAD', 'value': 'CAD' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'cancer', 'value': 'cancer' },
+                          { 'label': 'stroke', 'value': 'stroke' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    }], 'MDM': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Diabetes mellitus {ENTRY}.',
+                        'label': 'Diabetes Control',
+                        'options': [
+                          { 'label': 'Well Controlled', 'value': 'well controlled' },
+                          { 'label': 'Adequate', 'value': 'adequately controlled' },
+                          { 'label': 'Improving', 'value': 'control improving' },
+                          { 'label': 'Worsening', 'value': 'control worsening ' },
+                          { 'label': 'Pooly Controlled', 'value': 'poorly controlled' },
+                          { 'label': 'No Changed Needed', 'value': 'no changes needed' },
+                          { 'label': 'Changes Needed', 'value': 'changes needed' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Issues discussed include {ENTRY}.',
+                        'label': 'Issues Discussed',
+                        'options': [
+                          {
+                            'label': 'All',
+                            'value': 'maintaining a diabetic diet, weight control and exercise, continued home glucose monitoring, maintaining medication compliance, medication side effects, long term diabetes complications, foot care and podiatry visits, annual eye exam recommendations, and refraining from tobacco use',
+                          },
+                          { 'label': 'DM Diet', 'value': 'maintaining a diabetic diet' },
+                          { 'label': 'Wt Loss', 'value': 'weight loss' },
+                          { 'label': 'Glucose Monitoring', 'value': 'continued home glucose monitoring' },
+                          { 'label': 'Med Compliance', 'value': 'maintaining medication compliance' },
+                          { 'label': 'Side Effects', 'value': 'medication side effects' },
+                          { 'label': 'DM Complications', 'value': 'long term diabetes complications' },
+                          { 'label': 'Podiatry', 'value': 'foot care and podiatry visits' },
+                          { 'label': 'Eye Exam', 'value': 'annual eye exam recommendations' },
+                          { 'label': 'Tobacco Cessation', 'value': 'refraining from tobacco use' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatment plan: {ENTRY}.',
+                        'label': 'Treatment Plan',
+                        'options': [
+                          { 'label': 'Continue Current Meds', 'value': 'Continue current medications' },
+                          { 'label': 'No Changes', 'value': 'no changes' },
+                          { 'label': 'Diet Modification', 'value': 'diet modification' },
+                          { 'label': 'Medication Additions', 'value': 'medication additions' },
+                          { 'label': 'Medication Changes', 'value': 'medication changes' },
+                          { 'label': 'Diabetic Educator Referral', 'value': 'referral to diabetic educator' },
+                          { 'label': 'Nutrition Specialist Referral', 'value': 'referral to nutrition specialist' },
+                          { 'label': 'Labwork', 'value': 'Labwork' },
+                          { 'label': 'A1C', 'value': 'A1C' },
+                          { 'label': 'Lipids', 'value': 'Lipids check' },
+                          { 'label': 'Wt Loss', 'value': 'weight loss' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    { 'timeFrame': { 'sentence': 'Follow up in {ENTRY}.', 'label': 'Follow Up' } }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

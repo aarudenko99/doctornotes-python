@@ -1,0 +1,949 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">MVC</h1></div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Historian: {ENTRY}.',
+                        'label': 'Historian:',
+                        'options': [
+                          { 'label': 'EMS', 'value': 'EMS' },
+                          { 'label': 'Patient', 'value': 'patient' },
+                          { 'label': 'Family', 'value': 'family' },
+                          { 'label': 'Friend', 'value': 'friend' },
+                          { 'label': 'Spouse', 'value': 'spouse' },
+                          { 'label': 'bystander', 'value': 'bystander' },
+                          { 'label': 'other', 'value': 'other' },
+                          { 'label': 'nurse', 'value': 'nurse' },
+                          { 'label': 'transfer records', 'value': 'transfer records' },
+                          { 'label': 'unknown', 'value': 'limited - patient unable to give history' }],
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'Patient is a {ENTRY} old', 'label': 'Age ' } },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY} with ',
+                        'label': 'Sex',
+                        'options': [
+                          { 'label': 'male', 'value': 'male' },
+                          { 'label': 'female', 'value': 'female' },
+                          { 'label': 'pregnant female', 'value': 'pregnant female' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Medical History',
+                        'options': [
+                          { 'label': 'A-fib', 'value': 'atrial fibrillation' },
+                          { 'label': 'CHF', 'value': 'congestive heart failure' },
+                          { 'label': 'MI', 'value': 'myocardial infarction' },
+                          { 'label': 'diabetes', 'value': 'diabetes' },
+                          { 'label': 'thyroid disease', 'value': 'thyroid disease' },
+                          { 'label': 'HTN', 'value': 'hypertension' },
+                          { 'label': 'PE/DVT', 'value': 'PE/DVT' },
+                          { 'label': 'CVA/TIA', 'value': 'CVA/TIA' },
+                          { 'label': 'asthma', 'value': 'asthma' },
+                          { 'label': 'seizure', 'value': 'seizure ' },
+                          { 'label': 'COPD', 'value': 'COPD' },
+                          { 'label': 'ESRD DD', 'value': 'ESRD- dialysis dependent' },
+                          { 'label': 'none', 'value': 'no medical history' },
+                          { 'label': 'unknown', 'value': 'unknown' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'who presents for evaluation s/p {ENTRY}',
+                        'label': 'Type of accident',
+                        'options': [
+                          { 'label': 'MVC', 'value': 'motor vehicle collision' },
+                          { 'label': 'motorcycle accident', 'value': 'motorcycle accident' },
+                          { 'label': 'bike ', 'value': 'bicycle accident' },
+                          { 'label': 'Motor vehicle vs ped', 'value': 'motor vehicle vs pedestrian' },
+                          { 'label': 'single MVC', 'value': 'single car motor vehicle accident' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'complaining of or has injury?',
+                        'options': [
+                          {
+                            'label': 'no complaints or visible injuries',
+                            'value': 'with no complaints or visible injuries',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'possible injuries to ',
+                            'value': 'with possible injuries to',
+                            'sentence': '{ENTRY}',
+                          }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.', 'label': 'Injuries-head,thorax,abdomen', 'options': [
+                          { 'label': 'head', 'value': 'head' },
+                          { 'label': 'face', 'value': 'face' },
+                          { 'label': 'mouth', 'value': 'mouth' },
+                          { 'label': 'neck', 'value': 'neck' },
+                          { 'label': 'chest', 'value': 'chest' },
+                          { 'label': 'abdomen', 'value': 'abdomen' },
+                          { 'label': 'upper back', 'value': 'upper back' },
+                          { 'label': 'mid back', 'value': 'mid back' },
+                          { 'label': 'lower back', 'value': 'lower back' },
+                          { 'label': '*R shoulder', 'value': 'R shoulder' },
+                          { 'label': 'R arm', 'value': 'R arm' },
+                          { 'label': 'R elbow', 'value': 'R elbow' },
+                          { 'label': 'R forearm', 'value': 'R forearm' },
+                          { 'label': 'R wrist', 'value': 'R wrist' },
+                          { 'label': 'R hand', 'value': 'R hand' },
+                          { 'label': 'R hip', 'value': 'R hip' },
+                          { 'label': 'R thigh', 'value': 'R thigh' },
+                          { 'label': 'R knee', 'value': 'R knee' },
+                          { 'label': 'R leg', 'value': 'R leg' },
+                          { 'label': 'R ankle', 'value': 'R ankle' },
+                          { 'label': 'R foot', 'value': 'R foot' },
+                          { 'label': '*L shoulder', 'value': 'L shoulder' },
+                          { 'label': 'L arm', 'value': 'L arm' },
+                          { 'label': 'L elbow', 'value': 'L elbow' },
+                          { 'label': 'L forearm', 'value': 'L forearm' },
+                          { 'label': 'L wrist', 'value': 'L wrist' },
+                          { 'label': 'L hand', 'value': 'L hand' },
+                          { 'label': 'L hip', 'value': 'L hip' },
+                          { 'label': 'L thigh', 'value': 'L thigh' },
+                          { 'label': 'L knee', 'value': 'L knee' },
+                          { 'label': 'L leg', 'value': 'L leg' },
+                          { 'label': 'L ankle', 'value': 'L ankle' },
+                          { 'label': 'L foot', 'value': 'L foot' }],
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'Time of injury was {ENTRY} ago.', 'label': 'Onset' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Time of injury was {ENTRY}.',
+                        'label': 'Onset of injury ',
+                        'options': [
+                          { 'label': 'just PTA', 'value': 'just prior to arrival' },
+                          { 'label': 'today', 'value': 'today' },
+                          { 'label': 'this morning', 'value': 'this morning' },
+                          { 'label': 'this afternoon', 'value': 'this afternoon' },
+                          { 'label': 'this evening', 'value': 'this evening' },
+                          { 'label': 'yesterday', 'value': 'yesterday' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Position of patient in accident',
+                        'options': [
+                          { 'label': 'driver seat', 'value': 'Patient was in the driver seat' },
+                          { 'label': 'front passenger seat', 'value': 'Patient was in the front passenger seat' },
+                          {
+                            'label': 'back passenger behind driver',
+                            'value': 'Patient was in the back passenger seat behind the driver seat',
+                          },
+                          {
+                            'label': 'back passenger behind front passenger',
+                            'value': 'Patient was in the back passenger seat behind the front passenger seat',
+                          },
+                          { 'label': 'motorcycle/ATV driver', 'value': 'Patient was driver on a motorcycle/ATV' },
+                          { 'label': 'motorcycle/ATV passenger', 'value': 'Patient was a passenger on a motorcycle' },
+                          { 'label': 'Back seat passenger', 'value': 'Patient was a back seat passenger' },
+                          {
+                            'label': 'Back seat driver middle',
+                            'value': 'Patient was a back seat driver in the middle',
+                          },
+                          { 'label': 'ped-struck', 'value': 'Patient was the pedestrian that was struck' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Context(Driver)', 'options': [
+                          {
+                            'label': 'head on collision',
+                            'value': 'Patient\'s car hit another vehicle head on.',
+                            'sentence': '{ENTRY}.',
+                          },
+                          { 'label': 'rear ended', 'value': 'Patient\'s car got rear ended.', 'sentence': '{ENTRY}.' },
+                          {
+                            'label': 'T-Bone driver side',
+                            'value': 'Patient was struck on driver\'s side.',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'T-bone passenger side',
+                            'value': 'Patient\'s car got struck  on the passenger\'s side',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Patient rear ended another vehicle',
+                            'value': 'Patient rear ended another vehicle',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Patient T-boned another vehicle',
+                            'value': 'Patient T-boned another vehicle',
+                            'sentence': '{ENTRY}.',
+                          },
+                          { 'label': 'Lost control', 'value': 'Patient lost control.', 'sentence': '{ENTRY}.' },
+                          { 'label': 'Patient hit median', 'value': 'Patient hit median', 'sentence': '{ENTRY}.' },
+                          {
+                            'label': 'car overturned',
+                            'value': 'Patient\'s vehicle overturned',
+                            'sentence': '{ENTRY}.',
+                          },
+                          { 'label': 'Fell asleep', 'value': 'Patient fell asleep', 'sentence': '{ENTRY}.' },
+                          {
+                            'label': 'driver lost control of vehicle',
+                            'value': 'Driver lost control',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'unknown what happen',
+                            'value': 'Patient don\'t know what happened',
+                            'sentence': '{ENTRY}.',
+                          }],
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': 'The vehicle the patient was {ENTRY}',
+                        'label': 'Passenger  on motorbike/ATV vs in car?',
+                        'options': [{ 'label': 'motorbike/ATV', 'value': 'on' }, { 'label': 'car', 'value': 'in' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.', 'label': 'Context 2 (Passenger)', 'options': [
+                          { 'label': 'head on collision', 'value': 'hit another vehicle head on' },
+                          { 'label': 'rear ended by another', 'value': 'was rear ended by another vehicle' },
+                          { 'label': 'T-bone on driver\'s side', 'value': 'was struck on the driver\'s side' },
+                          { 'label': 'T-bone on passenger\'s side', 'value': 'was struck on the passenger\'s side' },
+                          { 'label': 'rear ended another ', 'value': 'rear ended another vehicle' },
+                          { 'label': 'T-boned another', 'value': 'T-boned another vehicle' },
+                          { 'label': 'side swiped another', 'value': 'side swiped another vehicle' },
+                          { 'label': 'got side swiped', 'value': 'got side swiped' },
+                          { 'label': 'overturned', 'value': 'overturned' },
+                          { 'label': 'spun around', 'value': 'spun around' },
+                          { 'label': 'hit the median', 'value': 'hit the median' },
+                          { 'label': 'crashed into a ditch', 'value': 'crashed into a ditch' },
+                          { 'label': 'crashed into a pole', 'value': 'crashed into a pole' },
+                          { 'label': 'crashed into a tree', 'value': 'crashed into a tree' },
+                          { 'label': 'crashed into a building', 'value': 'crashed into a building' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Restraints', 'options': [
+                          { 'label': 'Air Bags deployed', 'value': 'Air bags deployed.', 'sentence': '{ENTRY}.' },
+                          {
+                            'label': 'Air bags did not deploy',
+                            'value': 'Air bags did not deploy',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Restrained in car seat',
+                            'value': 'Patient was restrained in a car seat',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Not restrained in a car seat',
+                            'value': 'Patient was not restrained in a car seat',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Wearing a helmet',
+                            'value': 'Patient was wearing a helment',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Not wearing a helmet',
+                            'value': 'Patient not wearing a helmet',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Thrown from vehicle',
+                            'value': 'Patient was thrown from the vehicle',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Prolong extrication',
+                            'value': 'It was a prolong extrication',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'ambulatory',
+                            'value': 'Patient was ambulatory at the scene',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'unknown',
+                            'value': 'It is unknown whether patient was wearing restraints',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'not wearing SB',
+                            'value': 'Patient not wearing restraints',
+                            'sentence': '{ENTRY}.',
+                          },
+                          { 'label': 'Wearing SB', 'value': 'Patient wearing seatbelts', 'sentence': '{ENTRY}.' },
+                          {
+                            'label': 'not ambulatory',
+                            'value': 'Patient not ambulatory on the scene',
+                            'sentence': '{ENTRY}.',
+                          }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Associated symptom(s): {ENTRY}.',
+                        'label': 'Associated symptom(s):',
+                        'options': [
+                          { 'label': 'LOC', 'value': 'lost of consciousness' },
+                          { 'label': 'dizziness', 'value': 'dizziness' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'light-headedness ', 'value': 'light-headedness' },
+                          { 'label': 'difficulty swallowing', 'value': 'difficulty swallowing' },
+                          { 'label': 'vomiting', 'value': 'vomiting' },
+                          { 'label': 'nausea', 'value': 'nausea' },
+                          { 'label': 'headache', 'value': 'headache' },
+                          { 'label': 'focal weakness of RUE', 'value': 'focal weakness of RUE' },
+                          { 'label': 'focal weakness of LUE', 'value': 'focal weakness of LUE' },
+                          { 'label': 'focal weakness of RLE', 'value': 'focal weakness of RLE' },
+                          { 'label': 'focal weakness of LLE', 'value': 'focal weakness of LLE' },
+                          { 'label': 'vaginal bleeding', 'value': 'vaginal bleeding' },
+                          { 'label': 'unknown', 'value': 'unknown' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'No reports of {ENTRY}.',
+                        'label': 'Associated symptoms(negative)',
+                        'options': [
+                          { 'label': 'lost of consciousness', 'value': 'lost of consciousness' },
+                          { 'label': 'dizziness', 'value': 'dizziness' },
+                          { 'label': 'shortness of breath', 'value': 'shortness of breath' },
+                          { 'label': 'light-headedness', 'value': 'light-headedness' },
+                          { 'label': 'difficulty swallowing', 'value': 'difficulty swallowing' },
+                          { 'label': 'nausea', 'value': 'nausea' },
+                          { 'label': 'vomiting', 'value': 'vomiting' },
+                          { 'label': 'headache', 'value': 'headache' },
+                          { 'label': 'focal weakness', 'value': 'focal weakness' },
+                          { 'label': 'vaginal bleeding', 'value': 'vaginal bleeding' },
+                          {
+                            'label': 'all negative',
+                            'value': 'no lost of consciousness, dizziness, shortness of breath, light-headedness, difficulty swallowing, nausea, vomiting, headache, focal weakness, or vaginal bleeding',
+                          }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Down-time prior to arrival',
+                        'options': [
+                          { 'label': 'uknown', 'value': 'nknown ', 'sentence': 'Down-time: {ENTRY}.' },
+                          { 'label': 'Arrest witnessed', 'value': 'Arrest witnessed', 'sentence': '{ENTRY}.' },
+                          {
+                            'label': 'Arrest was not witnessed',
+                            'value': 'Arrest  not witnessed',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Bystander CPR initiated',
+                            'value': 'Bystander CPR was initiated',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Bystander CPR was not initiated',
+                            'value': 'Bystander CPR was not initiated',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'ROSC at the scene',
+                            'value': 'at the scene',
+                            'sentence': 'Patient had return of spontaneous circulation {ENTRY}.',
+                          },
+                          {
+                            'label': 'ROSC en route',
+                            'value': 'en route',
+                            'sentence': 'Patient had return of spontaneous circulation {ENTRY}.',
+                          },
+                          {
+                            'label': 'Cardiac arrest still present',
+                            'value': 'still in cardiac arrest',
+                            'sentence': 'Patient still{ENTRY}.',
+                          },
+                          {
+                            'label': 'Asystole > thirty minutes',
+                            'value': 'systole more then twenty minutes',
+                            'sentence': 'Patient was in {ENTRY}.',
+                          }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'EMS finding upon arrival: {ENTRY}.',
+                        'label': 'EMS finding',
+                        'options': [
+                          { 'label': 'unresponsive', 'value': 'unresponsive' },
+                          { 'label': 'no resp', 'value': 'no respiration' },
+                          { 'label': 'pulse absent', 'value': 'pulse absent' },
+                          { 'label': 'asystole', 'value': 'asystole ' },
+                          { 'label': 'lethargic', 'value': 'lethargic ' },
+                          { 'label': 'agonal resp', 'value': 'agonal respiration' },
+                          { 'label': 'weak pulse', 'value': 'weak pulse' },
+                          { 'label': 'alert', 'value': 'alert and responsive' },
+                          { 'label': 'normal resp', 'value': 'normal respiration' },
+                          { 'label': 'strong pulse', 'value': 'strong pulse' },
+                          { 'label': 'VFib/Vtach', 'value': 'VFib/Vtac' },
+                          { 'label': 'PEA', 'value': 'PEA ' },
+                          { 'label': 'BS norm', 'value': 'dextrostick normal' },
+                          { 'label': 'BS low', 'value': 'dextrostick low' },
+                          { 'label': 'unknown', 'value': 'unknown' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'EMS intervention:{ENTRY}.',
+                        'label': 'EMS Intervention',
+                        'options': [
+                          { 'label': 'bag valve mask ', 'value': 'bag valve mask ' },
+                          { 'label': 'ET intubation', 'value': 'endotracheal ntubation' },
+                          { 'label': 'king airway intubation', 'value': 'king airway intubation' },
+                          { 'label': 'Bilevel ventilation', 'value': 'Bilevel ventilation' },
+                          { 'label': 'iv placement', 'value': 'iv placement' },
+                          { 'label': 'IO placement', 'value': 'IO placement' },
+                          { 'label': 'trancutaneous pacing', 'value': 'trancutaneous pacing' },
+                          { 'label': 'defib', 'value': 'defibrillation' },
+                          { 'label': 'epinephrine', 'value': 'epinephrine' },
+                          { 'label': 'atropine', 'value': 'atropine' },
+                          { 'label': 'vasopressin', 'value': 'vasopressin' },
+                          { 'label': 'amiodarone', 'value': 'amiodarone' },
+                          { 'label': 'Narcan', 'value': 'Narcan' },
+                          { 'label': 'dextrose', 'value': 'dextrose' },
+                          { 'label': 'IV fluid bolus', 'value': 'IV fluid bolus' },
+                          { 'label': 'unknown', 'value': 'unknown' },
+                          { 'label': 'C-spine', 'value': 'C-spine' },
+                          { 'label': 'backboard', 'value': 'backboard' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Symptoms/activity prior to accident:{ENTRY}.',
+                        'label': 'Symptoms prior to arrest',
+                        'options': [
+                          { 'label': 'chest pain', 'value': 'chest pain' },
+                          { 'label': 'dyspnea', 'value': 'dyspnea' },
+                          { 'label': 'abdominal pain', 'value': 'abdominal pain' },
+                          { 'label': 'back pain', 'value': 'back pain' },
+                          { 'label': 'nausea/vomiting', 'value': 'nausea/vomiting' },
+                          { 'label': 'sweating', 'value': 'sweating' },
+                          { 'label': 'cough', 'value': 'cough' },
+                          { 'label': 'dizziness', 'value': 'dizziness' },
+                          { 'label': 'overdose', 'value': 'overdose' },
+                          { 'label': 'fever', 'value': 'fever' },
+                          { 'label': 'seizure', 'value': 'seizure' },
+                          { 'label': 'unknown', 'value': 'unknown' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    { 'timeFrame': { 'sentence': 'Patient is {ENTRY} into her pregnancy.', 'label': 'Pregnancy*' } },
+                    {
+                      'radioButtons': {
+                        'sentence': 'Patient {ENTRY} taking a blood thinner.',
+                        'label': 'Blood thinners?',
+                        'options': [{ 'label': 'is not', 'value': 'is not' }, { 'label': 'is', 'value': 'is' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient is taking {ENTRY}.',
+                        'label': 'Blood thinner',
+                        'options': [
+                          { 'label': 'plavix', 'value': 'plavix' },
+                          { 'label': 'Effient', 'value': 'prasugrel' },
+                          { 'label': 'ASA', 'value': 'aspirin' },
+                          { 'label': 'coumadin', 'value': 'warfarin' },
+                          { 'label': 'dabigatran(Pradaxa)', 'value': 'dabigatran' },
+                          { 'label': 'rivaroxaban(Xarelto)', 'value': 'rivaroxaban' },
+                          { 'label': 'apixaban(Eliquis)', 'value': 'apixaban' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': '',
+                        'value': '<br>&#10;<br>&#10;Surgery&#32;History&#10;<br>',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Surgery history: {ENTRY}.',
+                        'label': 'Surgery History',
+                        'options': [
+                          { 'label': 'appendectomy', 'value': 'appendectomy' },
+                          { 'label': 'CABG', 'value': 'CABG' },
+                          { 'label': 'cholecystectomy', 'value': 'cholecystectomy' },
+                          { 'label': 'hysterectomy', 'value': 'hysterectomy' },
+                          { 'label': 'tonsillectomy', 'value': 'tonsillectomy' },
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'unknown', 'value': 'unknown' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient was evaluated at {ENTRY} and transfer here for higher level of care. See transfer medical records.',
+                        'label': 'Transfer from',
+                        'options': [
+                          { 'label': 'Jasper', 'value': 'Jasper Memorial Hospital' },
+                          { 'label': 'St. Mary', 'value': 'St.Mary Hospital ' },
+                          { 'label': 'Mid County', 'value': 'Mid County free stranding ED' },
+                          { 'label': 'Medical Center of SE', 'value': 'Medical Center of SE' },
+                          { 'label': 'NEC', 'value': 'Neighbors Emergency Center' },
+                          { 'label': 'BEC', 'value': 'Beaumont Emergency Center' },
+                          { 'label': 'GTEC', 'value': 'Golden Triangle Emergency Center' },
+                          { 'label': 'Woodville', 'value': 'Woodsville hospital' },
+                          { 'label': 'Winnie Hospital', 'value': 'Winnie Hospital' },
+                          { 'label': 'Victory Hospital', 'value': 'Victory Hospital' },
+                          { 'label': 'Tyler County hospital', 'value': 'Tyler County hospitlal' },
+                          { 'label': 'another ED', 'value': 'another emergency department' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } }], 'Body': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Review of Symptom: positive for {ENTRY}',
+                        'label': 'Review of Systems (positive)',
+                        'options': [
+                          { 'label': 'sore throat', 'value': 'sore throat' },
+                          { 'label': 'difficuly swallowing', 'value': 'difficulty swallowing' },
+                          { 'label': 'sinus pain/drainage', 'value': 'sinus pain/drainage' },
+                          { 'label': 'epstxs', 'value': 'epitaxsis' },
+                          { 'label': 'palpitation', 'value': 'palpitation' },
+                          { 'label': 'hemoptysis', 'value': 'hemoptysis' },
+                          { 'label': 'melena', 'value': ' melena' },
+                          { 'label': 'dysuria', 'value': 'dysuria' },
+                          { 'label': 'urinary incontinence', 'value': 'urinary incontinence' },
+                          { 'label': 'muscle aches', 'value': 'muscle aches.' },
+                          { 'label': 'jnt swell', 'value': 'joint swelling/pain' },
+                          { 'label': 'neck pain', 'value': 'neck pain' },
+                          { 'label': 'fainting', 'value': 'fainting' },
+                          { 'label': 'tremor', 'value': 'tremor' },
+                          { 'label': 'bleeding', 'value': ' bleeding' },
+                          { 'label': 'weight loss', 'value': 'weight loss' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': 'palpable nodes', 'value': 'palpable nodes' },
+                          { 'label': 'rash', 'value': 'rash' },
+                          { 'label': 'lesion', 'value': 'skin  lesions' },
+                          { 'label': 'unkown', 'value': 'unknown' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'REVIEW OF SYMPTOMS: negative for {ENTRY}',
+                        'label': 'Review of Systems (negatives)',
+                        'options': [
+                          { 'label': 'Sore throat', 'value': 'sore throat' },
+                          { 'label': 'Sinus pain/drainage', 'value': 'sinus pain/drainage' },
+                          { 'label': 'Epstxs', 'value': ' epistaxis' },
+                          { 'label': 'palpitation', 'value': 'palpitation' },
+                          { 'label': 'hemoptysis', 'value': 'hemoptysis' },
+                          { 'label': 'melena', 'value': 'melena' },
+                          { 'label': 'Dysuria', 'value': 'dysuria' },
+                          { 'label': 'Urinary incontinence', 'value': 'being incontinent of urine' },
+                          { 'label': 'Muscle aches', 'value': ' any muscle aches' },
+                          { 'label': 'Jnt Swell', 'value': ' joint swelling' },
+                          { 'label': 'Back pain', 'value': 'any back pain' },
+                          { 'label': 'Fainting', 'value': 'fainting' },
+                          { 'label': 'Tremor', 'value': ' tremor' },
+                          { 'label': 'Bleeding', 'value': 'increased or abnormal bleeding' },
+                          { 'label': 'Wt loss', 'value': ' unintential weight loss' },
+                          { 'label': 'Dprsn', 'value': 'symptoms of depression' },
+                          { 'label': 'Palpable nodes', 'value': 'palpable nodes' },
+                          { 'label': 'Rash', 'value': 'any rash' },
+                          { 'label': 'Lesion', 'value': 'any lesions' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Vital signs {ENTRY}.',
+                        'label': 'Vital signs',
+                        'options': [
+                          { 'label': 'normal', 'value': 'all are normal' },
+                          { 'label': 'except pulse', 'value': 'except pulse' },
+                          { 'label': 'except bp', 'value': 'except blood pressure' },
+                          { 'label': 'except rr', 'value': 'except respiratory rate' },
+                          { 'label': 'except temp', 'value': 'except temperature' },
+                          { 'label': 'except SaO2', 'value': 'except oxygen saturation' },
+                          { 'label': 'all are abnormal', 'value': 'all are abnormal' },
+                          { 'label': 'none- no pulse', 'value': '- none(no pulse)' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Intial finding(s) upon arrival in the ED: {ENTRY}',
+                        'label': 'Initial finding(s) on arrival to ED',
+                        'options': [
+                          { 'label': 'apnea', 'value': 'apnea' },
+                          { 'label': 'agonal respiration', 'value': 'agonal respiration' },
+                          { 'label': 'no palpable pulse', 'value': 'no palpable pulse' },
+                          { 'label': 'decrease breath sounds', 'value': 'decrease breath sounds' },
+                          { 'label': 'open pneumothorax', 'value': 'open pneumothorax' },
+                          { 'label': 'stridor', 'value': 'stridor' },
+                          { 'label': 'flail chest', 'value': 'flail chest' },
+                          { 'label': 'unresponsive', 'value': 'unresponsive' },
+                          { 'label': 'no cardiac activity on US', 'value': 'no cardiac activity on US' },
+                          { 'label': 'cardiac tamponade', 'value': 'cardiac tamponade' },
+                          { 'label': 'PEA', 'value': 'PEA' },
+                          { 'label': 'bradycardia', 'value': 'bradycardia' },
+                          { 'label': 'hypotensive', 'value': 'hypotensive' },
+                          { 'label': 'ventricular tachycardia', 'value': 'ventrcular tacycardia' },
+                          { 'label': ' intubated', 'value': 'intubated' },
+                          { 'label': 'ventricular fibrillation', 'value': 'ventricular fibrillation' },
+                          { 'label': 'paced', 'value': 'trancutaneously paced' },
+                          { 'label': 'weakness of the RUE', 'value': 'weakness of the RUE' },
+                          { 'label': 'Weakness of the LUE', 'value': 'weakness of the LUE' },
+                          { 'label': 'weakness of the RLE', 'value': 'weakness of the RLE' },
+                          { 'label': 'weakness of the LLE', 'value': 'weakness of the LLE' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Intial intervention in the ED: {ENTRY}',
+                        'label': 'Intial intervention upon arrival to the ED',
+                        'options': [
+                          { 'label': 'CPR', 'value': 'CPR as per ACLS protocal' },
+                          { 'label': 'defibrillation', 'value': 'defibrillation' },
+                          { 'label': 'epinephrine', 'value': 'epinephrine' },
+                          { 'label': 'atropine', 'value': 'atropine' },
+                          { 'label': 'vasopressin', 'value': 'vasopressin' },
+                          { 'label': 'dextrose', 'value': 'dextrose' },
+                          { 'label': 'narcan', 'value': 'narcan' },
+                          { 'label': 'sodium bicarb', 'value': 'sodium bicarb' },
+                          { 'label': 'calcium chloride', 'value': 'calcium chloride' },
+                          { 'label': 'calcium gluconate', 'value': 'calcium gluconate' },
+                          { 'label': 'iv fluid bolus', 'value': 'iv fluid bolus' },
+                          { 'label': 'blood transfusion', 'value': ' blood transfusion' },
+                          { 'label': 'IO placement', 'value': 'IO placement' },
+                          { 'label': 'LMA placement', 'value': 'LMA placement' },
+                          {
+                            'label': 'endotracheal intubation',
+                            'value': 'endotracheal intubation(see procedure note)',
+                          },
+                          { 'label': 'surgical airway', 'value': 'cricthyrotomy(see procedure note)' },
+                          { 'label': 'trancutaneous pacing', 'value': 'trancutaneous pacing' },
+                          {
+                            'label': 'A-line placement(see procedure note)',
+                            'value': 'A-line placement (see procedure note)',
+                          },
+                          {
+                            'label': 'Central vein placement(see procedure note)',
+                            'value': 'Central line placement( see procedure note)',
+                          },
+                          {
+                            'label': 'transvenous pacemaker placement',
+                            'value': 'transvenous pacemaker placement(see procedure note)',
+                          },
+                          {
+                            'label': 'R chest tube placement',
+                            'value': 'right chest tube placement(see procedure note)',
+                          },
+                          { 'label': 'L chest tube placement', 'value': 'left chest tube placement' },
+                          { 'label': 'ROSC achieved.', 'value': 'ROSC achieved.' },
+                          { 'label': 'Death pronounced', 'value': 'ROSC not achieved and pronounced death at *' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'General: {ENTRY}',
+                        'label': 'General:',
+                        'options': [
+                          { 'label': 'normal', 'value': 'NAD, alert' },
+                          { 'label': 'NAD', 'value': 'NAD' },
+                          { 'label': 'alert', 'value': 'alert' },
+                          { 'label': 'mild', 'value': 'mild distress' },
+                          { 'label': 'moderate', 'value': 'moderate distress' },
+                          { 'label': 'severe', 'value': 'severe distress' },
+                          { 'label': 'anxious', 'value': 'anxious' },
+                          { 'label': 'lethargic', 'value': 'lethargic ' },
+                          { 'label': 'unresponsive', 'value': 'unresponsive' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'EENT {ENTRY}', 'label': 'EENT', 'options': [
+                          { 'label': 'normal', 'value': 'Eyes, ears, nose, mouth, and throat appear normal' },
+                          { 'label': 'eyes normal', 'value': 'eyes normal' },
+                          { 'label': 'EOMI', 'value': 'EOMI' },
+                          { 'label': 'PERLA', 'value': 'PERLA' },
+                          { 'label': 'ENT normal', 'value': 'ENT normal' },
+                          { 'label': 'pharynx normal', 'value': 'pharynx normal' },
+                          { 'label': 'ET in mouth secured', 'value': 'ET in mouth secured' },
+                          { 'label': 'LMA in mouth secured', 'value': 'LMA in mouth secured' },
+                          { 'label': 'Kings tube in mouth secured', 'value': 'Kingstube in mouth secured' },
+                          { 'label': 'nasaopharygeal airway present', 'value': 'nasopharygeal airway present' },
+                          { 'label': 'no chemosis ', 'value': 'no chemosis' },
+                          { 'label': 'no hyphema', 'value': 'no hyphema' },
+                          { 'label': 'no proptosis', 'value': 'no proptosis' },
+                          { 'label': 'no septal hematoma', 'value': 'no septal hematoma' },
+                          { 'label': 'no hematypanum', 'value': 'no hematypanum' },
+                          { 'label': 'no facial swelling', 'value': 'no facial swelling' },
+                          { 'label': 'no oral injury', 'value': 'no oral injury' },
+                          { 'label': 'no subconjunctivia', 'value': 'no subconjunctivia' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'EENT: {ENTRY}',
+                        'label': 'EENT:(abnormal)',
+                        'options': [
+                          { 'label': 'dilated right pupil', 'value': 'dilated right pupil' },
+                          { 'label': 'dilated left pupil', 'value': 'dilated left pupil' },
+                          { 'label': 'R periorbital swelling', 'value': 'R periorbital swelling' },
+                          { 'label': 'L periorbital swelling', 'value': 'L periorbital swelling' },
+                          { 'label': 'R chemosis', 'value': 'R chemosis' },
+                          { 'label': 'L chemosis', 'value': 'L chemosis' },
+                          { 'label': 'R hyphema', 'value': 'R hyphema' },
+                          { 'label': 'L hyphema', 'value': 'L hyphema' },
+                          { 'label': 'R proptosis', 'value': 'R proptosis' },
+                          { 'label': 'L proptosis', 'value': 'L proptosis' },
+                          { 'label': 'R septal hematoma', 'value': 'R septal hematoma' },
+                          { 'label': 'L septal hematoma', 'value': 'L septal hematoma' },
+                          { 'label': 'R hematypanum', 'value': 'R hematypanum' },
+                          { 'label': 'L hematypanum', 'value': 'L hematypanum' },
+                          { 'label': 'R facial swelling', 'value': 'R side facial swelling' },
+                          { 'label': 'L facial swelling', 'value': 'L side facial swelling' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Neck:{ENTRY}',
+                        'label': 'Neck',
+                        'options': [
+                          {
+                            'label': 'normal',
+                            'value': 'normal inspection, nontender , trachea midline, painless ROM',
+                          },
+                          { 'label': 'nml inspection', 'value': 'normal inspection' },
+                          { 'label': 'supple', 'value': 'supple' },
+                          { 'label': 'trachea midline', 'value': 'trachea midline' },
+                          { 'label': 'carotid bruit neg', 'value': 'negative for carotid bruit' },
+                          { 'label': 'painless ROM', 'value': 'painless ROM' },
+                          { 'label': 'carotid bruit pos', 'value': ' carotid bruit present' },
+                          { 'label': 'JVD pos', 'value': 'JVD present' },
+                          { 'label': 'emphysema present', 'value': 'subcutaneous emphysema present' },
+                          { 'label': 'expanding neck hematoma', 'value': 'expanding neck hematoma' },
+                          { 'label': 'trachea deviated', 'value': 'trachea deviated' },
+                          { 'label': 'veterbral tenderness', 'value': 'veterbral tenderness' },
+                          { 'label': 'paraspinal tenderness', 'value': 'paraspinal tenderness' },
+                          { 'label': 'limited ROM due to pain', 'value': 'limited ROM due to pain' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Respiratory:{ENTRY}', 'label': 'Respiratory', 'options': [
+                          {
+                            'label': 'normal',
+                            'value': 'no respiratory distress,normal inspection, no chest tenderness, normal breath sounds',
+                          },
+                          { 'label': 'no resp distress', 'value': 'no respiratory distress' },
+                          { 'label': 'normal inspection', 'value': 'normal inspection' },
+                          { 'label': 'chest NT', 'value': 'no chest tenderness' },
+                          { 'label': 'nml BS', 'value': 'normal breath sounds' },
+                          { 'label': 'speaks normally', 'value': 'speaks in complete sentences' },
+                          { 'label': 'no subcut emphysema', 'value': 'no subcutaneous emphysema' },
+                          { 'label': 'no crepitus', 'value': 'no crepitus' },
+                          { 'label': 'respiratory distress', 'value': 'respiratory distress' },
+                          { 'label': 'pain on movement', 'value': 'pain on movement' },
+                          { 'label': 'splinting', 'value': 'splinting' },
+                          { 'label': 'dec BS', 'value': 'decrease breath sounds' },
+                          { 'label': 'wheezing', 'value': 'wheezing' },
+                          { 'label': 'rales', 'value': 'rales' },
+                          { 'label': 'rhonchi', 'value': 'rhonchi' },
+                          { 'label': 'active cough', 'value': 'active cough' },
+                          { 'label': 'no spontaneous respiration', 'value': 'no spontaneous respiration' },
+                          { 'label': 'bag-valve mask in use', 'value': 'bag-valve mask in use' },
+                          { 'label': 'ET tube/bag - valve', 'value': 'ET tube/bag-valve' },
+                          { 'label': 'spontaneous slow respirations', 'value': 'spontaneous slow respirations' },
+                          { 'label': 'R chest wall tenderness', 'value': 'R chest wall tenderness' },
+                          { 'label': 'L chest wall tenderness', 'value': 'L chest wall tenderness' },
+                          { 'label': 'R CW crepitus', 'value': 'R chest wall crepitus' },
+                          { 'label': 'L CW crepitus', 'value': 'L chest wall crepitus' },
+                          { 'label': 'R subcut CW emphy', 'value': 'R chest wall subcutaneous emphysema' },
+                          { 'label': 'L CW subcut emphy', 'value': 'L chest wall subcutaneous emphysema' },
+                          { 'label': '(+) seatbelt sign', 'value': '(+) seatbelt sign' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Cardiac {ENTRY}',
+                        'label': 'Cardiac:',
+                        'options': [
+                          { 'label': 'normal', 'value': 'RRR, no murmurs' },
+                          { 'label': 'RRR', 'value': 'regular rate & rhythm' },
+                          { 'label': 'Murmur(-) ', 'value': 'no murmurs' },
+                          { 'label': 'murmur', 'value': 'murmur' },
+                          { 'label': 'tachy', 'value': 'tachycardia' },
+                          { 'label': 'brady', 'value': 'bradycardia' },
+                          { 'label': 'irregular, irregular', 'value': 'irregular, irregular' },
+                          { 'label': 'no cardiac activity', 'value': 'no cardiac activity' },
+                          { 'label': 'muffled heart sounds', 'value': 'muffled heart sounds' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Abdomen:{ENTRY}',
+                        'label': 'Abdomen',
+                        'options': [
+                          { 'label': 'normal', 'value': 'nontender, no organomegaly, normal bowel sounds' },
+                          { 'label': 'nontender', 'value': 'nontender' },
+                          { 'label': 'no organomegaly', 'value': 'no organomegaly' },
+                          { 'label': 'nml bowel sounds', 'value': 'normal bowel sounds' },
+                          { 'label': 'RUQ tenderness', 'value': 'tenderness  to  RUQ' },
+                          { 'label': 'RLQ tenderness', 'value': 'tenderness  to RLQ ' },
+                          { 'label': 'midepigastric tenderness ', 'value': 'tenderness to midepigastric area' },
+                          { 'label': 'periumbilical tenderness', 'value': 'tenderness to periumbilical region' },
+                          { 'label': 'LUQ tenderness', 'value': 'tenderness  to LUQ' },
+                          { 'label': 'LLQ tenderness', 'value': 'tenderness to LLQ' },
+                          { 'label': 'hepatomegaly', 'value': 'hepatomegaly' },
+                          { 'label': 'splenomegaly', 'value': 'splenomegaly' },
+                          { 'label': 'mass', 'value': 'mass' },
+                          { 'label': 'catheter present', 'value': 'catheter present' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Skin: {ENTRY}',
+                        'label': 'Skin',
+                        'options': [
+                          { 'label': 'normal', 'value': 'normal color, no rash, warm' },
+                          { 'label': 'color normal', 'value': 'color normal' },
+                          { 'label': 'no rash', 'value': 'no rash' },
+                          { 'label': 'warm', 'value': 'warm' },
+                          { 'label': 'dry', 'value': 'dry' },
+                          { 'label': 'intact', 'value': 'intact' },
+                          { 'label': 'cyanosis', 'value': 'cyanosis  **' },
+                          { 'label': 'diaphoresis', 'value': 'diaphoresis' },
+                          { 'label': 'pallor', 'value': 'pallor' },
+                          { 'label': 'ecchymosis', 'value': 'ecchymosis  **' },
+                          { 'label': 'skin rash', 'value': 'skin rash - *' },
+                          { 'label': 'embolic lesions', 'value': 'embolic lesion *' },
+                          { 'label': 'pressure ulcer ', 'value': 'pressure ulcer **' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': '(MS) Extremities: {ENTRY}',
+                        'label': '(MS) Extremities',
+                        'options': [
+                          {
+                            'label': 'normal',
+                            'value': 'no deformity, normal ROM, and nontender in all 4 extremities',
+                          },
+                          { 'label': 'non-tender', 'value': 'non-tender' },
+                          { 'label': 'no joint swelling', 'value': 'no joint swelling' },
+                          { 'label': 'no leg/pedal edema', 'value': 'no leg/pedal edema' },
+                          { 'label': 'normal appearance', 'value': 'normal in appearance' },
+                          { 'label': 'calf tenderness*', 'value': 'calf tenderness' },
+                          { 'label': 'joint swelling*', 'value': 'joint swelling **' },
+                          { 'label': 'lower leg edema*', 'value': 'lower leg  edema**' },
+                          { 'label': 'deformity*', 'value': 'deformity  **' },
+                          { 'label': 'right AKA', 'value': 'right above the knee amputation ' },
+                          { 'label': 'right BKA', 'value': 'right below knee amputation ' },
+                          { 'label': 'left AKA', 'value': 'left above the knee amputation ' },
+                          { 'label': 'left BKA', 'value': 'left below knee amputation ' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'NEURO: {ENTRY}', 'label': 'NEURO', 'options': [
+                          {
+                            'label': 'normal',
+                            'value': 'alert and oriented X 3, cooperative, motor and sensation grossly normal in 4 extremities',
+                          },
+                          { 'label': 'alert', 'value': 'alert' },
+                          { 'label': 'nml speech', 'value': 'normal speech' },
+                          { 'label': 'nml CN2-12', 'value': 'normal CN (2-12)' },
+                          { 'label': 'nml finger to nose', 'value': 'normal finger to nose' },
+                          { 'label': 'normal gait', 'value': 'norml gait' },
+                          { 'label': 'motor normal', 'value': 'motor normal in all extremities' },
+                          { 'label': 'sensation normal', 'value': 'sensation normal in all extremities' },
+                          { 'label': 'nml though process', 'value': 'normal thought process' },
+                          { 'label': 'slow', 'value': 'slow' },
+                          { 'label': 'confused', 'value': 'confused' },
+                          { 'label': 'no response to commands', 'value': 'no response to commands' },
+                          {
+                            'label': 'no withdrawal from painful stimuli',
+                            'value': 'no withdrawal from painful stimul',
+                          },
+                          { 'label': 'abnormal thought process', 'value': 'abnormal thought process' },
+                          { 'label': 'abnormal cognition', 'value': 'abnormal cognition' },
+                          { 'label': 'abnormal speech', 'value': 'abnormal speech' },
+                          { 'label': 'right facial droop', 'value': 'right facial droop' },
+                          { 'label': 'left facial droop', 'value': 'left facial droop' },
+                          { 'label': 'left pronator drift', 'value': 'left pronator drift' },
+                          { 'label': 'right pronator drift', 'value': 'right pronator drift' },
+                          { 'label': 'deceberate posturing', 'value': 'deceberate posturing' },
+                          { 'label': 'decorticate posturing', 'value': 'decorticate posturing' },
+                          { 'label': 'weakness**', 'value': 'weakness *' },
+                          { 'label': 'abnormal sensation **', 'value': 'abnormal sensation **' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

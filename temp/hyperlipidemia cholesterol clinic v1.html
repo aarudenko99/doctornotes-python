@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">Hyperlipidemia / Cholesterol Clinic &#8211; V1</h1>
+            </div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for {ENTRY}.',
+                        'label': 'Reason for Visit',
+                        'options': [
+                          { 'label': 'Hyperlipidemia', 'value': 'hyperlipidemia check' },
+                          { 'label': 'Hypertension F/U', 'value': 'hypertension followup' },
+                          { 'label': 'BP Check', 'value': 'blood pressure check' },
+                          { 'label': 'Diabetes F/U', 'value': 'diabetes follow up' },
+                          { 'label': 'Diabetes Initial', 'value': 'diabetes initial visit' },
+                          { 'label': 'Physical', 'value': 'physical exam' },
+                          { 'label': 'Med Refill', 'value': 'medication refill' },
+                          { 'label': 'Acute Visit', 'value': 'acute visit' },
+                          { 'label': 'Pre-Op', 'value': 'preoperative exam' },
+                          { 'label': 'Obesity', 'value': 'obesity evaluation' },
+                          { 'label': 'Asthma', 'value': 'asthma evaluation' },
+                          { 'label': 'COPD', 'value': 'COPD evaluation' },
+                          { 'label': 'Tobacco Cessation', 'value': 'tobacco cessation' },
+                          { 'label': 'Chronic Pain', 'value': 'chronic pain' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '', 'label': 'Any New Concerns?', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has history including {ENTRY}.',
+                        'label': 'Risk Factors and Goals',
+                        'options': [
+                          {
+                            'label': 'None',
+                            'value': 'no CAD, not diabetic, no hypertension, no tobacco, no obesity, and prior TIA/stroke',
+                          },
+                          { 'label': 'diabetic', 'value': 'diabetes' },
+                          { 'label': 'not diabetic', 'value': 'not being diabetic' },
+                          { 'label': 'Coronary Artery Disease', 'value': 'known coronary disease' },
+                          { 'label': 'No CAD', 'value': 'no known coronary disease' },
+                          { 'label': 'tobacco abuse', 'value': 'tobacco use' },
+                          { 'label': 'no tobacco', 'value': 'no tobacco use' },
+                          { 'label': 'obesity', 'value': 'obesity' },
+                          { 'label': 'nonobese', 'value': 'no obesity' },
+                          { 'label': 'prior stroke/TIA', 'value': 'prior stroke/TIA' },
+                          { 'label': 'no prior stroke/TIA', 'value': 'no prior stroke/TIA' },
+                          { 'label': 'LDL goal is under 160', 'value': 'LDL goal is under 160' },
+                          { 'label': 'LDL goal is under 130', 'value': 'LDL goal is under 130' },
+                          { 'label': 'LDL goal is under 100', 'value': 'LDL goal is under 100' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has symptoms of {ENTRY}.',
+                        'label': 'Symptoms',
+                        'options': [
+                          {
+                            'label': 'None',
+                            'value': 'none of the following; no chest pain, shortness of breath, weakness, orthostatic hypotension, cough, myalgias, rash, headaches, weight gain, leg swelling, palpitations, slow heart rate, fatigue, depression',
+                          },
+                          { 'label': 'Chest Pain', 'value': 'chest pain' },
+                          { 'label': 'Intermittent Chest Pain', 'value': 'intermittent chest pain' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'Weakness', 'value': 'weakness' },
+                          { 'label': 'Orthostatic Hypotension', 'value': 'orthostatic hypotension' },
+                          { 'label': 'Cough', 'value': 'cough' },
+                          { 'label': 'Myalgias', 'value': 'myalgias' },
+                          { 'label': 'Rash', 'value': 'rash' },
+                          { 'label': 'Headaches', 'value': 'headaches' },
+                          { 'label': 'Wt Gain', 'value': 'weight gain' },
+                          { 'label': 'Leg Swelling', 'value': 'leg swelling' },
+                          { 'label': 'Palpitations', 'value': 'palpitations' },
+                          { 'label': 'Slow HR', 'value': 'slow heart rate' },
+                          { 'label': 'Fatigue', 'value': 'fatigue' },
+                          { 'label': 'Depression', 'value': 'depression' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient reports {ENTRY}.',
+                        'label': 'Compliance with Medications',
+                        'options': [
+                          { 'label': 'Good - Meds', 'value': 'good compliance with medications' },
+                          { 'label': 'Frequent', 'value': 'frequent compliance with medications' },
+                          { 'label': 'Occasional', 'value': 'occasional compliance with medications' },
+                          { 'label': 'Poor', 'value': 'poor compliance with medications' },
+                          { 'label': 'Noncompliance ', 'value': 'noncompliance with medications' },
+                          { 'label': 'No Side Effects', 'value': 'no side effects from medications noted' },
+                          { 'label': 'Possible Side Effects', 'value': 'possible side effects from medications noted' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Current treatments include {ENTRY}.',
+                        'label': 'Treatments',
+                        'options': [
+                          { 'label': 'Diet', 'value': 'diet modification' },
+                          { 'label': 'Wt Loss', 'value': 'weight loss' },
+                          { 'label': 'Exercise', 'value': 'exercise ' },
+                          { 'label': 'Smoking Cessation', 'value': 'smoking cessation' },
+                          { 'label': 'Statins', 'value': 'Statins' },
+                          { 'label': 'atorvastatin (Lipitor)', 'value': 'atorvastatin (Lipitor)' },
+                          { 'label': 'simvastatin (Zocor)', 'value': 'simvastatin (Zocor)' },
+                          { 'label': 'pitavastatin (Livalo)', 'value': 'pitavastatin (Livalo)' },
+                          { 'label': 'lovastatin (Mevacor)', 'value': 'lovastatin (Mevacor)' },
+                          { 'label': 'fluvastatin (Lescol)', 'value': 'fluvastatin (Lescol)' },
+                          { 'label': 'niacin', 'value': 'niacin' },
+                          { 'label': 'herbal supplements', 'value': 'herbal supplements' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': 'Review of Symptoms: {ENTRY}',
+                        'label': 'Review of Systems',
+                        'value': '<br>&#10;<br>&#10;Review&#32;of&#32;Systems:&#10;',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'General:',
+                        'options': [
+                          {
+                            'label': 'All ROS Negative',
+                            'value': 'All other systems reviewed and are negative',
+                          }, { 'label': 'Vital Signs Reviewed', 'value': 'vital signs reviewed' }],
+                      },
+                    }], 'Body': [
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Physical Exam:',
+                        'value': 'Physical&#32;Exam:&#10;Constitutional:&#32;&#32;No&#32;acute&#32;distress&#10;HEENT:&#32;&#32;Head&#32;normocephalic&#32;and&#32;atraumatic.&#32;No&#32;scleral&#32;icterus&#32;or&#32;erythema.&#32;Pharynx&#32;moist&#32;without&#32;erythema&#32;or&#32;exudate.&#10;CV:&#32;&#32;Regular&#32;rate&#32;and&#32;rhythm.&#32;No&#32;murmur.&#32;Peripheral&#32;pulses&#32;intact.&#10;Respiratory:&#32;&#32;Lungs&#32;clear&#32;to&#32;auscultation&#32;bilaterally&#10;Abdomen:&#32;&#32;Soft,&#32;non-tender,&#32;non-distended.&#10;Back:&#32;&#32;No&#32;CVA&#32;or&#32;vertebral&#32;tenderness&#10;Skin:&#32;&#32;Normal&#32;color.&#32;Warm&#32;and&#32;Dry&#10;Extremities:&#32;&#32;Non-tender.&#32;No&#32;pedal&#32;edema.&#32;&#10;Neuro:&#32;&#32;Oriented&#32;x3.',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Medical History: {ENTRY}',
+                        'label': 'Past Medical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'HTN', 'value': 'hypertension' },
+                          { 'label': 'HLD', 'value': 'hyperlipidemia' },
+                          { 'label': 'DM', 'value': 'diabetes' },
+                          { 'label': 'hypothyroidism', 'value': 'hypothyroidism' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': 'anxiety', 'value': 'anxiety' },
+                          { 'label': 'headaches', 'value': 'headaches' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'CAD', 'value': 'CAD' },
+                          { 'label': 'CHF', 'value': 'CHF' },
+                          { 'label': 'COPD', 'value': 'COPD' },
+                          { 'label': 'asthma', 'value': 'asthma' },
+                          { 'label': 'neck pain', 'value': 'neck pain' },
+                          { 'label': 'back pain', 'value': 'back pain' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Surgical History: {ENTRY}',
+                        'label': 'Past Surgical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'appendectomy', 'value': 'appendectomy' },
+                          { 'label': 'cholecystectomy', 'value': 'cholecystectomy' },
+                          { 'label': 'tonsillectomy', 'value': 'tonsillectomy' },
+                          { 'label': 'joint replacement', 'value': 'joint replacement' },
+                          { 'label': 'cesarean section', 'value': 'cesarean section' },
+                          { 'label': 'hysterectomy', 'value': 'hysterectomy' },
+                          { 'label': 'CABG', 'value': 'CABG' },
+                          { 'label': 'stents', 'value': 'stent placement' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Social History: {ENTRY}',
+                        'label': 'Social History',
+                        'options': [
+                          { 'label': 'no tobacco use', 'value': 'no tobacco use' },
+                          { 'label': 'tobacco use', 'value': 'tobacco use' },
+                          { 'label': 'no ETOH use', 'value': 'no alcohol use' },
+                          { 'label': 'occasional ETOH use', 'value': 'occasional alcohol use' },
+                          { 'label': 'frequent ETOH use', 'value': 'frequent alcohol use' },
+                          { 'label': 'drug use', 'value': 'drug use' },
+                          { 'label': 'no drug use', 'value': 'no drug use' },
+                          { 'label': 'married', 'value': 'married' },
+                          { 'label': 'unmarried', 'value': 'unmarried' },
+                          { 'label': 'sexually active', 'value': 'sexually active' },
+                          { 'label': 'not sexually active', 'value': 'not sexually active' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Family History: {ENTRY}',
+                        'label': 'Family History (most common - can use free text)',
+                        'options': [
+                          { 'label': 'no pertinent family history', 'value': 'no pertinent family history' },
+                          { 'label': 'HTN', 'value': 'HTN' },
+                          { 'label': 'HLD', 'value': 'HLD' },
+                          { 'label': 'DM', 'value': 'DM' },
+                          { 'label': 'CAD', 'value': 'CAD' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'cancer', 'value': 'cancer' },
+                          { 'label': 'stroke', 'value': 'stroke' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    }], 'MDM': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Hyperlipidemia {ENTRY}.',
+                        'label': 'Control',
+                        'options': [
+                          { 'label': 'Well Controlled', 'value': 'well controlled' },
+                          { 'label': 'Adequate', 'value': 'adequately controlled' },
+                          { 'label': 'Stable', 'value': 'stable' },
+                          { 'label': 'Improving', 'value': 'control improving' },
+                          { 'label': 'Worsening', 'value': 'control worsening ' },
+                          { 'label': 'Poorly Controlled', 'value': 'poorly controlled' },
+                          { 'label': 'No Changed Needed', 'value': 'no changes needed' },
+                          { 'label': 'Changes Needed', 'value': 'changes needed' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Issues discussed include {ENTRY}.',
+                        'label': 'Issues Discussed',
+                        'options': [
+                          {
+                            'label': 'All',
+                            'value': 'maintaining a diet, weight control and exercise, continued home blood pressure monitoring, maintaining medication compliance, medication side effects, long term hyperlipidemia complications, and refraining from tobacco use',
+                          },
+                          { 'label': 'Diet', 'value': 'maintaining a proper diet' },
+                          { 'label': 'Wt Loss', 'value': 'weight loss' },
+                          { 'label': 'Blood Monitoring', 'value': 'continued home blood pressure monitoring' },
+                          { 'label': 'Med Compliance', 'value': 'maintaining medication compliance' },
+                          { 'label': 'Side Effects', 'value': 'medication side effects' },
+                          { 'label': 'Longterm Complications', 'value': 'long term complications' },
+                          {
+                            'label': 'Future Med Changes if Needed',
+                            'value': 'future potential medication changes if needed',
+                          },
+                          { 'label': 'Tobacco Cessation', 'value': 'refraining from tobacco use' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatment plan: {ENTRY}.', 'label': 'Treatment Plan', 'options': [
+                          { 'label': 'Continue Current Meds', 'value': 'Continue current medications' },
+                          { 'label': 'No Changes', 'value': 'no changes' },
+                          { 'label': 'Diet Modification', 'value': 'diet modification' },
+                          { 'label': 'Exercise Program', 'value': 'exercise program' },
+                          { 'label': 'Medication Additions', 'value': 'medication additions ***' },
+                          { 'label': 'Medication Changes', 'value': 'medication changes ***' },
+                          { 'label': 'Nutrition Specialist Referral', 'value': 'referral to nutrition specialist' },
+                          { 'label': 'Labwork Today Discussed', 'value': 'labwork from today discussed and reviewed' },
+                          { 'label': 'Future Labwork', 'value': 'future labwork ordered' },
+                          { 'label': 'A1C', 'value': 'A1C' },
+                          { 'label': 'Cholesterol Check', 'value': 'Cholesterol check' },
+                          {
+                            'label': 'Up to Date on Screening and Maintence',
+                            'value': 'patient up to date on maintence and screening exams',
+                          },
+                          { 'label': 'Colonoscopy', 'value': 'referral for colonoscopy' },
+                          { 'label': 'Fecal Occult Testing', 'value': 'fecal occult testing' },
+                          { 'label': 'PSA Check', 'value': 'PSA Check' },
+                          { 'label': 'Mammogram', 'value': 'referral for mammogram' },
+                          { 'label': 'Pap Test', 'value': 'Pap Test' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    { 'timeFrame': { 'sentence': 'Follow up in {ENTRY}.', 'label': 'Follow Up' } }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">Psych complaint</h1></div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Nursing notes reviewed?',
+                        'options': [
+                          { 'label': 'Yes', 'value': 'Nursing notes reviewed' },
+                          { 'label': 'No', 'value': 'Nursing notes not reviewed' },
+                          { 'label': 'Not available', 'value': 'Nursing note not available' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}',
+                        'label': 'History/PE obtainable?',
+                        'options': [
+                          { 'label': 'Yes', 'value': 'Historian:' },
+                          { 'label': 'No', 'value': 'Factor limiting' }],
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}',
+                        'label': 'What part of evaluation limited?',
+                        'options': [
+                          { 'label': 'history', 'value': 'history:' },
+                          { 'label': 'physical exam', 'value': 'physical exam:' },
+                          { 'label': 'Hx/PE', 'value': 'history/PE:' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': ' {ENTRY}. Historian:',
+                        'label': 'Factors limiting evaluation',
+                        'options': [
+                          { 'label': 'age', 'value': 'age' },
+                          { 'label': 'AMS', 'value': 'altered mental status' },
+                          { 'label': 'aphasia', 'value': 'aphasia' },
+                          { 'label': 'poor comprehension', 'value': 'poor comprehension' },
+                          { 'label': 'poor cooperation', 'value': 'poor cooperation' },
+                          { 'label': 'vague historian', 'value': 'vague historian' },
+                          { 'label': 'dementia', 'value': 'dementia' },
+                          { 'label': 'confusion', 'value': 'confusion' },
+                          { 'label': 'intoxication', 'value': 'intoxication' },
+                          { 'label': 'severe distress', 'value': 'severe distress' },
+                          { 'label': 'combative', 'value': 'combative' },
+                          { 'label': 'uncooperative', 'value': 'uncooperative' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Historian: {ENTRY}.',
+                        'label': 'Historian',
+                        'options': [
+                          { 'label': 'Patient', 'value': 'Patient' },
+                          { 'label': 'Spouse', 'value': 'Spouse' },
+                          { 'label': 'significant other', 'value': 'significant other' },
+                          { 'label': 'EMS', 'value': 'EMS' },
+                          { 'label': 'family member', 'value': 'family member' },
+                          { 'label': 'friend', 'value': 'friend' },
+                          { 'label': 'caretaker', 'value': 'caretaker' },
+                          { 'label': 'nursing home', 'value': 'nursing home' },
+                          { 'label': 'interpreter', 'value': 'with interpreter' },
+                          { 'label': 'police', 'value': 'police' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}.', 'label': '', 'value': '' } },
+                    {
+                      'textArea': {
+                        'sentence': 'This is a sentence {ENTRY}',
+                        'label': 'This is a label',
+                        'value': '<br>&#10;<br>',
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'Patient is a {ENTRY} old ', 'label': 'Age' } },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY} with ',
+                        'label': 'Sex',
+                        'options': [
+                          { 'label': 'male', 'value': 'male' },
+                          { 'label': 'female', 'value': 'female' },
+                          { 'label': 'pregnant female', 'value': 'pregnant female' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY} ',
+                        'label': 'Medical Hx',
+                        'options': [
+                          { 'label': 'no medical history', 'value': 'no medical history' },
+                          { 'label': 'A-fib', 'value': 'A-fib' },
+                          { 'label': 'CAD', 'value': 'CAD' },
+                          { 'label': 'CHF', 'value': 'CHF' },
+                          { 'label': 'MI', 'value': 'MI' },
+                          { 'label': 'DM', 'value': 'DM' },
+                          { 'label': 'HTN', 'value': 'HTN' },
+                          { 'label': 'CVA', 'value': 'CVA' },
+                          { 'label': 'hyperlipdemia', 'value': 'hyperlipidemia' },
+                          { 'label': 'DVT', 'value': 'DVT' },
+                          { 'label': 'PE', 'value': 'PE' },
+                          { 'label': 'HIV', 'value': 'HIV' },
+                          { 'label': 'COPD', 'value': 'COPD' },
+                          { 'label': 'Asthma', 'value': 'Ashtma' },
+                          { 'label': 'Thyroid disease', 'value': 'Thyroid disease' },
+                          { 'label': 'ESRD-DD', 'value': 'ESRD -DD' },
+                          { 'label': 'Depression', 'value': 'depression' },
+                          { 'label': 'Bipolar disorder', 'value': 'bipolar disorder' },
+                          { 'label': 'schizophrenia', 'value': 'schizophrenia' },
+                          { 'label': 'anxiety', 'value': 'anxiety' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'presents for evaluation for {ENTRY}.',
+                        'label': 'Chief complaint ',
+                        'options': [
+                          { 'label': 'psychiatric complaint', 'value': 'psychiatric complaint' },
+                          { 'label': 'bizarre behavior', 'value': 'bizzare behavior' },
+                          { 'label': 'suicidal thoughts', 'value': 'suicidal thoughts' },
+                          { 'label': 'suicidal attempt', 'value': 'suicidal attempt' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': 'increase agitation', 'value': 'increase agitation' },
+                          { 'label': 'auditory hallucination', 'value': 'auditory hallucination' },
+                          { 'label': 'visual hallucination ', 'value': 'visual hallucination' },
+                          { 'label': 'self-injury', 'value': 'self - injury' },
+                          { 'label': 'intentional drug overdose', 'value': 'intentional drug overdose' },
+                          { 'label': 'homicidal ideation', 'value': 'homicidal ideation' },
+                          { 'label': 'possible psychosis', 'value': 'possible psychosis' },
+                          { 'label': 'exacerbation of bipolar disorder ', 'value': 'excerabation of bipolar disorder' },
+                          { 'label': 'refill of psych meds', 'value': 'refill of psychiatric medication' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Onset of symptoms known?',
+                        'options': [
+                          { 'label': 'Yes(acute)', 'value': 'Patient’s conditis acute' },
+                          { 'label': 'No', 'value': 'Onset of symptom unknown' },
+                          { 'label': 'Yes(chronic', 'value': 'Patient’s condition is chronic' }],
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'Onset of symptoms  started {ENTRY} ago.', 'label': 'Onset ' } },
+                    {
+                      'timeFrame': {
+                        'sentence': 'It has been getting worst in the last {ENTRY}.',
+                        'label': 'Chronic',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Symptom came on {ENTRY}.',
+                        'label': 'Timing',
+                        'options': [
+                          { 'label': 'suddenly', 'value': 'suddenly' },
+                          { 'label': 'gradually', 'value': 'gradually' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Symptom {ENTRY}.',
+                        'label': 'Timing 2',
+                        'options': [
+                          { 'label': 'constant', 'value': 'constant' },
+                          { 'label': 'waxes and wanes', 'value': 'waxes and wanes' },
+                          { 'label': 'intermittent*', 'value': 'intermittent' }],
+                      },
+                    },
+                    {
+                      'timeFrame': {
+                        'sentence': 'Symptom lasts {ENTRY}.',
+                        'label': 'Intermittent- How long each episode?',
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Admits to suicidal plan?',
+                        'options': [
+                          { 'label': 'No', 'value': 'Patient denies any plans for suicide' },
+                          { 'label': 'Yes', 'value': 'Patient admits to a plan for suicide' },
+                          { 'label': 'Unknown', 'value': 'Patient not answering question regarding a plan' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}.', 'label': 'Suicidal plan', 'value': '' } },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Access to guns?',
+                        'options': [
+                          { 'label': 'No', 'value': 'Patient has no access to guns' },
+                          { 'label': 'Yes', 'value': 'Patient has access to guns' },
+                          { 'label': 'Unknown', 'value': 'It is unknown if patient has access to guns' }],
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Previous episode of suicidal attempt?',
+                        'options': [
+                          { 'label': 'yes', 'value': 'Patient does have a history of previous episode' },
+                          { 'label': 'No ', 'value': 'Patient does not have a history of suicidal attempt' },
+                          { 'label': 'unkown', 'value': 'It is unknown if patient has history of suicidal attempt' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Suicidal attempt Context(trigger, how it was done, act come to attention)',
+                        'value': '',
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Context of bizzare/psychotic behavior',
+                        'value': '',
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Similar episode of past psychiatric presentation',
+                        'options': [
+                          {
+                            'label': 'Yes',
+                            'value': 'Patient has had similar psychiatric episodes in the past.',
+                          },
+                          { 'label': 'No', 'value': 'Patient has not had similar psychiatric episode in the past ' },
+                          {
+                            'label': 'unknown',
+                            'value': 'It is unknown if patient has had similar episode in the past',
+                          }],
+                      },
+                    },
+                    { 'reminder': { 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient arrived by {ENTRY}.',
+                        'label': 'Arrived by',
+                        'options': [
+                          { 'label': 'private car', 'value': 'private car ' },
+                          { 'label': 'ambulance', 'value': 'ambulance' },
+                          { 'label': 'police', 'value': 'police on dentition warrent' },
+                          { 'label': 'New Checkbox', 'value': 'new checkbox' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': ' {ENTRY}', 'label': '', 'value': '' } }], 'Body': [
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'ROS',
+                        'value': 'Review&#32;of&#32;Systems:&#10;&#32;Constitution:&#32;[Negative&#32;for&#32;appetite&#32;change,&#32;wt&#32;change.]&#10;&#32;HENT:&#32;[Negative&#32;for&#32;congestion,&#32;ear&#32;pain.]&#10;&#32;Eyes:&#32;[Negative&#32;for&#32;eye&#32;pain,&#32;eye&#32;discharge.]&#10;&#32;Respiratory:&#32;[Negative&#32;for&#32;stridor,&#32;wheezing.]&#10;&#32;Cardiovascular:&#32;[Negative&#32;for&#32;leg&#32;swelling,&#32;palpitations.]&#10;&#32;GI:&#32;[Negative&#32;for&#32;bloody&#32;stools,&#32;poor&#32;appetite.&#32;]&#10;&#32;Endocrine/Allergy/Heme:&#32;[Negative&#32;for&#32;polydipsia,&#32;adenopathy,&#32;easy&#32;bruising.]&#10;&#32;GU:&#32;[Negative&#32;for&#32;dysuria,&#32;urgency,&#32;hematuria.]&#10;&#32;Musc:[Negative&#32;for&#32;arthralgias,&#32;joint&#32;swelling,&#32;myalgias.&#32;]&#10;&#32;Skin:&#32;[Negative&#32;for&#32;rash,&#32;wound.&#32;]&#10;&#32;Neurologic:&#32;[Negative&#32;for&#32;speech&#32;problem,&#32;confusion.&#32;]&#10;&#32;Psychiatric:&#32;[Negative&#32;for&#32;depressed&#32;mood,&#32;anxiety,&#32;hallucinations.&#32;]&#10;',
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Physical Exam',
+                        'value': 'Vital&#32;Signs&#32;reviewed&#10;Pulse:[Nml]&#32;&#32;&#10;Resp&#32;Rate:[Nml]&#32;&#32;&#10;Blood&#32;Pressure:[Nml]&#32;&#10;Temp:[Nml]&#32;&#32;&#10;Pulse&#32;Ox:[Nml]&#10;&#10;Gen:&#32;[alert],[no&#32;acute&#32;distress]&#10;&#10;HEENT:&#32;[PEERL,EOMI],[no&#32;nystagmus],[airway&#32;intact,&#32;handing&#32;secretions]&#10;&#10;Neck:&#32;[nml&#32;inspection,&#32;supple]&#10;&#10;Resp:&#32;[no&#32;resp&#32;distress,&#32;nml&#32;breath&#32;sounds]&#10;&#10;Cardiac:&#32;[regular,rate&#32;and&#32;rhythm,&#32;no&#32;murmurs]&#10;&#10;Abd:&#32;[nontender,&#32;no&#32;organomegaly]&#32;&#10;&#10;Skin:&#32;[nml&#32;color,&#32;no&#32;rash]&#10;&#10;Extremity:&#32;[nontender,&#32;no&#32;swelling,&#32;nml&#32;appearance]&#10;&#10;Neuro:[alert,nml&#32;speech],&#32;[nml&#32;thought&#32;process,&#32;answering&#32;question&#32;appropriately]&#10;&#32;[&#32;CN&#32;two-twelve&#32;intact],&#10;finger&#32;to&#32;nose&#32;[R-nml],[L-nml]&#10;knee&#32;to&#32;ankle&#32;[R-nml],&#32;[L-nml]&#32;&#10;[no&#32;motor&#32;drift&#32;in&#32;all&#32;extremities&#32;],&#10;[sensation&#32;intact&#32;to&#32;light&#32;tough&#32;and&#32;equal&#32;bilaterally&#32;in&#32;all&#32;extremities]&#10;[normal&#32;gait]&#10;Motor&#32;RUE:&#32;Prox&#32;[5/5]&#32;&#32;Distal&#32;[5/5]&#32;&#32;&#32;&#32;LUE:&#32;Prox&#32;[5/5]&#32;&#32;&#32;Distal&#32;[5/5]&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RLE:&#32;&#32;Prox&#32;[5/5]&#32;Distal&#32;[5/5]&#32;&#32;&#32;&#32;&#32;LLE:&#32;&#32;Prox&#32;[5/5]&#32;&#32;&#32;distal&#32;[5/5]&#10;&#10;',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Psych: {ENTRY}.',
+                        'label': 'Psych',
+                        'options': [
+                          { 'label': 'Well groomed ', 'value': 'Well groomed ' },
+                          { 'label': 'disheveled ', 'value': 'disheveled ' },
+                          { 'label': 'Cooperative ', 'value': 'Cooperative' },
+                          { 'label': 'guarded. ', 'value': 'guarded ' },
+                          { 'label': 'calm ', 'value': 'calm ' },
+                          { 'label': 'agitated ', 'value': 'agitated ' },
+                          { 'label': 'flat', 'value': 'flat affect' },
+                          { 'label': 'blunted', 'value': 'blunted affect' },
+                          { 'label': 'appropriate affect', 'value': 'appropriate affect' },
+                          { 'label': 'decreased eye contact', 'value': 'decreased&#032;eye&#032;contact' },
+                          { 'label': 'normal speech', 'value': 'normal speech' },
+                          { 'label': 'pressured speech', 'value': 'pressured speech' },
+                          { 'label': 'tangentiality', 'value': 'tangentiality' },
+                          { 'label': 'maintain eye con', 'value': 'maintain&#032;eye&#032;conta' }],
+                      },
+                    }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

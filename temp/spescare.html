@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle"> #SPES-CEM WARD </h1>
+            </div>            <!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script>                    var dngJsonData = {
+                  'HPI': [
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Admission diagnosis',
+                        'options': [
+                          {
+                            'label': 'L hip #',
+                            'value': 'left hip fracture',
+                            'sentence': 'Patient had a {ENTRY}',
+                          },
+                          { 'label': 'R hip #', 'value': 'right hip fracture', 'sentence': 'Patient had a {ENTRY}' },
+                          {
+                            'label': 'Stroke R',
+                            'value': 'stroke with right hemiparesis',
+                            'sentence': 'Patient had a {ENTRY}',
+                          },
+                          {
+                            'label': 'Stroke L',
+                            'value': 'stroke with left hemiparesis',
+                            'sentence': 'Patient had a {ENTRY}',
+                          },
+                          { 'label': 'Amputation', 'value': 'Amputation', 'sentence': 'Patient had an {ENTRY}' },
+                          { 'label': 'cancer', 'value': 'malignancy', 'sentence': 'Patient has an {ENTRY}' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'PMH',
+                        'options': [
+                          { 'label': 'Known with', 'value': 'Patient is known with ', 'sentence': '{ENTRY}' },
+                          { 'label': 'CRF', 'value': 'Chronic Renal Failure', 'sentence': '{ENTRY}' },
+                          { 'label': 'CCF', 'value': 'congestive cardiac failure', 'sentence': '{ENTRY}' },
+                          { 'label': 'HPN', 'value': 'hypertension', 'sentence': '{ENTRY}' },
+                          { 'label': 'AF', 'value': 'atrial fibrillation', 'sentence': '{ENTRY}' },
+                          { 'label': 'COPD', 'value': 'COPD', 'sentence': '{ENTRY}' },
+                          { 'label': 'DM', 'value': 'type 2 diabetes ', 'sentence': '{ENTRY}' },
+                          {
+                            'label': 'NOAG',
+                            'value': 'NOAGs',
+                            'sentence': 'Note the patient is on one of the {ENTRY}',
+                          },
+                          { 'label': 'Warfarin', 'value': 'warfarin', 'sentence': 'Note the patient is on {ENTRY}' },
+                          { 'label': 'Cancer', 'value': 'Malignancy', 'sentence': '{ENTRY}' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Rehab Aims',
+                        'options': [
+                          { 'label': 'Aims', 'value': 'Rehabilitation Aims', 'sentence': '{ENTRY}' },
+                          { 'label': 'mobilization', 'value': 'Mobilization', 'sentence': '{ENTRY}' },
+                          { 'label': 'speech', 'value': 'Speech therapy', 'sentence': '{ENTRY}' },
+                          { 'label': 'palliation', 'value': 'Palliative', 'sentence': '{ENTRY}' },
+                          { 'label': 'wound care', 'value': 'Wound care', 'sentence': '{ENTRY}' },
+                          { 'label': 'post op', 'value': 'Post operative care', 'sentence': '{ENTRY}' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Ongoing or New Medical Issues', 'options': [
+                          { 'label': 'pain', 'value': 'Pain', 'sentence': '{ENTRY}' },
+                          { 'label': 'low mood', 'value': 'Low Mood', 'sentence': '{ENTRY}' },
+                          { 'label': 'wound sepsis', 'value': 'Wound sepsis', 'sentence': '{ENTRY}' },
+                          { 'label': 'UTI', 'value': 'UTI', 'sentence': '{ENTRY}' },
+                          { 'label': 'dehydration', 'value': 'Dehydration', 'sentence': '{ENTRY}' },
+                          { 'label': 'RTI', 'value': 'Respiratory tract infection', 'sentence': '{ENTRY}' },
+                          { 'label': 'dyspnoea', 'value': 'Respiratory distress', 'sentence': '{ENTRY}' },
+                          { 'label': 'HGT', 'value': 'Poorly controlled blood sugar', 'sentence': '{ENTRY}' },
+                          { 'label': 'motivation', 'value': 'Poor motivation', 'sentence': '{ENTRY}' },
+                          { 'label': 'INR', 'value': 'INR outside therapeautic range', 'sentence': '{ENTRY}' },
+                          { 'label': 'bleeding risk', 'value': 'Bleeding risk', 'sentence': '{ENTRY}' },
+                          { 'label': 'constipation', 'value': 'Constipation', 'sentence': '{ENTRY}' },
+                          { 'label': 'diarrhoea', 'value': 'Loose bowel motions', 'sentence': '{ENTRY}' },
+                          { 'label': 'Social', 'value': 'Social Issues', 'sentence': '{ENTRY}' },
+                          { 'label': 'Delirium', 'value': 'Delirium', 'sentence': '{ENTRY}' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': 'Description', 'value': '' } },
+                    {
+                      'textArea': {
+                        'sentence': 'This is a sentence {ENTRY}',
+                        'label': 'Nursing Staff Report',
+                        'value': '',
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': 'This is a sentence {ENTRY}',
+                        'label': 'Patient Report',
+                        'value': '',
+                      },
+                    }],
+                  'Body': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Constitution: {ENTRY}',
+                        'label': 'Physical Exam: Constitution',
+                        'options': [
+                          { 'label': 'pleasant', 'value': 'pleasant' },
+                          { 'label': 'well appearing', 'value': 'well appearing' },
+                          { 'label': 'non toxic', 'value': 'non toxic' },
+                          { 'label': 'ill appearing', 'value': 'ill appearing' },
+                          { 'label': 'distressed', 'value': 'distressed' },
+                          { 'label': 'non distressed', 'value': 'non distressed' },
+                          { 'label': 'in pain', 'value': 'in pain' },
+                          { 'label': 'pain free', 'value': 'pain free' },
+                          { 'label': 'feverish', 'value': 'pyrexial' },
+                          { 'label': 'apyrexial', 'value': 'apyrexial' },
+                          { 'label': 'pale', 'value': 'pale' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': 'Vitals are as follows {ENTRY}',
+                        'label': 'Vitals',
+                        'value': 'Temp=&#32;&#32;&#32;&#10;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#10;BP=&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SATS=&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;HR=&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;RR=&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'HENT: {ENTRY}',
+                        'label': 'HENT',
+                        'options': [
+                          { 'label': 'normocephalic', 'value': 'normocephalic' },
+                          { 'label': 'atraumatic', 'value': 'atraumatic' },
+                          { 'label': 'R ext ear normal', 'value': 'right external ear normal' },
+                          { 'label': 'L ext ear normal', 'value': 'left external ear normal' },
+                          { 'label': 'oropharynx normal', 'value': 'oropharynx normal' },
+                          { 'label': 'MMM', 'value': 'mucous membranes moist' },
+                          { 'label': 'MM dry', 'value': 'mucous membranes dry' },
+                          { 'label': 'oropharyngeal redness', 'value': 'oropharyngeal redness' },
+                          { 'label': 'oropharyngeal exudates', 'value': 'oropharyngeal exudate' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Eyes: {ENTRY}',
+                        'label': 'Eyes',
+                        'options': [
+                          { 'label': 'PERRL', 'value': 'PERRL' },
+                          { 'label': 'EOM nl', 'value': 'EOM nl' },
+                          { 'label': 'vision intact', 'value': 'vision intact' },
+                          { 'label': 'conj nl', 'value': 'conj nl' },
+                          { 'label': 'sclera nl', 'value': 'sclera nl' },
+                          { 'label': 'eye discharge', 'value': 'eye discharge' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Neck: {ENTRY}',
+                        'label': 'Neck',
+                        'options': [
+                          { 'label': 'ROM nl', 'value': 'ROM nl' },
+                          { 'label': 'supple', 'value': 'supple, no meningismus' },
+                          { 'label': 'stridor', 'value': 'stridor' },
+                          { 'label': 'cervical adenopathy', 'value': 'cervical adenopathy' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Cardiovascular: {ENTRY}',
+                        'label': 'Cardiovascular',
+                        'options': [
+                          { 'label': 'normal rate', 'value': 'normal rate' },
+                          { 'label': 'regular rhythm', 'value': 'regular rhythm' },
+                          { 'label': 'heart sounds nl', 'value': 'heart sounds normal' },
+                          { 'label': 'murmur', 'value': 'murmur' },
+                          { 'label': 'gallop', 'value': 'gallop' },
+                          { 'label': 'rub', 'value': 'rub' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Respiratory: {ENTRY}',
+                        'label': 'Respiratory',
+                        'options': [
+                          { 'label': 'effort nl', 'value': 'effort normal' },
+                          { 'label': 'breath sounds nl', 'value': 'breath sounds normal' },
+                          { 'label': 'resp distress', 'value': 'respiratory distress' },
+                          { 'label': 'wheezes', 'value': 'wheezes' },
+                          { 'label': 'rales left', 'value': 'rales left' },
+                          { 'label': 'rales right', 'value': 'rales right' },
+                          { 'label': 'chest tenderness', 'value': 'chest tenderness' },
+                          { 'label': 'crackles left', 'value': 'crackles left' },
+                          { 'label': 'crackles right', 'value': 'crackles right' },
+                          { 'label': 'chest tenderness', 'value': 'chest tenderness' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Abdominal: {ENTRY}',
+                        'label': 'Abdominal',
+                        'options': [
+                          { 'label': 'soft', 'value': 'soft' },
+                          { 'label': 'tenderness', 'value': 'tenderness' },
+                          { 'label': 'nontender', 'value': 'nontender' },
+                          { 'label': 'bowel sounds nl', 'value': 'bowel sounds normal' },
+                          { 'label': 'no rebound or guarding', 'value': 'no rebound or guarding' },
+                          { 'label': 'distended', 'value': 'distended' },
+                          { 'label': 'rebound', 'value': 'rebound' },
+                          { 'label': 'guarding', 'value': 'guarding' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Genitourinary/rectal {ENTRY}',
+                        'label': 'Genitourinary/rectal',
+                        'options': [
+                          { 'label': 'urinary incontenence', 'value': 'urinary incontenence' },
+                          { 'label': 'faecal incontenence', 'value': 'faecal incontenence' },
+                          { 'label': 'uterus nl', 'value': 'uterus normal' },
+                          { 'label': 'wears nappy', 'value': 'wears nappy' },
+                          { 'label': 'chronic UTI', 'value': 'chronic UTI' },
+                          { 'label': 'stoma bag', 'value': 'stoma bag' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Musculoskeletal: {ENTRY}',
+                        'label': 'Musculoskeletal',
+                        'options': [
+                          { 'label': 'nl ROM', 'value': 'normal ROM' },
+                          { 'label': 'tenderness', 'value': 'tenderness' },
+                          { 'label': 'nontender', 'value': 'nontender' },
+                          { 'label': 'swelling', 'value': 'swelling' },
+                          { 'label': 'no swelling', 'value': 'no swelling' },
+                          { 'label': 'bruising', 'value': 'bruising' },
+                          { 'label': 'no bruising', 'value': 'no bruising' },
+                          { 'label': 'intact pulses', 'value': 'intact pulses' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Neurological: {ENTRY}',
+                        'label': 'Neurological',
+                        'options': [
+                          { 'label': 'alert', 'value': 'alert' },
+                          { 'label': 'oriented x3', 'value': 'oriented x3' },
+                          { 'label': 'CN II-XII intact', 'value': 'CN II-XII intact' },
+                          { 'label': '5/5 strength', 'value': '5/5 strength throughout' },
+                          { 'label': 'nl sensation', 'value': 'normal sensation throughout' },
+                          { 'label': 'no pronator drift', 'value': 'no pronator drift' },
+                          { 'label': 'no abnormal coordination', 'value': 'no abnormal coordination' },
+                          { 'label': 'nl gait', 'value': 'normal gait' },
+                          { 'label': 'left hemiparesis', 'value': 'left hemiparesis' },
+                          { 'label': 'right hemiparesis', 'value': 'right hemiparesis' },
+                          { 'label': 'left facial paresis', 'value': 'left facial paresis' },
+                          { 'label': 'right facial paresis', 'value': 'right facial paresis' },
+                          { 'label': 'abnormal gait', 'value': 'abnormal gait' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': 'This is a sentence {ENTRY}',
+                        'label': 'Neuro - detail',
+                        'value': '',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Skin: {ENTRY}',
+                        'label': 'Skin & Wound(s)',
+                        'options': [
+                          { 'label': 'warm', 'value': 'warm' },
+                          { 'label': 'dry', 'value': 'dry' },
+                          { 'label': 'rash', 'value': 'rash' },
+                          { 'label': 'wound', 'value': 'wound' },
+                          { 'label': 'laceration', 'value': 'laceration' },
+                          { 'label': 'erythema', 'value': 'erythema' },
+                          { 'label': 'bed sores', 'value': 'bed sores' },
+                          { 'label': 'surgical scar', 'value': 'surgical scar' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': 'This is a sentence {ENTRY}',
+                        'label': 'Skin & Wound Check - detail',
+                        'value': '',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Psychiatric: {ENTRY}',
+                        'label': 'Psychiatric',
+                        'options': [
+                          { 'label': 'nl affect', 'value': 'normal affect' },
+                          { 'label': 'depressed mood', 'value': 'depressed mood' },
+                          { 'label': 'anxious', 'value': 'anxious' },
+                          { 'label': 'judgement nl', 'value': 'judgement normal' },
+                          { 'label': 'agitated', 'value': 'agitated' },
+                          { 'label': 'suidical thoughts', 'value': 'suicidal thoughts' },
+                          { 'label': 'no suidical thoughts', 'value': 'no suidical thoughts' }],
+                      },
+                    }],
+                  'MDM': [
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Plan',
+                        'options': [
+                          { 'label': 'INR', 'value': 'INR', 'sentence': '{ENTRY}' },
+                          { 'label': 'FBC CRP', 'value': 'FBC CRP', 'sentence': '{ENTRY}' },
+                          { 'label': 'U-MCS', 'value': 'Urine MCS', 'sentence': '{ENTRY}' },
+                          { 'label': 'refer', 'value': 'Referral', 'sentence': '{ENTRY}' },
+                          { 'label': 'blood transfusion', 'value': 'Blood transfusion', 'sentence': '{ENTRY}' },
+                          { 'label': 'wound care', 'value': 'Wound care', 'sentence': '{ENTRY}' },
+                          { 'label': 'procedure', 'value': 'Procedure', 'sentence': '{ENTRY}' },
+                          { 'label': 'blood culture', 'value': 'Blood Culture', 'sentence': '{ENTRY}' },
+                          { 'label': 'ECG', 'value': 'ECG', 'sentence': '{ENTRY}' },
+                          { 'label': 'Trop', 'value': 'Troponin', 'sentence': '{ENTRY}' },
+                          { 'label': 'oxygen', 'value': 'Oxygen via nasal cannula', 'sentence': '{ENTRY}' }],
+                      },
+                    }, { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } }],
+                }                </script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

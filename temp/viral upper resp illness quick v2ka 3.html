@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">Delet</h1></div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for evaluation of {ENTRY}.',
+                        'label': 'Main Symptoms',
+                        'options': [
+                          { 'label': 'Fever', 'value': 'fever' },
+                          { 'label': 'Cough', 'value': 'cough' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': '', 'value': 'wheezing' },
+                          { 'label': 'Nasal Congestion', 'value': 'nasal congestion' },
+                          { 'label': 'chest tightness, chest pain ', 'value': 'chest tightness, chest pain' },
+                          { 'label': 'Sinus Pain', 'value': 'sinus pain' },
+                          { 'label': 'Sore Throat', 'value': 'sore throat' },
+                          { 'label': 'Dec Appetite', 'value': 'decreased appetite' },
+                          { 'label': 'Weakness', 'value': 'weakness' },
+                          { 'label': 'HA', 'value': 'headache' },
+                          { 'label': 'Neck Pain', 'value': 'neck pain' },
+                          { 'label': 'Nausea', 'value': 'nausea' },
+                          { 'label': 'Vomiting', 'value': 'vomiting' },
+                          { 'label': 'Diarrhea', 'value': 'diarrhea' },
+                          { 'label': 'Rash', 'value': 'rash' },
+                          { 'label': 'Irritability', 'value': 'irritability' },
+                          { 'label': 'Fatigue', 'value': 'fatigue' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': '',
+                        'value': '***No&#32;other&#32;members&#32;of&#32;the&#32;household&#32;are&#32;ill.***Denies&#32;recent&#32;ABX&#32;use,&#32;no&#32;PMH&#32;of&#32;asthma,&#32;or&#32;COPD&#32;***&#32;patient&#32;had&#32;subjective&#32;fevers&#32;100&#32;for&#32;***days.&#10;Patient&#32;***&#32;had&#32;influenza&#32;vaccine&#32;this&#32;year;&#32;UTD&#32;on&#32;immunizations.***&#10;',
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'Onset of symptoms was {ENTRY} ago.', 'label': 'Onset of Symptoms' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has associated symptoms of {ENTRY}.',
+                        'label': 'Associated Symptoms',
+                        'options': [
+                          { 'label': 'Fever', 'value': 'fever' },
+                          { 'label': 'Cough', 'value': 'cough' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'Nasal Congestion', 'value': 'nasal congestion' },
+                          { 'label': 'Ear Pain', 'value': 'ear pain' },
+                          {
+                            'label': 'Sinus pain, facial pain, pressure, or fullness,',
+                            'value': 'sinus pain,facial pain, pressure, or fullness',
+                          },
+                          { 'label': 'Sore Throat', 'value': 'sore throat' },
+                          { 'label': 'Dec Appetite', 'value': 'decreased appetite' },
+                          { 'label': 'Weakness', 'value': 'weakness' },
+                          { 'label': 'HA', 'value': 'headache' },
+                          { 'label': 'Neck Pain', 'value': 'neck pain' },
+                          { 'label': 'Abd Pain', 'value': 'abdominal pain' },
+                          { 'label': 'Nausea', 'value': 'nausea' },
+                          { 'label': 'Vomiting', 'value': 'vomiting' },
+                          { 'label': 'Diarrhea', 'value': 'diarrhea' },
+                          { 'label': 'Rash', 'value': 'rash' },
+                          { 'label': 'purulent nasa discharge', 'value': 'purelent nasa discharge' },
+                          { 'label': 'upper tooth pain', 'value': 'upper tooth pain' },
+                          {
+                            'label': 'worsening symptoms after an initial period of improvement',
+                            'value': 'worsening symptoms after an initial period of improvement',
+                          }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient does not have symptoms of {ENTRY}.',
+                        'label': 'Denies Symptoms',
+                        'options': [
+                          { 'label': 'Fever', 'value': 'fever' },
+                          { 'label': 'Cough', 'value': 'cough' },
+                          { 'label': 'SOB', 'value': 'shortness of breath' },
+                          { 'label': 'nasal Congestion', 'value': 'nasal congestion' },
+                          { 'label': 'Ear Pain', 'value': 'ear pain' },
+                          {
+                            'label': 'sinus pain,facial pain, pressure, or fullness',
+                            'value': 'sinus pain, facial pain, pressure, or fullness',
+                          },
+                          { 'label': 'Sore Throat', 'value': 'sore throat' },
+                          { 'label': 'Dec Appetite', 'value': 'decreased appetite' },
+                          { 'label': 'Weakness', 'value': 'weakness' },
+                          { 'label': 'HA', 'value': 'headache' },
+                          { 'label': 'Neck Pain', 'value': 'neck pain' },
+                          { 'label': 'Abd Pain', 'value': 'abdominal pain' },
+                          { 'label': 'Nausea', 'value': 'nausea' },
+                          { 'label': 'Vomiting', 'value': 'vomiting' },
+                          { 'label': 'Diarrhea', 'value': 'diarrhea' },
+                          { 'label': 'Rash', 'value': 'rash' },
+                          { 'label': 'purulent nasa discharge', 'value': 'purulent nasa discharge' },
+                          { 'label': 'upper Tooth pain', 'value': 'upprt tooth pain' },
+                          {
+                            'label': 'worsening symptoms after an initial period of improvement',
+                            'value': 'worsening symptoms after an initial period of improvement',
+                          }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatment prior to arrival includes {ENTRY}.',
+                        'label': 'Treatment Prior to Arrival',
+                        'options': [
+                          { 'label': 'None', 'value': 'nothing' },
+                          { 'label': 'Tylenol', 'value': 'Tylenol' },
+                          { 'label': 'Ibuprofen', 'value': 'Ibuprofen' },
+                          { 'label': 'OTC Cough Meds', 'value': 'OTC cough medications' },
+                          { 'label': 'OTC Cold Meds', 'value': 'OTC cold medications' },
+                          { 'label': 'Decongestants', 'value': 'decongestants' },
+                          { 'label': 'Inhaler', 'value': 'inhaler therapies' },
+                          { 'label': 'Nebs', 'value': 'nebulizer treatments' },
+                          { 'label': 'with no improvement', 'value': 'with no significant improvement' }],
+                      },
+                    }], 'Body': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Review of Systems: {ENTRY}', 'label': '', 'options': [
+                          { 'label': 'All ROS Negative', 'value': 'All other systems reviewed and are negative' },
+                          { 'label': 'Vital Signs Reviewed', 'value': 'vital signs reviewed' },
+                          { 'label': 'No CP', 'value': 'denies chest pain' },
+                          { 'label': 'No SOB', 'value': 'denies shortness of breath' },
+                          { 'label': 'No DOE', 'value': 'denies dyspnea on exertion' },
+                          { 'label': 'No HA', 'value': 'denies headache' },
+                          { 'label': 'No Vision Changes', 'value': 'denies vision changes' },
+                          { 'label': 'No Lightheadedness', 'value': 'denies lightheadedness' },
+                          { 'label': 'No Abd Pain', 'value': 'denies abdominal pain' },
+                          { 'label': 'No Back Pain', 'value': 'denies back pain' },
+                          { 'label': 'No Urinary Symptoms', 'value': 'denies urinary symptoms' },
+                          { 'label': 'No Leg Swelling', 'value': 'denies leg swelling' },
+                          { 'label': 'No Fever', 'value': 'denies fever' },
+                          { 'label': 'No Chills/Sweats', 'value': 'denies chills/sweats' },
+                          { 'label': 'No Wt Gain', 'value': 'denies weight gain' },
+                          { 'label': 'No Wt Loss', 'value': 'denies weight loss' },
+                          { 'label': 'No Sore Throat', 'value': 'denies sore throat' },
+                          { 'label': 'No Cough', 'value': 'denies cough' },
+                          { 'label': 'No Suicidal Thoughts', 'value': 'denies suicidal thoughts' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Physical Exam:',
+                        'value': 'PHYSICAL&#32;EXAM:&#10;GENERAL:&#32;pleasant,&#32;WDWN&#32;in&#32;NAD&#10;HEAD:&#32;normocephalic,&#32;atraumatic,&#32;no&#32;lesions&#10;EYES:&#32;EOMs&#32;intact&#32;Pupils&#32;equal,&#32;round&#32;and&#32;reactive&#32;to&#32;light,&#32;Extraocular&#32;muscles&#32;intact,&#32;Sclera&#32;are&#32;normal,&#32;Conjunctiva&#32;are&#32;normal.&#32;&#10;ENT:&#32;TMs&#32;pearl&#32;gray&#32;with&#32;good&#32;light&#32;reflex,&#32;no&#32;erythema&#32;of&#32;the&#32;TM&#32;or&#32;external&#32;canal,&#32;no&#32;discharge;&#32;&#10;nares&#32;patent,&#32;***&#32;rhinorrhea;***&#32;No&#32;pain&#32;on&#32;palpation&#32;of&#32;the&#32;frontal&#32;or&#32;maxillary&#32;sinuses.&#10;Mouth:&#32;No&#32;trismus;&#32;Oropharynx&#32;is&#32;moist&#32;**No&#32;exudates&#32;on&#32;pharynges&#32;and&#32;tonsils.&#32;No&#32;tonsillar&#32;hypertrophy,&#32;***No&#32;tenderness&#32;with&#32;the&#32;percussion&#32;of&#32;the&#32;upper&#32;teeth.&#32;The&#32;uvula&#32;is&#32;midline&#10;NECK:&#32;&#32;No&#32;lymphadenopathy.&#32;No&#32;meningeal&#32;signs.&#32;FROM&#32;to&#32;flexion,&#32;extension,&#32;and&#32;lateral&#32;rotation&#32;without&#32;limitations.&#10;CARD:&#32;&#32;Regular&#32;rate&#32;and&#32;rhythm&#32;without&#32;murmur.&#10;RESP:&#32;&#32;No&#32;respiratory&#32;distress&#32;or&#32;accessory&#32;muscle&#32;use,&#32;breath&#32;sounds&#32;normal,&#32;clear&#32;to&#32;auscultation&#32;bilaterally&#32;without&#32;crackles,&#32;rhonchi&#32;or&#32;wheezing.***&#32;&#10;ABD:&#32;Soft,&#32;non-tender&#32;to&#32;light&#32;or&#32;deep&#32;palpation,&#32;no&#32;rebound&#32;tenderness;&#32;no&#32;hepatomegaly,&#32;splenomegaly,&#32;or&#32;masses.&#32;&#10;SKIN:&#32;Warm&#32;and&#32;dry,&#32;No&#32;rash&#10;NEURO:&#32;alert&#32;and&#32;oriented&#32;&#32;&#32;&#32;&#32;&#10;PSYCH:&#32;&#32;Mood/affect&#32;appropriate.&#10;Extremities:&#32;&#32;Non-tender.&#32;No&#32;edema.&#32;&#10;Back:&#32;&#32;No&#32;tenderness',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}', 'label': 'Respiratory Exam:', 'options': [
+                          {
+                            'label': 'Normal',
+                            'value': 'Lungs clear to auscultation bilaterally.  No wheeze, crackles, or rales.',
+                          },
+                          { 'label': 'L Lung Normal', 'value': 'left lung clear' },
+                          { 'label': 'R Lung Normal', 'value': 'right lung clear' },
+                          { 'label': 'Left Lung', 'value': 'left lung' },
+                          { 'label': 'Right Lung', 'value': 'right lung' },
+                          { 'label': 'Bilateral', 'value': 'bilateral' },
+                          { 'label': 'Upper', 'value': 'upper lobe' },
+                          { 'label': 'Middle', 'value': 'middle lobe' },
+                          { 'label': 'Lower', 'value': 'lower lobe' },
+                          { 'label': 'Crackles', 'value': 'crackles' },
+                          { 'label': 'Wheeze', 'value': 'wheeze' },
+                          { 'label': 'Rales', 'value': 'rales' },
+                          { 'label': 'Stridor', 'value': 'stridor' },
+                          { 'label': 'Chest Wall Tenderness', 'value': 'chest wall tenderness' },
+                          { 'label': 'Accessory Muscle Use', 'value': 'accessory muscle use' },
+                          { 'label': 'No Accessory Muscle Use', 'value': 'no accessory muscle use' },
+                          { 'label': 'Respiratory Distress', 'value': 'respiratory distress' },
+                          { 'label': 'No Respiratory Distress', 'value': 'no respiratory distress' },
+                          { 'label': 'Speaking in Full Sentences', 'value': 'speaking in full sentence' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Medical History: {ENTRY}',
+                        'label': 'Past Medical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'HTN', 'value': 'hypertension' },
+                          { 'label': 'HLD', 'value': 'hyperlipidemia' },
+                          { 'label': 'DM', 'value': 'diabetes' },
+                          { 'label': 'hypothyroidism', 'value': 'hypothyroidism' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': 'anxiety', 'value': 'anxiety' },
+                          { 'label': 'headaches', 'value': 'headaches' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'CAD', 'value': 'CAD' },
+                          { 'label': 'CHF', 'value': 'CHF' },
+                          { 'label': 'COPD', 'value': 'COPD' },
+                          { 'label': 'asthma', 'value': 'asthma' },
+                          { 'label': 'neck pain', 'value': 'neck pain' },
+                          { 'label': 'back pain', 'value': 'back pain' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Surgical History: {ENTRY}',
+                        'label': 'Past Surgical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'appendectomy', 'value': 'appendectomy' },
+                          { 'label': 'cholecystectomy', 'value': 'cholecystectomy' },
+                          { 'label': 'tonsillectomy', 'value': 'tonsillectomy' },
+                          { 'label': 'joint replacement', 'value': 'joint replacement' },
+                          { 'label': 'cesarean section', 'value': 'cesarean section' },
+                          { 'label': 'hysterectomy', 'value': 'hysterectomy' },
+                          { 'label': 'CABG', 'value': 'CABG' },
+                          { 'label': 'stents', 'value': 'stent placement' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Social History: {ENTRY}',
+                        'label': 'Social History',
+                        'options': [
+                          { 'label': 'no tobacco use', 'value': 'no tobacco use' },
+                          { 'label': 'tobacco use', 'value': 'tobacco use' },
+                          { 'label': 'no ETOH use', 'value': 'no alcohol use' },
+                          { 'label': 'occasional ETOH use', 'value': 'occasional alcohol use' },
+                          { 'label': 'frequent ETOH use', 'value': 'frequent alcohol use' },
+                          { 'label': 'drug use', 'value': 'drug use' },
+                          { 'label': 'no drug use', 'value': 'no drug use' },
+                          { 'label': 'married', 'value': 'married' },
+                          { 'label': 'unmarried', 'value': 'unmarried' },
+                          { 'label': 'sexually active', 'value': 'sexually active' },
+                          { 'label': 'not sexually active', 'value': 'not sexually active' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Family History: {ENTRY}',
+                        'label': 'Family History (most common - can use free text)',
+                        'options': [
+                          { 'label': 'no pertinent family history', 'value': 'no pertinent family history' },
+                          { 'label': 'HTN', 'value': 'hypertension' },
+                          { 'label': 'HLD', 'value': 'hyperlipidemia' },
+                          { 'label': 'DM', 'value': 'diabetes' },
+                          { 'label': 'CAD', 'value': 'coronary artery disease' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'cancer', 'value': 'cancer' },
+                          { 'label': 'stroke', 'value': 'stroke' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } }], 'MDM': [
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': '',
+                        'value': 'Patient&#32;with&#32;presentation&#32;consistent&#32;with&#32;an&#32;acute&#32;viral&#32;upper&#32;respiratory&#32;tract&#32;infection.&#32;The&#32;patient&#32;is&#32;not&#32;in&#32;respiratory&#32;distress&#32;and&#32;comfortable.&#32;The&#32;patient&#32;moves&#32;air&#32;well&#32;and&#32;oxygen&#32;saturations&#32;are&#32;normal.&#32;&#32;patient&#32;does&#32;not&#32;present&#32;w/&#32;any&#32;concrete&#32;signs/symptoms&#32;of&#32;pneumonia&#32;or&#32;other&#32;complications,&#32;deferred&#32;CXR&#32;or&#32;further&#32;labwork&#32;at&#32;this&#32;time.&#32;&#32;No&#32;evidence&#32;of&#32;bacterial&#32;infections&#32;including&#32;pneumonia,&#32;meningitis,&#32;pharyngitis,&#32;sinusitis,&#32;otitis&#32;media.&#32;&#10;&#10;&#10;BRONCHITIS:&#32;&#32;with&#32;Xr-ay&#10;&#10;Patient&#32;presents&#32;with&#32;productive&#32;cough&#32;and&#32;general&#32;malaise.&#32;Although&#32;the&#32;patient&#32;has&#32;no&#32;evidence&#32;of&#32;respiratory&#32;distress&#32;or&#32;significant&#32;hypoxia,&#32;I&#32;will&#32;obtain&#32;a&#32;chest&#32;x-ray&#32;to&#32;help&#32;rule&#32;out&#32;infiltrate&#32;and&#32;pneumonia.&#32;Chest&#32;x-ray&#32;revealed&#32;no&#32;evidence&#32;of&#32;obvious&#32;consolidation&#32;of&#32;infiltrating.&#32;Patient&#39;s&#32;symptoms&#32;are&#32;likely&#32;related&#32;to&#32;upper&#32;respiratory&#32;infection&#32;and&#32;are&#32;no&#32;evidence&#32;of&#32;infiltrating&#32;I&#32;will&#32;not&#32;use&#32;antibiotics&#32;at&#32;this&#32;time.&#32;However,&#32;I&#32;will&#32;provide&#32;the&#32;patient&#32;with&#32;symptomatic&#32;relief.&#32;No&#32;evidence&#32;of&#32;bacterial&#32;infections&#32;including&#32;pneumonia,&#32;meningitis,&#32;pharyngitis,&#32;sinusitis,&#32;otitis&#32;media.&#32;&#10;&#10;&#32;&#10;',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient prescribed {ENTRY}.', 'label': 'Prescriptions', 'options': [
+                          {
+                            'label': 'Wait and Watch Antibiotic',
+                            'value': 'an antibiotic.  Will have patient/family use wait and watch approach and only use antibiotics if symptoms not improving',
+                          },
+                          { 'label': 'Tamiflu', 'value': 'Tamiflu' },
+                          { 'label': 'Amoxicillin', 'value': 'Amoxicillin' },
+                          {
+                            'label': 'Amoxicillin and clavulanate (Augmentin)',
+                            'value': 'Amoxicillin and clavulanate (Augmentin)',
+                          },
+                          { 'label': 'Cefprozil (Cefzil)', 'value': 'Cefprozil (Cefzil)' },
+                          { 'label': 'Cefuroxime (Ceftin)', 'value': 'Cefuroxime (Ceftin)' },
+                          { 'label': 'Cefpodoxime (Vantin)', 'value': 'Cefpodoxime (Vantin)' },
+                          { 'label': 'Cefdinir', 'value': 'Cefdinir' },
+                          { 'label': 'Azithromycin (Zithromax)', 'value': 'Azithromycin (Zithromax)' },
+                          {
+                            'label': 'Trimethoprim/sulfamethoxazole (Bactrim DS)',
+                            'value': 'Trimethoprim/sulfamethoxazole (Bactrim DS)',
+                          },
+                          { 'label': 'Albuterol Inhaler', 'value': 'albuterol inhaler' },
+                          { 'label': 'Albuterol Nebulizer', 'value': 'albuterol nebulizer' },
+                          { 'label': 'Tylenol', 'value': 'Tylenol' },
+                          { 'label': 'Ibuprofen', 'value': 'Ibuprofen' },
+                          { 'label': 'Prednisone', 'value': 'prednisone' },
+                          { 'label': 'Cough Medicine', 'value': 'cough medicine' },
+                          { 'label': 'Robitussin', 'value': 'Robitussin' },
+                          { 'label': 'Tessalon Perles', 'value': 'Tessalon Perles' },
+                          { 'label': 'Phenergan-Codeine', 'value': 'Phenergan-Codeine' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': '',
+                        'value': 'Advised&#32;Pt&#32;on&#32;supportive&#32;therapies,&#32;Tylenol&#32;or&#32;Ibuprofen&#32;to&#32;keep&#32;fever&#32;<100.4&#32;and&#32;for&#32;body&#32;aches,&#10;Use&#32;a&#32;humidifier&#32;in&#32;the&#32;bedroom,&#32;nasal&#32;sailing,&#32;***and&#32;nasal&#32;suction,&#32;before&#32;and&#32;after&#32;feeding,&#32;advancing&#32;clear&#32;fluids&#32;as&#32;tolerated&#32;(8-10cups),&#32;and&#32;thorough&#32;handwashing.&#10;Advised&#32;Pt&#32;to&#32;return&#32;to&#32;school/work&#32;only&#32;after&#32;resolution&#32;of&#32;fever.&#10;I&#32;discussed&#32;with&#32;the&#32;patient,&#32;diagnosis,&#32;plan&#32;of&#32;care,&#32;medications&#32;and&#32;to&#32;follow&#32;up&#32;with&#32;the&#32;patient’s&#32;primary&#32;physician.&#32;The&#32;patient&#32;was&#32;instructed&#32;to&#32;return&#32;if&#32;the&#32;worsens&#32;in&#32;any&#32;way,&#32;especially&#32;if&#32;not&#32;tolerating&#32;fluids,&#32;increased&#32;sinus&#32;pain&#32;or&#32;swelling,&#32;worsening&#32;headache,&#32;persistent&#32;fever,&#32;difficulty&#32;swallowing&#32;or&#32;breathing,&#32;or&#32;as&#32;needed.&#32;The&#32;patient&#32;agreed&#32;with&#32;the&#32;plan.&#32;&#10;&#10;',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Follow Up',
+                        'options': [
+                          { 'label': '1 - 2 days', 'value': 'Follow up in one or two days' },
+                          { 'label': '3 - 5', 'value': 'Follow up in three to five days' },
+                          { 'label': '7', 'value': 'Follow up in one week' },
+                          { 'label': 'As needed', 'value': 'Follow up as needed' },
+                          {
+                            'label': 'R/T to clinic/UC with worsening symptoms',
+                            'value': 'return to clinic or urgent care with new or worsening symptoms',
+                          },
+                          {
+                            'label': 'Present to ER with worsening symptoms',
+                            'value': 'present to ER with new or worsening symptoms',
+                          }],
+                      },
+                    }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

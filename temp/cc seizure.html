@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">CC &#8211; Seizure</h1>
+            </div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for evaluation of {ENTRY}.',
+                        'label': 'Main Symptoms',
+                        'options': [
+                          { 'label': 'Seizure', 'value': 'seizure' },
+                          { 'label': 'Seizure like Activity', 'value': 'seizure like activity' },
+                          { 'label': 'Shaking Episode', 'value': 'shaking episode' },
+                          { 'label': 'Dizziness', 'value': 'dizziness' },
+                          { 'label': 'Vertigo', 'value': 'vertigo' },
+                          { 'label': 'Syncope', 'value': 'syncope' },
+                          { 'label': 'Head Trauma', 'value': 'head trauma' },
+                          { 'label': 'Nausea', 'value': 'nausea' },
+                          { 'label': 'Vomiting', 'value': 'vomiting' },
+                          { 'label': 'Fall', 'value': 'fall' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient was {ENTRY}.',
+                        'label': 'Description of Event',
+                        'options': [
+                          { 'label': '+ LOC', 'value': 'noted to have a loss of consciousness' },
+                          { 'label': 'Tonic Clonic', 'value': 'noted to have tonic clonic movements' },
+                          { 'label': 'Absence', 'value': 'noted to have staring episodes' },
+                          { 'label': 'Incontinent', 'value': 'incontinent' },
+                          { 'label': 'Tongue Biting', 'value': 'noted to bite their tongue' },
+                          { 'label': 'Post Ictal', 'value': 'post-ictal following the event' }],
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'Onset of symptoms was {ENTRY} ago.', 'label': 'Onset of Symptoms' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has associated symptoms of {ENTRY}.',
+                        'label': 'Associated Symptoms',
+                        'options': [
+                          { 'label': 'HA', 'value': 'headache' },
+                          { 'label': 'Nausea', 'value': 'nausea' },
+                          { 'label': 'Vomiting', 'value': 'vomiting' },
+                          { 'label': 'Diaphoresis', 'value': 'diaphoresis' },
+                          { 'label': 'Lightheadedness', 'value': 'lightheadedness' },
+                          { 'label': 'Chest Pain', 'value': 'chest pain' },
+                          { 'label': 'Abd Pain', 'value': 'abdominal pain' },
+                          { 'label': 'Abd Discomfort', 'value': 'abd discomfort' },
+                          { 'label': 'Leg Swelling', 'value': 'leg swelling' },
+                          { 'label': 'Leg Pain', 'value': 'leg pain' },
+                          { 'label': 'Dizziness', 'value': 'dizziness' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient does not have symptoms of {ENTRY}.',
+                        'label': 'Denies Symptoms',
+                        'options': [
+                          { 'label': 'HA', 'value': 'headache' },
+                          { 'label': 'Nausea', 'value': 'nausea' },
+                          { 'label': 'Vomiting', 'value': 'vomiting' },
+                          { 'label': 'Diaphoresis', 'value': 'diaphoresis' },
+                          { 'label': 'Lightheadedness', 'value': 'lightheadedness' },
+                          { 'label': 'Chest Pain', 'value': 'chest pain' },
+                          { 'label': 'Abd Pain', 'value': 'abdominal pain' },
+                          { 'label': 'Abd Discomfort', 'value': 'abd discomfort' },
+                          { 'label': 'Dizziness', 'value': 'dizziness' },
+                          { 'label': 'Numbness', 'value': 'numbness' },
+                          { 'label': 'Weakness', 'value': 'weakness' },
+                          { 'label': 'Tingling', 'value': 'tingling' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatment prior to arrival includes {ENTRY}.',
+                        'label': 'Treatment Prior to Arrival',
+                        'options': [
+                          { 'label': 'None', 'value': 'nothing' },
+                          { 'label': 'Ativan', 'value': 'ativan' },
+                          { 'label': 'Valium', 'value': 'valium' },
+                          { 'label': 'Versed', 'value': 'versed' },
+                          { 'label': 'IV Fluids', 'value': 'IV fluids' },
+                          { 'label': 'Home Seizure Meds', 'value': 'home seizure medications' },
+                          { 'label': 'W/ Improvement', 'value': 'with improvement' },
+                          { 'label': 'W/O Improvement', 'value': 'without improvement' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has {ENTRY}.',
+                        'label': 'Questions',
+                        'options': [
+                          { 'label': 'Hx of Sz\'s', 'value': 'a history of seizures' },
+                          { 'label': 'No Hx of Sz\'s', 'value': 'had no prior seizures' },
+                          { 'label': 'On Sz Meds', 'value': 'previously been prescribed seizure medications' },
+                          {
+                            'label': 'Non Compliant with Meds',
+                            'value': 'a history of being non-compliant with seizure medications',
+                          },
+                          { 'label': 'Hx of ETOH Withdrawal Szs', 'value': 'a history of alcohol withdrawal seizures' }],
+                      },
+                    }], 'Body': [
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': '',
+                        'value': 'ROS:&#32;All&#32;review&#32;of&#32;systems&#32;reviewed&#32;and&#32;are&#32;negative.&#32;&#10;&#10;Past&#32;Medical&#32;History:&#32;None&#10;Past&#32;Surgical&#32;History:&#32;None&#10;Medications:&#32;None&#10;Social&#32;History:&#32;No&#32;tobacco&#32;use&#10;Family&#32;History:&#32;No&#32;pertinent&#32;family&#32;history',
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': '',
+                        'value': 'PHYSICAL&#32;EXAM:&#10;Constitutional&#32;:&#32;&#32;Pleasant,&#32;no&#32;acute&#32;distress&#10;Vital&#32;signs&#32;and&#32;nursing&#32;notes&#32;reviewed&#10;HEENT:&#32;Pharynx&#32;moist&#32;and&#32;non-erythematous.&#32;&#10;CV:&#32;&#32;Regular&#32;rate&#32;and&#32;rhythm,&#32;no&#32;murmur.&#32;&#10;Respiratory:&#32;&#32;Lungs&#32;clear&#32;to&#32;auscultation&#32;bilaterally&#10;Abdomen:&#32;&#32;Soft,&#32;non-tender,&#32;non-distended.&#32;&#32;Bowel&#32;sounds&#32;normal&#10;Back:&#32;&#32;No&#32;tenderness&#10;Skin:&#32;&#32;Normal&#32;color,&#32;warm&#32;and&#32;dry&#10;Extremities:&#32;&#32;Non-tender,&#32;no&#32;pedal&#32;edema.',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Neurological: {ENTRY}',
+                        'label': 'Neurological',
+                        'options': [
+                          {
+                            'label': 'everything normal',
+                            'value': 'alert,&#032;oriented&#032;x3,&#032;CN&#032;II-XII&#032;intact,&#032;normal&#032;sensation&#032;throughout',
+                          },
+                          { 'label': 'alert', 'value': 'alert' },
+                          { 'label': 'oriented x3', 'value': 'oriented&#032;x3' },
+                          { 'label': 'CN II-XII intact', 'value': 'CN&#032;II-XII&#032;intact' },
+                          { 'label': '5/5 strength', 'value': '5/5 strength throughout' },
+                          { 'label': 'nl sensation', 'value': 'normal&#032;sensation&#032;throughout' },
+                          { 'label': 'no pronator drift', 'value': 'no pronator drift' },
+                          { 'label': 'no abnormal coordination', 'value': 'no abnormal coordination' },
+                          { 'label': 'nl gait', 'value': 'normal gait' }],
+                      },
+                    }], 'MDM': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for evaluation of {ENTRY}.',
+                        'label': 'Chief Complaint',
+                        'options': [
+                          { 'label': 'Seizure', 'value': 'seizure' },
+                          { 'label': 'Seizure like Activity', 'value': 'seizure like activity' },
+                          { 'label': 'Shaking Episode', 'value': 'shaking episode' },
+                          { 'label': 'Dizziness', 'value': 'dizziness' },
+                          { 'label': 'Vertigo', 'value': 'vertigo' },
+                          { 'label': 'Syncope', 'value': 'syncope' },
+                          { 'label': 'Head Trauma', 'value': 'head trauma' },
+                          { 'label': 'Nausea', 'value': 'nausea' },
+                          { 'label': 'Vomiting', 'value': 'vomiting' },
+                          { 'label': 'Fall', 'value': 'fall' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Vital signs revealed {ENTRY}.',
+                        'label': 'Vital signs',
+                        'options': [
+                          { 'label': 'WNL', 'value': 'no major abnormalities' },
+                          { 'label': 'No Fever', 'value': 'no fever' },
+                          { 'label': 'Fever', 'value': 'fever' },
+                          { 'label': 'No Hypoxia', 'value': 'no hypoxia' },
+                          { 'label': 'Hypoxia', 'value': 'hypoxia' },
+                          { 'label': 'No Tachycardia', 'value': 'no tachycardia' },
+                          { 'label': 'Tachycardia', 'value': 'tachycardia' },
+                          { 'label': 'No Tachypnea', 'value': 'no tachypnea' },
+                          { 'label': 'Hypotension', 'value': 'hypotension' },
+                          { 'label': 'No Hypotension', 'value': 'no hypotension' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Diagnosis at this time most consistent with {ENTRY}.',
+                        'label': 'Diagnosis',
+                        'options': [
+                          { 'label': 'Seizure', 'value': 'seizure' },
+                          { 'label': 'Alcohol Withdrawal Seizure', 'value': 'alcohol withdrawal seizure' },
+                          { 'label': 'Non Epileptic Seizure', 'value': 'non epileptic seizure' },
+                          { 'label': 'Spell', 'value': 'spell' },
+                          { 'label': 'Syncope', 'value': 'syncope' },
+                          { 'label': 'Vasovagal Syncope', 'value': 'vasovagal syncope' },
+                          { 'label': 'Orthostatic Hypotension', 'value': 'orthostatic hypotension' },
+                          { 'label': 'Dehydration', 'value': 'dehydration' },
+                          { 'label': 'Stroke', 'value': 'stroke' },
+                          { 'label': 'Weakness', 'value': 'weakness' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Differential diagnosis considered including {ENTRY}.  These were thought to be less likely given the history, exam, and workup.',
+                        'label': 'Differential Diagnosis',
+                        'options': [
+                          { 'label': 'Seizure', 'value': 'seizure' },
+                          { 'label': 'Alcohol Withdrawal Seizure', 'value': 'alcohol withdrawal seizure' },
+                          { 'label': 'Non Epileptic Seizure', 'value': 'non epileptic seizure' },
+                          { 'label': 'Spell', 'value': 'spell' },
+                          { 'label': 'Syncope', 'value': 'syncope' },
+                          { 'label': 'Vasovagal Syncope', 'value': 'vasovagal syncope' },
+                          { 'label': 'Orthostatic Hypotension', 'value': 'orthostatic hypotension' },
+                          { 'label': 'Dehydration', 'value': 'dehydration' },
+                          { 'label': 'Stroke', 'value': 'stroke' },
+                          { 'label': 'Weakness', 'value': 'weakness' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Diagnostic testing performed: {ENTRY}.',
+                        'label': 'Diagnostic Testing',
+                        'options': [
+                          {
+                            'label': 'None',
+                            'value': 'Based on history and exam, discussed that further testing at this time would likely not be of benefit and therefore no further testing was performed',
+                          },
+                          {
+                            'label': 'EKG Normal',
+                            'value': 'EKG shows normal sinus rhythm without acute ST elevation/depression.  No acute T-wave changes',
+                          },
+                          {
+                            'label': 'CXR Neg',
+                            'value': 'Chest Xray reveals no evidence of pneumonia or other acute process',
+                          },
+                          { 'label': 'CT Head Neg', 'value': 'CT of the head shows no acute findings' },
+                          { 'label': 'WBC Elevated', 'value': 'WBC elevated' },
+                          { 'label': 'WBC Nl', 'value': 'WBC normal' },
+                          { 'label': 'BMP Nl', 'value': 'metabolic panel normal' },
+                          { 'label': 'D-Dimer Elevated', 'value': 'D-Dimer Elevated' },
+                          { 'label': 'D-Dimer Nl', 'value': 'D-Dimer normal' },
+                          { 'label': 'Troponin Nl', 'value': 'troponin normal' },
+                          { 'label': 'Urine Nl', 'value': 'urinalysis without signs of infection' },
+                          { 'label': 'Preg Test Neg', 'value': 'pregnancy test negative' },
+                          { 'label': 'Lactate Nl', 'value': 'lactate normal' },
+                          { 'label': 'Lactate Elevated', 'value': 'lactate normal' },
+                          { 'label': 'therapeutic drug levels pending', 'value': 'therapeutic drug levels pending' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatments provided included {ENTRY}.',
+                        'label': 'Treatments Provided',
+                        'options': [
+                          { 'label': 'IV fluids', 'value': 'IV fluids' },
+                          { 'label': 'Ativan', 'value': 'ativan' },
+                          { 'label': 'Valium', 'value': 'valium' },
+                          { 'label': 'Versed', 'value': 'versed' },
+                          { 'label': 'Keppra', 'value': 'keppra' },
+                          { 'label': 'Fosphenytoin', 'value': 'fosphenytoin' },
+                          { 'label': 'Phenytoin', 'value': 'Phenytoin' },
+                          { 'label': 'Zofran', 'value': 'zofran' },
+                          { 'label': 'W/ Improvement', 'value': 'with improvement in symptoms' },
+                          { 'label': 'W/O Improvement', 'value': 'without improvement in symptoms' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Plan:',
+                        'options': [
+                          {
+                            'label': 'Admit',
+                            'value': 'Patient will be admitted.  Discussed case with Dr. *** who will admit.',
+                            'sentence': '{ENTRY}',
+                          },
+                          {
+                            'label': 'Monitor',
+                            'value': 'Monitor for new or worsening symptoms.',
+                            'sentence': '{ENTRY}',
+                          },
+                          {
+                            'label': 'Increase Fluid Intake',
+                            'value': 'Patient encourage to increase fluid hydration.',
+                            'sentence': '{ENTRY}',
+                          }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient prescribed {ENTRY}.',
+                        'label': 'Prescriptions',
+                        'options': [
+                          { 'label': 'Ativan', 'value': 'ativan' },
+                          { 'label': 'Valium', 'value': 'valium' },
+                          { 'label': 'Librium', 'value': 'librium' },
+                          { 'label': 'Keppra', 'value': 'keppra' },
+                          { 'label': 'Tylenol', 'value': 'Tylenol' },
+                          { 'label': 'Ibuprofen', 'value': 'Ibuprofen' },
+                          { 'label': 'Zofran', 'value': 'zofran' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Follow Up',
+                        'options': [
+                          { 'label': '1 - 2 days', 'value': 'Follow up in one or two days' },
+                          { 'label': '3 - 5', 'value': 'Follow up in three to five days' },
+                          { 'label': '7', 'value': 'Follow up in one week' },
+                          { 'label': 'As needed', 'value': 'Follow up as needed' },
+                          {
+                            'label': 'R/T to clinic/UC with worsening symptoms',
+                            'value': 'return to clinic or urgent care with new or worsening symptoms',
+                          },
+                          {
+                            'label': 'Present to ER with worsening symptoms',
+                            'value': 'present to ER with new or worsening symptoms',
+                          },
+                          { 'label': 'Referral placed to neurology', 'value': 'Referral placed to neurology' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

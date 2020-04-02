@@ -1,0 +1,258 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, shrink-to-fit=no">
+    <title>{% block title %}{% endblock %}</title>
+    <style type="text/css">
+        img.wp-smiley, img.emoji {
+            display: inline !important;
+            border: none !important;
+            box-shadow: none !important;
+            height: 1em !important;
+            width: 1em !important;
+            margin: 0 .07em !important;
+            vertical-align: -0.1em !important;
+            background: none !important;
+            padding: 0 !important;
+        }
+
+        #inp {
+            height: 90%;
+            width: 100%;
+        }
+    }</style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link href="{% static 'assets/dng.css' %}" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+    <script src="{% static 'assets/jquery.js' %}" type="text/javascript"></script>
+    <script src="{% static 'assets/jquery-migrate.min.js' %}" type="text/javascript"></script>
+    {% block head %}{% endblock %}
+</head>
+<body>
+    {% block header %}
+        <!-- Header -->
+        <nav class="navbar bg-primary">
+            <a class="navbar-brand text-white d-flex align-items-center" href="{% url 'notes' %}" title="Home">
+                <i class="material-icons md-24 mr-1">assignment</i>
+                <span>DoctorNotes</span>
+            </a>
+            <div class="d-flex align-items-center float-rignt">
+                <span class="text-white mr-2">Hi, <strong>{{ user.username }}</strong></span>
+                <a class="text-white" href="{% url 'logout' %}" title="Logout">
+                    <i class="material-icons md-24 align-middle">exit_to_app</i>
+                </a>
+            </div>
+        </nav>
+        <!-- Header end -->
+    {% endblock %}
+    <!-- Main Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-5 no-gutters">
+                <form action="{% url 'macro' %}" method="POST">
+                    {% csrf_token%}
+                    {% for field in form %}
+                        {{ field }}
+                    {% endfor %}
+                    <button class="btn btn-success" type="submit">Save</button>
+                </form>
+            </div>
+            <div class="col-3" style="max-height: 600px; min-height: 600px; overflow: scroll; float: left;">
+                Macro
+                <div id="match-list"></div>
+            </div>
+
+            <div class="col-4">
+                    <div class="my-2">
+                        <label for="inputType">Type</label>
+                        <select name="type" class="form-control mb-2" id="inputType">
+                            <option selected>Choose...</option>
+                            {% for type in types %}
+                            <option value="{{ type }}">{{ type }}</option>
+                            {% endfor %}
+                        </select>
+                        <label for="inputTag">Tag</label>
+                        <select name="tag" class="form-control mb-2" id="inputTag">
+                            <option selected>Choose...</option>
+                            {% for tag in tags %}
+                            <option value="{{ tag }}">{{ tag }}</option>
+                            {% endfor %}
+                        </select>
+                        <label for="inputCategory">Category</label>
+                        <select name="category" class="form-control mb-2" id="inputCategory">
+                            <option selected>Choose...</option>
+                            {% for cat in categories %}
+                            <option value="{{ cat }}">{{ cat }}</option>
+                            {% endfor %}
+                        </select>
+                        <label for="inputTitle">Title</label>
+                        <select name="title_option" class="form-control mb-2" id="inputTitle">
+                            <option selected>Choose...</option>
+                            {% for title in titles %}
+                            <option value="{{ title }}">{{ title }}</option>
+                            {% endfor %}
+                        </select>
+                        <label for="inputMacro">Macro</label>
+                        <select name="macro_option" class="form-control mb-2" id="inputMacro">
+                            <option selected>Choose...</option>
+                            {% for macro in macros %}
+                            <option value="{{ macro }}">{{ macro }}</option>
+                            {% endfor %}
+                        </select>
+                    </div>
+                <button id="filter" class="btn btn-success" type="submit" value="Search">Search</button>
+            </div>
+        </div>
+    </div>
+<script>
+
+    const search = document.getElementById("inp");
+    const matchList = document.getElementById("match-list");
+    const filter = document.getElementById("filter");
+
+    let macro_data = `{{ macro_json|escapejs }}`;
+    let macro_json = JSON.parse(macro_data);
+
+    // Search json and filter it
+    let searchStates = async searchText => {
+        let matches = 0;
+        if (searchText.includes("#")) {
+            // Get matches to current text input
+
+            const filterSearch = searchText.split('#');
+            const filterText = filterSearch[filterSearch.length-1];
+            matches = macro_json.filter(state => {
+                const regex = new RegExp(`^${filterText}`, 'gi');
+                return state.fields.Title.match(regex) || state.fields.Abbreviation.match(regex);
+            });
+            if (matches.length === 0) {
+                matches = [];
+                matchList.innerHTML = '';
+            }
+        }
+        else {
+            matches = [];
+            matchList.innerHTML = '';
+        }
+        outputHtml(matches);
+
+    };
+    const outputHtml = matches => {
+        if (matches.length > 0){
+
+            const html = matches.map(
+                match => `
+                    <button class="card card-body mb-1" style="overflow: hidden;" onclick="add_macro(\`${match.fields.Content}\`)">
+                    <h6>${match.fields.Title}</h6>
+                    <div class="text-success">
+                        <h6>${match.fields.Content}</h6>
+                    </div>
+                    </button>
+                `
+                )
+            .join('');
+
+            matchList.innerHTML = html;
+        }
+    };
+
+    search.addEventListener('input', () => searchStates(search.value));
+    filter.addEventListener("click", () => filter_macro());
+
+    function add_macro(data) {
+        const target = document.getElementById("inp");
+
+        if (target.setRangeText) {
+            const {value} = target;
+            target.value = value.slice(0, value.lastIndexOf('#'));
+            target.setRangeText(data);
+        } else {
+            const {value} = target;
+            target.value = value.slice(0, value.lastIndexOf('#'));
+            target.focus();
+            document.execCommand('insertText', false /*no UI*/, data);
+        }
+         matchList.innerHTML = '';
+    }
+
+    function check_filter(data){
+        if (data === 'Choose...' || data === null){
+            return '';
+        }
+        return data;
+    }
+
+    function filter_macro() {
+        const type = document.getElementsByName('type')[0];
+        const tag = document.getElementsByName('tag')[0];
+        const category = document.getElementsByName('category')[0];
+        const title = document.getElementsByName('title_option')[0];
+        const macro = document.getElementsByName('macro_option')[0];
+
+        const type_selected = type.options[type.selectedIndex].value;
+        const tag_selected = tag.options[tag.selectedIndex].value;
+        const category_selected = category.options[category.selectedIndex].value;
+        const title_selected = check_filter(title.options[title.selectedIndex].value);
+        const macro_selected = check_filter(macro.options[macro.selectedIndex].value);
+
+        var matches = macro_json.filter(state => {
+            let fields = state.fields;
+            const type_reg = new RegExp(`^${type_selected}`, 'gi');
+            const category_reg = new RegExp(`^${category_selected}`, 'gi');
+            const title_reg = new RegExp(`^${title_selected}`, 'gi');
+            const macro_reg = new RegExp(`^${macro_selected}`, 'gi');
+
+            var type = true;
+            if (type_selected !== 'Choose...'){
+                if (fields.Type === null){
+                    type = false;
+                }
+                else{
+                    console.log('category', fields.Category);
+                    type = fields.Type.match(type_selected);
+                    console.log('c', category)
+                }
+            }
+
+            var category = true;
+            if (category_selected !== 'Choose...'){
+                if (fields.Category === null){
+                    category = false;
+                }
+                else{
+                    category = fields.Category.match(category_selected);
+                }
+            }
+
+            var tag = true;
+            if (tag_selected === 'Choose...' || tag_selected === null){
+                tag = true;
+            }
+            else {
+                tag = fields.Tags.includes(tag_selected);
+            }
+
+            return type
+                && fields.Title.match(title_reg)
+                && fields.Abbreviation.match(macro_reg)
+                && tag
+                && category;
+        });
+
+        if (matches.length === 0) {
+            matches = [];
+            matchList.innerHTML = '';
+        }
+        outputHtml(matches);
+    }
+
+</script>
+
+</body>
+</html>

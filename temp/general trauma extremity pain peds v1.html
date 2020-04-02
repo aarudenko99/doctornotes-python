@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent">
+                <h1 class="dngContentTitle">General Trauma / Extremity Pain &#8211; Peds &#8211; V1</h1>
+            </div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for evaluation of {ENTRY}.',
+                        'label': 'Main Symptoms',
+                        'options': [
+                          { 'label': 'Fall', 'value': 'fall' },
+                          { 'label': 'Head Trauma', 'value': 'head trauma' },
+                          { 'label': 'Neck Pain', 'value': 'neck pain' },
+                          { 'label': 'Injury', 'value': 'injury' },
+                          { 'label': 'MVA', 'value': 'motor vehicle accident' },
+                          { 'label': 'Bike Accident', 'value': 'bicycle accident' },
+                          { 'label': 'Extremity Pain', 'value': 'extremity pain' },
+                          { 'label': 'Hand Pain', 'value': 'hand pain' },
+                          { 'label': 'Shoulder Pain', 'value': 'shoulder pain' },
+                          { 'label': 'Hip Pain', 'value': 'hip pain' },
+                          { 'label': 'Knee Pain', 'value': 'knee pain' },
+                          { 'label': 'Laceration', 'value': 'laceration' },
+                          { 'label': 'Abrasion', 'value': 'abrasion' },
+                          { 'label': 'Wound', 'value': 'wound' },
+                          { 'label': 'Injury', 'value': 'injury' },
+                          { 'label': 'LOC', 'value': 'loss of consciousness' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    { 'timeFrame': { 'sentence': 'Onset of symptoms was {ENTRY} ago.', 'label': 'Onset of Symptoms' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient describes {ENTRY} pain.', 'label': 'Location of Pain/Injury', 'options': [
+                          { 'label': 'Left', 'value': 'left' },
+                          { 'label': 'Right', 'value': 'right' },
+                          { 'label': '1st', 'value': '1st' },
+                          { 'label': '2nd', 'value': '2nd' },
+                          { 'label': '3rd', 'value': '3rd' },
+                          { 'label': '4th', 'value': '4th' },
+                          { 'label': '5th', 'value': '5th' },
+                          { 'label': 'Neck', 'value': 'neck' },
+                          { 'label': 'Chest', 'value': 'chest' },
+                          { 'label': 'Abdomen', 'value': 'abdomen' },
+                          { 'label': 'Groin', 'value': 'groin' },
+                          { 'label': 'Shoulder', 'value': 'shoulder' },
+                          { 'label': 'Clavicle', 'value': 'clavicle' },
+                          { 'label': 'Upper Arm', 'value': 'upper arm' },
+                          { 'label': 'Forearm', 'value': 'forearm' },
+                          { 'label': 'Wrist', 'value': 'wrist' },
+                          { 'label': 'Hand', 'value': 'hand' },
+                          { 'label': 'Finger', 'value': 'finger' },
+                          { 'label': 'Hip', 'value': 'hip' },
+                          { 'label': 'Knee', 'value': 'knee' },
+                          { 'label': 'Lower Leg', 'value': 'lower leg' },
+                          { 'label': 'Ankle', 'value': 'ankle' },
+                          { 'label': 'Foot', 'value': 'foot' },
+                          { 'label': 'Toe', 'value': 'toe' },
+                          { 'label': 'Nail', 'value': 'nail' },
+                          { 'label': 'Back', 'value': 'back' },
+                          { 'label': 'Tailbone', 'value': 'tailbone' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Pain is {ENTRY} in severity.',
+                        'label': 'Severity',
+                        'options': [
+                          { 'label': 'Mild', 'value': 'mild' },
+                          { 'label': 'Moderate', 'value': 'moderate' },
+                          { 'label': 'Severe', 'value': 'severe' },
+                          { 'label': '1', 'value': '1/10' },
+                          { 'label': '2', 'value': '2/10' },
+                          { 'label': '3', 'value': '3/10' },
+                          { 'label': '4', 'value': '4/10' },
+                          { 'label': '5', 'value': '5/10' },
+                          { 'label': '6', 'value': '6/10' },
+                          { 'label': '7', 'value': '7/10' },
+                          { 'label': '8', 'value': '8/10' },
+                          { 'label': '9', 'value': '9/10' },
+                          { 'label': '10', 'value': '10/10' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has associated symptoms of {ENTRY}.',
+                        'label': 'Associated Symptoms',
+                        'options': [
+                          { 'label': 'Pain', 'value': 'pain' },
+                          { 'label': 'Bruising', 'value': 'brusing' },
+                          { 'label': 'Swelling', 'value': 'swelling' },
+                          { 'label': 'Redness', 'value': 'redness' },
+                          { 'label': 'Warmth', 'value': 'warmth' },
+                          { 'label': 'Bleeding', 'value': 'bleeding' },
+                          { 'label': 'Numbness', 'value': 'numbness' },
+                          { 'label': 'Tingling', 'value': 'tingling' },
+                          { 'label': 'Weakness', 'value': 'weakness' },
+                          { 'label': 'LOC', 'value': 'loss of consciousness' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient does not have symptoms of {ENTRY}.',
+                        'label': 'Denies Symptoms',
+                        'options': [
+                          { 'label': 'Pain', 'value': 'pain' },
+                          { 'label': 'Bruising', 'value': 'bruising' },
+                          { 'label': 'Swelling', 'value': 'swelling' },
+                          { 'label': 'Redness', 'value': 'redness' },
+                          { 'label': 'Warmth', 'value': 'warmth' },
+                          { 'label': 'Bleeding', 'value': 'bleeding' },
+                          { 'label': 'Numbness', 'value': 'numbness' },
+                          { 'label': 'Tingling', 'value': 'tingling' },
+                          { 'label': 'Weakness', 'value': 'weakness' },
+                          { 'label': 'LOC', 'value': 'loss of consciousness' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Questions?',
+                        'options': [
+                          {
+                            'label': 'No LOC',
+                            'value': 'Patient&#032;did&#032;not&#032;have&#032;a&#032;loss&#032;of&#032;consciousness',
+                          },
+                          { 'label': 'LOC', 'value': 'Patient&#032;had&#032;a&#032;last&#032;consciousness' },
+                          { 'label': 'No Vomiting', 'value': 'no&#032;vomiting' },
+                          { 'label': 'Vomiting', 'value': 'has&#032;had&#032;vomiting' },
+                          { 'label': 'No Scalp Hematoma', 'value': 'no&#032;scalp&#032;hematoma' },
+                          { 'label': 'Scalp Hematoma', 'value': 'scalp&#032;hematoma&#032;present' },
+                          { 'label': 'No Dizziness', 'value': 'no&#032;dizziness&#032;present' },
+                          { 'label': 'Dizziness', 'value': 'dizziness&#032;present' },
+                          { 'label': 'No Blurry Vision', 'value': 'no&#032;blurry&#032;vision' },
+                          { 'label': 'Blurry Vision', 'value': 'blurry&#032;vision&#032;present' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatment prior to arrival includes {ENTRY}.',
+                        'label': 'Treatment Prior to Arrival',
+                        'options': [
+                          { 'label': 'None', 'value': 'nothing' },
+                          { 'label': 'Tylenol', 'value': 'Tylenol' },
+                          { 'label': 'Ibuprofen', 'value': 'Ibuprofen' },
+                          { 'label': 'Compression', 'value': 'compression' },
+                          { 'label': 'Splinting', 'value': 'splinting' },
+                          { 'label': 'Elevation', 'value': 'elevation' },
+                          { 'label': 'Rest', 'value': 'rest' },
+                          { 'label': 'Ice', 'value': 'ice' }],
+                      },
+                    }], 'Body': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Review of Systems: {ENTRY}', 'label': '', 'options': [
+                          { 'label': 'All ROS Negative', 'value': 'All other systems reviewed and are negative' },
+                          { 'label': 'Vital Signs Reviewed', 'value': 'vital signs reviewed' },
+                          { 'label': 'No Fever', 'value': 'denies fever' },
+                          { 'label': 'No Chills/Sweats', 'value': 'denies chills/sweats' },
+                          { 'label': 'No SOB', 'value': 'denies shortness of breath' },
+                          { 'label': 'No Cough', 'value': 'denies cough' },
+                          { 'label': 'No CP', 'value': 'denies chest pain' },
+                          { 'label': 'No HA', 'value': 'denies headache' },
+                          { 'label': 'No Neck Pain/Stiffness', 'value': 'denies neck pain/stiffness' },
+                          { 'label': 'No Sore Throat', 'value': 'denies sore throat' },
+                          { 'label': 'No Ear Pain', 'value': 'denies ear pain' },
+                          { 'label': 'No Rash', 'value': 'denies rash' },
+                          { 'label': 'No Lightheadedness', 'value': 'denies lightheadedness' },
+                          { 'label': 'No Abd Pain', 'value': 'denies abdominal pain' },
+                          { 'label': 'No Back Pain', 'value': 'denies back pain' },
+                          { 'label': 'No Urinary Symptoms', 'value': 'denies urinary symptoms' },
+                          { 'label': 'No Lethargy', 'value': 'denies lethargy' },
+                          { 'label': 'No Vomiting', 'value': 'denies vomiting' },
+                          { 'label': 'No Diarrhea', 'value': 'denies diarrhea' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Physical Exam:',
+                        'value': 'Physical&#32;Exam:&#10;Constitutional:&#32;&#32;No&#32;acute&#32;distress&#10;HEENT:&#32;Mucous&#32;membranes&#32;moist&#10;CV:&#32;Regular&#32;rate&#32;and&#32;rhythm.&#32;No&#32;murmurs,&#32;gallops,&#32;rubs.&#10;Respiratory:&#32;Lungs&#32;clear&#32;without&#32;crackles,&#32;wheeze,&#32;or&#32;rales.&#10;Extremities:&#32;&#32;Non-tender.&#32;No&#32;edema.&#32;&#10;Back:&#32;&#32;No&#32;tenderness&#10;Neuro:&#32;&#32;No&#32;gross&#32;motor&#32;deficits',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Musculoskeletal: {ENTRY}',
+                        'label': 'Musculoskeletal',
+                        'options': [
+                          { 'label': 'nl ROM', 'value': 'normal ROM' },
+                          { 'label': 'decreased ROM', 'value': 'decreased ROM' },
+                          { 'label': 'tenderness', 'value': 'tenderness' },
+                          { 'label': 'nontender', 'value': 'nontender' },
+                          { 'label': 'swelling', 'value': 'swelling' },
+                          { 'label': 'no swelling', 'value': 'no swelling' },
+                          { 'label': 'bruising', 'value': 'bruising' },
+                          { 'label': 'no bruising', 'value': 'no bruising' },
+                          { 'label': 'intact pulses', 'value': 'intact pulses' },
+                          { 'label': 'sensation intact', 'value': 'sensation intact' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Medical History: {ENTRY}',
+                        'label': 'Past Medical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'asthma', 'value': 'asthma' },
+                          { 'label': 'ADHD', 'value': 'ADHD' },
+                          { 'label': 'DM', 'value': 'diabetes' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': 'anxiety', 'value': 'anxiety' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'autism', 'value': 'autism' },
+                          { 'label': 'constipation', 'value': 'constipation' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Past Surgical History: {ENTRY}',
+                        'label': 'Past Surgical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'none' },
+                          { 'label': 'appendectomy', 'value': 'appendectomy' },
+                          { 'label': 'tonsillectomy', 'value': 'tonsillectomy' },
+                          { 'label': 'tympanostomy tubes', 'value': 'tympanostomy tubes' },
+                          { 'label': 'hernia repair', 'value': 'hernia repair' },
+                          { 'label': 'circumcision', 'value': 'circumcision' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Social History: {ENTRY}',
+                        'label': 'Social History',
+                        'options': [
+                          { 'label': 'tobacco use', 'value': 'tobacco use' },
+                          { 'label': 'secondary tobacco exposure', 'value': 'secondary tobacco exposure' },
+                          { 'label': 'no tobacco use/exposure', 'value': 'no tobacco use/exposure' },
+                          { 'label': 'does not attend daycare', 'value': 'does not attend daycare' },
+                          { 'label': 'attends daycare', 'value': 'attends daycare' },
+                          { 'label': 'attends school', 'value': 'attends school' },
+                          { 'label': 'up-to-date on immunizations', 'value': 'up-to-date on immunizations' },
+                          { 'label': 'no immunizations', 'value': 'no immunizations' },
+                          { 'label': 'sexually active', 'value': 'sexually active' },
+                          { 'label': 'not sexually active', 'value': 'not sexually active' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Family History: {ENTRY}',
+                        'label': 'Family History (most common - can use free text)',
+                        'options': [
+                          { 'label': 'no pertinent family history', 'value': 'no pertinent family history' },
+                          { 'label': 'HTN', 'value': 'hypertension' },
+                          { 'label': 'HLD', 'value': 'hyperlipidemia' },
+                          { 'label': 'DM', 'value': 'diabetes' },
+                          { 'label': 'CAD', 'value': 'coronary artery disease' },
+                          { 'label': 'migraines', 'value': 'migraines' },
+                          { 'label': 'cancer', 'value': 'cancer' },
+                          { 'label': 'stroke', 'value': 'stroke' },
+                          { 'label': 'depression', 'value': 'depression' },
+                          { 'label': '***', 'value': '***' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } }], 'MDM': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient presenting for evaluation of {ENTRY}.',
+                        'label': 'Chief Complaint',
+                        'options': [
+                          { 'label': 'Fall', 'value': 'fall' },
+                          { 'label': 'Head Trauma', 'value': 'head trauma' },
+                          { 'label': 'Pain', 'value': 'pain' },
+                          { 'label': 'Injury', 'value': 'injury' },
+                          { 'label': 'MVA', 'value': 'motor vehicle accident' },
+                          { 'label': 'Bike Accident', 'value': 'bicycle accident' },
+                          { 'label': 'Extremity Pain', 'value': 'extremity pain' },
+                          { 'label': 'Hand Pain', 'value': 'hand pain' },
+                          { 'label': 'Finger Pain', 'value': 'finger pain' },
+                          { 'label': 'Foot Pain', 'value': 'foot pain' },
+                          { 'label': 'Toe Pain', 'value': 'toe pain' },
+                          { 'label': 'Laceration', 'value': 'laceration' },
+                          { 'label': 'Abrasion', 'value': 'abrasion' },
+                          { 'label': 'Wound', 'value': 'wound' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Vital signs revealed {ENTRY}.',
+                        'label': 'Vital signs',
+                        'options': [
+                          { 'label': 'WNL', 'value': 'no major abnormalities' },
+                          { 'label': 'No Fever', 'value': 'no fever' },
+                          { 'label': 'Fever', 'value': 'fever' },
+                          { 'label': 'No Hypoxia', 'value': 'no hypoxia' },
+                          { 'label': 'Hypoxia', 'value': 'hypoxia' },
+                          { 'label': 'No Tachycardia', 'value': 'no tachycardia' },
+                          { 'label': 'Tachycardia', 'value': 'tachycardia' },
+                          { 'label': 'No Tachypnea', 'value': 'no tachypnea' },
+                          { 'label': 'Hypotension', 'value': 'hypotension' },
+                          { 'label': 'No Hypotension', 'value': 'no hypotension' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Diagnosis at this time most consistent with {ENTRY}.',
+                        'label': 'Diagnosis',
+                        'options': [
+                          { 'label': 'Head Trauma', 'value': 'head trauma' },
+                          { 'label': 'Concussion', 'value': 'concussion' },
+                          { 'label': 'Neck Pain', 'value': 'neck pain' },
+                          { 'label': 'Fall', 'value': 'fall' },
+                          { 'label': 'Contusion', 'value': 'contusion' },
+                          { 'label': 'Bruise', 'value': 'bruise' },
+                          { 'label': 'Extremity Pain', 'value': 'extremity pain' },
+                          { 'label': 'Fracture', 'value': 'fracture' },
+                          { 'label': 'MVA', 'value': 'motor vehicle accident' },
+                          { 'label': 'Bike Accident', 'value': 'bike accident' },
+                          { 'label': 'Sport Related Injury', 'value': 'sports related injury' },
+                          { 'label': 'Injury', 'value': 'injury' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Differential diagnosis considered including {ENTRY}.  These were thought to be less likely given the history, exam, and workup.',
+                        'label': 'Differential Diagnosis',
+                        'options': [
+                          { 'label': 'Contusion', 'value': 'contusion' },
+                          { 'label': 'Bruise', 'value': 'bruise' },
+                          { 'label': 'Trauma', 'value': 'trauma' },
+                          { 'label': 'Extremity Pain', 'value': 'extremity pain' },
+                          { 'label': 'Head Trauma', 'value': 'head trauma' },
+                          { 'label': 'Fracture', 'value': 'fracture' },
+                          { 'label': 'Fall', 'value': 'fall' },
+                          { 'label': 'MVA', 'value': 'motor vehicle accident' },
+                          { 'label': 'Bike Accident', 'value': 'bike accident' },
+                          { 'label': 'Skull Fracture', 'value': 'skull fracture' },
+                          { 'label': 'SAH', 'value': 'SAH' },
+                          { 'label': 'SDH', 'value': 'SDH' },
+                          { 'label': 'Other', 'value': '***' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Diagnostic testing performed: {ENTRY}.',
+                        'label': 'Diagnostic Testing',
+                        'options': [
+                          {
+                            'label': 'None',
+                            'value': 'Based on history and exam, discussed that further testing at this time would likely not be of benefit and therefore no further testing was performed',
+                          },
+                          { 'label': 'Xray Neg', 'value': 'Xray imaging shows no evidence of fracture' },
+                          { 'label': 'Xray Shows Fracture', 'value': 'Xray shows fracture' },
+                          { 'label': 'Head CT Neg', 'value': 'head CT showed no acute findings' },
+                          { 'label': 'CT Neck Neg', 'value': 'CT cervical shows no evidence of acute injury' },
+                          { 'label': 'CT Max/Face Neg', 'value': 'CT maxillofacial shows no acute findings' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Treatments provided included {ENTRY}.',
+                        'label': 'Treatments Provided',
+                        'options': [
+                          { 'label': 'Tylenol', 'value': 'tylenol' },
+                          { 'label': 'Ibuprofen', 'value': 'ibuprofen' },
+                          { 'label': 'Hydrocodone', 'value': 'hydrocodone' },
+                          { 'label': 'Oxycodone', 'value': 'oxycodone' },
+                          { 'label': 'Morphine', 'value': 'morphine' },
+                          { 'label': 'Fentanyl', 'value': 'fentanyl' },
+                          { 'label': 'Dilaudid', 'value': 'dilaudid' },
+                          { 'label': 'Toradol', 'value': 'toradol' },
+                          { 'label': 'Naproxen', 'value': 'naproxen' },
+                          { 'label': 'Crutches', 'value': 'crutches' },
+                          { 'label': 'ACE Wrap', 'value': 'ACE wrap' },
+                          { 'label': 'Sling', 'value': 'sling placement' },
+                          { 'label': 'Splint', 'value': 'splint placement' },
+                          { 'label': 'Brace', 'value': 'brace placement' },
+                          { 'label': 'Ice', 'value': 'ice' },
+                          { 'label': 'W/ Improvement', 'value': 'with improvement in symptoms' },
+                          { 'label': 'W/O Improvement', 'value': 'without improvement in symptoms' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Plan:',
+                        'options': [
+                          {
+                            'label': 'Gen Symptomatic Cares',
+                            'value': 'Rest, fluids, and over-the-counter symptomatic treatments were recommended.',
+                            'sentence': '{ENTRY}',
+                          },
+                          {
+                            'label': 'Tylenol/Ibuprofen',
+                            'value': 'Recommend over the counter Tylenol and Ibuprofen for fever/general discomfort.',
+                            'sentence': '{ENTRY}',
+                          },
+                          {
+                            'label': 'RICE',
+                            'value': 'Recommend rest, ice, elevation, and compression.',
+                            'sentence': '{ENTRY}',
+                          },
+                          {
+                            'label': 'Monitor',
+                            'value': 'Monitor for new or worsening symptoms.',
+                            'sentence': '{ENTRY}',
+                          },
+                          { 'label': 'FU Ortho', 'value': 'Follow up with orthopedic povider', 'sentence': '{ENTRY}' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient prescribed {ENTRY}.',
+                        'label': 'Prescriptions',
+                        'options': [
+                          { 'label': 'Tylenol', 'value': 'Tylenol' },
+                          { 'label': 'Ibuprofen', 'value': 'Ibuprofen' },
+                          { 'label': 'Tylenol with Codeine', 'value': 'Tylenol with Codeine' },
+                          { 'label': 'Hydrocodone', 'value': 'Hydrocodone' },
+                          { 'label': 'Oxycodone', 'value': 'Oxycodone' },
+                          { 'label': 'Naproxen', 'value': 'Naproxen' },
+                          { 'label': 'Etodolac', 'value': 'Etodolac' },
+                          { 'label': 'Lodine', 'value': 'Lodine' },
+                          { 'label': 'Crutches', 'value': 'crutches' },
+                          { 'label': 'Physical Therapy', 'value': 'physical therapy' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Follow Up',
+                        'options': [
+                          { 'label': '1 - 2 days', 'value': 'Follow up in one or two days' },
+                          { 'label': '3 - 5', 'value': 'Follow up in three to five days' },
+                          { 'label': '7', 'value': 'Follow up in one week' },
+                          { 'label': 'As needed', 'value': 'Follow up as needed' },
+                          {
+                            'label': 'R/T to clinic/UC with worsening symptoms',
+                            'value': 'return to clinic or urgent care with new or worsening symptoms',
+                          },
+                          {
+                            'label': 'Present to ER with worsening symptoms',
+                            'value': 'present to ER with new or worsening symptoms',
+                          },
+                          { 'label': 'Ortho Followup', 'value': 'Follow up with orthopedic provider' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

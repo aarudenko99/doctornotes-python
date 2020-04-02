@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">new CP stress test 2</h1>
+            </div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'radioButtons': {
+                        'sentence': 'Patient complains of  {ENTRY}',
+                        'label': 'Complains of Chest Pain descibed as :',
+                        'options': [
+                          { 'label': 'Sharp', 'value': 'sharp&#032;chest&#032;pain' },
+                          { 'label': 'Dull ', 'value': 'dull chest pain' },
+                          { 'label': 'Pressure', 'value': 'pressure&#032;like&#032;chest&#032;pain' },
+                          { 'label': 'Squezing', 'value': 'squeezing&#032;chest&#032;pain' },
+                          { 'label': 'Vague', 'value': 'vague&#032;chest&#032;pain' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient has  {ENTRY}.',
+                        'label': 'Patient has ',
+                        'options': [
+                          { 'label': 'Afib', 'value': 'Atrial Fibrillation' },
+                          { 'label': 'Cardiomyopathy', 'value': 'Cardiomyopathy' },
+                          { 'label': 'CAD', 'value': 'know CAD' },
+                          { 'label': 'CHF', 'value': 'new onset of congestive heart failure' },
+                          { 'label': 'Carotid dz (narrowing/Stenosis*', 'value': 'carotid narrowing/stenosis' },
+                          { 'label': 'Aortic Aneurysm', 'value': 'aortic aneurysm' },
+                          { 'label': 'Other ', 'value': 'Other ___' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Pain is :  {ENTRY}.',
+                        'label': '*Chest pain Associated with',
+                        'options': [
+                          { 'label': 'w/o other Sxs', 'value': 'without other symptoms' },
+                          { 'label': 'worse w/Exertion*', 'value': 'exacerbated by exertion' },
+                          { 'label': 'Relieved by Rest*', 'value': 'relived by rest' },
+                          { 'label': 'relief w/NTG*', 'value': 'relived by Nitroglycerin' },
+                          { 'label': 'assoc w/SOB*', 'value': 'associated with shortness of breath' },
+                          { 'label': 'assoc w/Jaw Pain*', 'value': 'associated&#032;with&#032;jaw&#032;pain' },
+                          { 'label': 'Syncope*', 'value': 'associated&#032;with&#032;syncope' },
+                          { 'label': 'Palpitations*', 'value': 'associated&#032;withpalpitations' },
+                          { 'label': 'Eating', 'value': 'worse&#032;with&#032;eating&#032;' },
+                          {
+                            'label': 'Relief w/Antacid/Acid Blocker',
+                            'value': 'relief&#032;with&#032;antacids,&#032;acid&#032;blockers',
+                          }],
+                      },
+                    }], 'MDM': [
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient',
+                        'label': '*Risk Factors for CAD',
+                        'options': [
+                          { 'label': 'Age>40*', 'value': 'age is greater than  Forty years old' },
+                          { 'label': 'Father wCAD age<50*', 'value': 'father with CAD at age less than fifty' },
+                          { 'label': 'Brother w/CAD age<50*', 'value': 'brother with CAD at age less than fifty' },
+                          { 'label': 'Current smoker*', 'value': 'is a current smoker' },
+                          { 'label': 'Diabetes*', 'value': 'has diabetes' },
+                          { 'label': 'Hyperlipidemia*', 'value': 'has hyperlipidemia' },
+                          { 'label': 'Hypertension*', 'value': 'has hypertension' },
+                          { 'label': 'CVA', 'value': 'stroke' },
+                          { 'label': 'TIA', 'value': 'TIA' },
+                          { 'label': 'Congenital Heart Dz', 'value': 'congenital heart disease' },
+                          { 'label': 'Pacemaker', 'value': 'has pacemaker' },
+                          { 'label': 'ICD (Defib)', 'value': 'has  implantable cardioverter-defibrillator' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient instructed to  {ENTRY}',
+                        'label': 'Patient instructed to ',
+                        'options': [
+                          { 'label': 'start ASA', 'value': 'start daily Aspirin  ' },
+                          { 'label': 'Cont ASA', 'value': 'continue current Aspirin' },
+                          { 'label': 'Cont Beta Blocker', 'value': 'continue Beta Blocker' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Orders',
+                        'options': [
+                          {
+                            'label': 'Cardiology Consult',
+                            'value': 'Cardiology Consult',
+                            'sentence': 'Order {ENTRY}',
+                          },
+                          { 'label': 'Stress ECHO', 'value': 'Stress ECHO', 'sentence': 'Order: {ENTRY}' },
+                          { 'label': 'Stress Test EKG', 'value': 'Stress EKG, ', 'sentence': 'Order: {ENTRY}' }],
+                      },
+                    }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

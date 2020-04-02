@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">Fall &#8211; Q</h1></div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'timeFrame': {
+                        'sentence': 'Patient presents with complaint of a fall {ENTRY} ago.',
+                        'label': 'How Long Ago was the Fall?',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'The patient arrives to the ED {ENTRY}.',
+                        'label': 'Arrival',
+                        'options': [
+                          { 'label': 'Ambulatory', 'value': 'ambulatory' },
+                          { 'label': 'Via EMS', 'value': 'via EMS' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient reports the fall was due to {ENTRY}.',
+                        'label': 'Details',
+                        'options': [
+                          { 'label': 'Tripping', 'value': 'tripping' },
+                          { 'label': 'Slipping', 'value': 'slipping' },
+                          { 'label': 'Stairs', 'value': 'stairs' },
+                          { 'label': 'LOC', 'value': 'loss of conciousness' },
+                          { 'label': 'Ice', 'value': 'ice' },
+                          { 'label': 'Rug', 'value': 'a rug' },
+                          { 'label': 'Pet', 'value': 'a pet' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient complains of {ENTRY} pain.',
+                        'label': 'What is Injured',
+                        'options': [
+                          { 'label': 'Head', 'value': 'head' },
+                          { 'label': 'Neck', 'value': 'neck' },
+                          { 'label': 'L Hand', 'value': 'left hand' },
+                          { 'label': 'R Hand', 'value': 'right hand' },
+                          { 'label': 'L Wrist', 'value': 'left wrist' },
+                          { 'label': 'R Wrist', 'value': 'right wrist' },
+                          { 'label': 'L Elbow', 'value': 'left elbow' },
+                          { 'label': 'R Elbow', 'value': 'right elbow' },
+                          { 'label': 'L Arm', 'value': 'left arm' },
+                          { 'label': 'R Arm', 'value': 'right arm' },
+                          { 'label': 'L Ankle', 'value': 'left ankle' },
+                          { 'label': 'R Ankle', 'value': 'right ankle' },
+                          { 'label': 'L Knee', 'value': 'left knee' },
+                          { 'label': 'R Knee', 'value': 'right knee' },
+                          { 'label': 'L Leg', 'value': 'left leg' },
+                          { 'label': 'R Leg', 'value': 'right leg' },
+                          { 'label': 'R Hip', 'value': 'right hip' },
+                          { 'label': 'L Hip', 'value': 'left hip' },
+                          { 'label': 'Back', 'value': 'back' },
+                          { 'label': 'Chest', 'value': 'chest' },
+                          { 'label': 'Abdominal', 'value': 'abdominal' },
+                          { 'label': 'None', 'value': 'no' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient reports pain is {ENTRY}/10 in severity.  ',
+                        'label': 'Pain Severity',
+                        'options': [
+                          { 'label': '1', 'value': '1' },
+                          { 'label': '2', 'value': '2' },
+                          { 'label': '3', 'value': '3' },
+                          { 'label': '4', 'value': '4' },
+                          { 'label': '5', 'value': '5' },
+                          { 'label': '6', 'value': '6' },
+                          { 'label': '7', 'value': '7' },
+                          { 'label': '8', 'value': '8' },
+                          { 'label': '9', 'value': '9' },
+                          { 'label': '10', 'value': '10' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Ambulatory at Scene?  LOC?  On blood thinners?',
+                        'options': [
+                          { 'label': 'Ambulatory', 'value': 'Patient was ambulatory at scene' },
+                          { 'label': 'Not Ambulatory', 'value': 'Patient was not ambulatory at scene' },
+                          { 'label': 'No Blood Thinners', 'value': 'patient is not on any blood thinners' },
+                          { 'label': 'ASA', 'value': 'patient is on aspirin' },
+                          { 'label': 'Coumadin', 'value': 'patient is on coumadin' },
+                          { 'label': 'Plavix', 'value': 'patient is on plavix' },
+                          { 'label': 'Positive LOC', 'value': 'patient had positive LOC' },
+                          { 'label': 'No LOC', 'value': 'no LOC' }],
+                      },
+                    }],
+                  'Body': [
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Review of Systems (negatives)',
+                        'options': [
+                          {
+                            'label': 'All Neg',
+                            'value': 'All other systems reviewed and negative except as stated above in the HPI.',
+                          },
+                          { 'label': 'CP', 'value': 'No chest pain.' },
+                          { 'label': 'SOB', 'value': 'No shortness of breath.' },
+                          { 'label': 'Ab Pain', 'value': 'No abdominal pain.' },
+                          { 'label': 'Dysuria', 'value': 'No dysuria.' },
+                          { 'label': 'Jnt Swell', 'value': 'No joint swelling.' },
+                          { 'label': 'HA', 'value': 'No headache.' },
+                          { 'label': 'Tremor', 'value': 'No tremor.' },
+                          { 'label': 'Bleeding', 'value': 'No increased or abnormal bleeding.' },
+                          { 'label': 'Epstxs', 'value': 'No epistaxis ' },
+                          { 'label': 'Wt loss', 'value': 'No unintential weight loss.' },
+                          { 'label': 'Dprsn', 'value': 'No depression symptoms.' }],
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}',
+                        'label': 'PMH/MEDS/ALLERGIES',
+                        'options': [
+                          {
+                            'label': 'None',
+                            'value': 'Past medical history: None.   No Medications or allergies.',
+                          }, { 'label': 'Blank', 'value': 'PMH:       MEDS:        ALLERGIES:' }],
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': 'Tobacco use: {ENTRY}',
+                        'label': 'Tobacco use',
+                        'options': [
+                          { 'label': 'None', 'value': 'None' },
+                          { 'label': '<1ppd', 'value': '<1ppd' },
+                          { 'label': '1ppd', 'value': '1ppd' },
+                          { 'label': '>1ppd', 'value': 'greater thanŁ ppd' }],
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': 'Alcohol Use: {ENTRY}',
+                        'label': 'Alcohol use',
+                        'options': [
+                          { 'label': 'Yes', 'value': 'Yes' },
+                          { 'label': 'No', 'value': 'No' },
+                          { 'label': 'Occasional', 'value': 'Occasional' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Physical Exam',
+                        'value': 'PHYSICAL&#32EXAM:&#10Primary&#32Exam&#10A:&#32Patent&#10B:&#32Equal&#32breath&#32sounds&#32bilaterally&#10C:&#32Pulses&#32intact&#32in&#32all&#32extremities,&#32no&#32active&#32bleeding&#10D:&#32No&#32signs&#32of&#32neurologic&#32impairment&#10&#10Secondary&#32Exam&#10Constitutional: &#32No&#32acute&#32distress&#10Vital&#32signs&#32and&#32nursing&#32notes&#32reviewed&#10HEENT: &#32C-collar&#32in&#32place.&#32Normocephalic&#32and&#32atraumatic.&#32PERRL,&#32EOMI.&#32Normal&#32pharyngeal&#32exam.&#32TM&#32intact&#10CV: &#32Regular&#32rate&#32and&#32rhythm,&#32no&#32murmur.&#32Peripheral&#32pulses&#32intact.&#10Respiratory: &#32Lungs&#32clear&#32to&#32auscultation&#32bilaterally&#10Abdomen: &#32Soft,&#32Non-tender,&#32non-distended.&#10Back: &#32No&#32vertebral&#32tenderness,&#32step-offs&#32or&#32crepitus&#10Skin: &#32Normal&#32color,&#32warm&#32and&#32dry&#10Extremities: &#32Non-tender,&#32no&#32deformities.&#32Strength&#325/5&#10Neuro: &#32Oriented&#32x&#323,&#32no&#32gross&#32sensory&#32deficits',
+                      },
+                    }],
+                  'MDM': [
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Quick Text Block (fill in *** areas)',
+                        'value': 'Patient&#32presenting&#32following&#32a&#32fall.&#32&#32Patient&#32has&#32complaints&#32of&#32***.&#32&#32Patient&#39s&#32neurological&#32exam&#32was&#32non-focal&#32and&#32unremarkable.&#32&#32Imaging&#32was&#32obtained&#32as&#32above&#32showing&#32no&#32evidence&#32of&#32fracture&#32or&#32acute&#32pathology.&#32&#32Patient&#32provided&#32***.&#32&#32&#32Patient&#32remained&#32stable&#32and&#32neurologically&#32intact&#32while&#32in&#32the&#32emergency&#32department.&#32&#32Discussed&#32warning&#32signs&#32that&#32would&#32prompt&#32return&#32to&#32ED.&#32&#32Return&#32to&#32emergency&#32department&#32urgently&#32if&#32new&#32or&#32worsening&#32symptoms&#32develop.&#32&#32',
+                      },
+                    }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

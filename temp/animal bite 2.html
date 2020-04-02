@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<style type="text/css">    img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 .07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}</style>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/jquery-migrate.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/wpautop.min.js" type="text/javascript"></script>
+<script src="../../../../../Downloads/delete/doc-notes-master/assets/singleDng.js" type="text/javascript"></script>
+<link href="../../../../../Downloads/delete/doc-notes-master/assets/dng.css" id="diagnosisNoteGenerator-css" media="all" rel="stylesheet" type="text/css"/>
+<div class="centercontent">
+    <div class="dngContent">
+        <div class="centercontent">
+            <div class="dngTitleContent"><h1 class="dngContentTitle">Animal Bite</h1></div><!-- dngTitleContent -->
+            <div class="pad dngLeftContent">
+                <script> var dngJsonData = {
+                  'HPI': [
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}',
+                        'label': 'History and Physical Exam obtainable?',
+                        'options': [
+                          { 'label': 'Yes', 'value': 'History obtained from ' },
+                          { 'label': 'No', 'value': 'Factors limiting' }],
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}',
+                        'label': 'What part of evaluation was limited?',
+                        'options': [
+                          { 'label': 'history', 'value': 'history' },
+                          { 'label': 'physical exam', 'value': 'physical exam' },
+                          { 'label': 'hx/pe', 'value': 'history and physical exam' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}. Historian:',
+                        'label': 'Factors limiting evaluation',
+                        'options': [
+                          { 'label': 'age', 'value': 'age' },
+                          { 'label': 'AMS', 'value': 'altered mental status' },
+                          { 'label': 'aphasia', 'value': 'aphasia' },
+                          { 'label': 'poor comprehension', 'value': 'poor comprehension' },
+                          { 'label': 'vague historian', 'value': 'vague historian' },
+                          { 'label': 'confusion', 'value': 'confusion' },
+                          { 'label': 'dementia', 'value': 'dementia' },
+                          { 'label': 'psychosis', 'value': 'psychosis' },
+                          { 'label': 'severe distress', 'value': 'severe distress' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Historian',
+                        'options': [
+                          { 'label': 'patient', 'value': 'Patient' },
+                          { 'label': 'spouse', 'value': 'Spouse' },
+                          { 'label': 'family', 'value': 'Family' },
+                          { 'label': 'EMS', 'value': 'EMS' },
+                          { 'label': 'nurse', 'value': 'Nurse' },
+                          { 'label': 'friend', 'value': 'Friend' },
+                          { 'label': 'police', 'value': 'police' },
+                          { 'label': 'physician', 'value': 'physician' },
+                          { 'label': 'mom', 'value': 'Mom' },
+                          { 'label': 'dad', 'value': 'Dad' },
+                          { 'label': 'family member', 'value': 'Family member' },
+                          { 'label': 'Transfer medical records', 'value': 'Transfer emdical records' },
+                          { 'label': 'nursing home', 'value': 'Nursing home' },
+                          { 'label': 'significant other', 'value': 'Significant other' },
+                          { 'label': 'with interpreter', 'value': 'with interpreter' }],
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'Patient is a {ENTRY} old', 'label': 'Age ' } },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY} with ',
+                        'label': 'Sex',
+                        'options': [
+                          { 'label': 'male', 'value': 'male' },
+                          { 'label': 'female', 'value': 'female' },
+                          { 'label': 'pregnant female', 'value': 'pregnant female' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Medical History',
+                        'options': [
+                          { 'label': 'none', 'value': 'no medical history' },
+                          { 'label': 'Afib', 'value': 'Afib' },
+                          { 'label': 'CAD', 'value': 'CAD' },
+                          { 'label': 'MI', 'value': 'MI' },
+                          { 'label': 'PE', 'value': 'PE' },
+                          { 'label': 'asthma', 'value': 'asthma' },
+                          { 'label': 'DVT', 'value': 'DVT' },
+                          { 'label': 'CVA', 'value': 'CVA' },
+                          { 'label': 'TIA', 'value': 'TIA' },
+                          { 'label': 'HTN', 'value': 'HTN' },
+                          { 'label': 'DM', 'value': 'DM' },
+                          { 'label': 'GERD', 'value': 'GERD' },
+                          { 'label': 'PUD', 'value': 'PUD' },
+                          { 'label': 'hiatal hernia', 'value': 'hiatal hernia' },
+                          { 'label': 'hepatitis', 'value': 'hepitatis' },
+                          { 'label': 'thyroid disease', 'value': 'thyroid disease' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'presents for evaluation s/p attack from {ENTRY}.',
+                        'label': 'Attack  from ?',
+                        'options': [
+                          { 'label': 'dog', 'value': 'dog' },
+                          { 'label': 'cat', 'value': 'cat' },
+                          { 'label': 'snake', 'value': 'snake' },
+                          { 'label': 'another person', 'value': 'another&#032;person' },
+                          { 'label': 'unknown animal', 'value': 'unknown animal' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': 'presents for evaluation s/p bite from {ENTRY}.',
+                        'label': 'Attack  from ?',
+                        'value': '',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Patient was {ENTRY}.',
+                        'label': 'type of injury ',
+                        'options': [
+                          { 'label': 'bitten', 'value': 'bitten' },
+                          { 'label': 'scratched', 'value': 'scratched' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Animal',
+                        'options': [
+                          { 'label': 'Family\'s pet', 'value': 'The animal is a family\'s pet.' },
+                          { 'label': 'Neighbor\'s pet', 'value': 'The animal is a neighbor\'s pet' },
+                          { 'label': 'Neighborhood animal', 'value': 'The animal is a neighborhood animal ' },
+                          { 'label': 'Stray animal ', 'value': 'The animal is a stray animal' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'This incident occured {ENTRY}.',
+                        'label': 'TIme of incident',
+                        'options': [
+                          { 'label': 'just prior to arrival', 'value': 'just prior to arrival' },
+                          { 'label': 'this evening', 'value': 'this evening' },
+                          { 'label': 'this afternoon', 'value': 'this afternoon' },
+                          { 'label': 'this morning', 'value': 'this morning' },
+                          { 'label': 'last evening', 'value': 'last evening' },
+                          { 'label': 'yesterday afternoon', 'value': 'yesterday afternnoon' },
+                          {
+                            'label': 'yesterday morning                                ',
+                            'value': 'yesterday morning',
+                          }],
+                      },
+                    },
+                    { 'timeFrame': { 'sentence': 'this incident occured {ENTRY} ago.', 'label': 'Time of incident' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'This incident occured {ENTRY}.',
+                        'label': 'Location',
+                        'options': [
+                          { 'label': 'home', 'value': 'at home' },
+                          { 'label': 'park', 'value': 'at the park' },
+                          { 'label': 'neighbor\'s home', 'value': 'at the neighbor\'s home' },
+                          { 'label': 'family\'s member home', 'value': 'at the family\'s member home' },
+                          { 'label': 'work', 'value': 'at work' },
+                          { 'label': 'street', 'value': 'on the street' },
+                          { 'label': 'at unknown location', 'value': 'at unknown location' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}.', 'label': 'Location', 'value': '' } },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Attack provoked?',
+                        'options': [
+                          { 'label': 'No', 'value': 'This was not a provoked attack.' },
+                          { 'label': 'Yes', 'value': 'This was a provoked attack due to ' },
+                          { 'label': 'unknown', 'value': 'It is unknown if this was provoked attaack.' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}.',
+                        'label': 'Provoked attack',
+                        'options': [
+                          { 'label': 'approaching animal', 'value': 'animal being approached' },
+                          { 'label': 'entering animal\'s domain', 'value': 'entering animal\'s domain' },
+                          { 'label': 'animals fighting', 'value': 'animals fighting' },
+                          { 'label': 'playing/teasing with animal', 'value': 'playing with or teasing the animal' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': 'Context/decription of animal', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'The animal{ENTRY}.',
+                        'label': 'Animal appearance',
+                        'options': [
+                          { 'label': 'well', 'value': ' appeared well' },
+                          { 'label': 'sick', 'value': ' appeared sick' },
+                          { 'label': 'appearance unknown', 'value': 's appearance unknown ' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Animal immunization is {ENTRY}.',
+                        'label': 'Immunization status',
+                        'options': [
+                          { 'label': 'unknown', 'value': 'unknown' },
+                          { 'label': 'up to date', 'value': 'up to date' },
+                          { 'label': 'not up to date', 'value': 'not up to date' }],
+                      },
+                    },
+                    {
+                      'checkBoxesMultiline': {
+                        'label': 'Status of animal',
+                        'options': [
+                          {
+                            'label': 'Animal captured and observed',
+                            'value': 'Animal captured. It will be observed',
+                            'sentence': '{ENTRY}.',
+                          },
+                          { 'label': 'Animal not captured', 'value': 'Animal not captured', 'sentence': '{ENTRY}.' },
+                          {
+                            'label': 'Animal is known and can be observed for 10 days',
+                            'value': 'Animal is known and can be observed for 10 days',
+                            'sentence': '{ENTRY}.',
+                          },
+                          {
+                            'label': 'Animal control has been notified',
+                            'value': 'Animal control/local authorities  has been notified',
+                            'sentence': '{ENTRY}.',
+                          }],
+                      },
+                    },
+                    {
+                      'radioButtons': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Possible injury',
+                        'options': [
+                          {
+                            'label': 'No',
+                            'value': 'Patient no complaining of pain and does not appear to sustain any injuries.',
+                          }, { 'label': 'Yes', 'value': 'Patient sustain possible injury  to the ' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Location of injury',
+                        'options': [
+                          { 'label': 'head', 'value': 'head' },
+                          { 'label': 'face', 'value': 'face' },
+                          { 'label': 'mouth', 'value': 'mouth' },
+                          { 'label': 'nose', 'value': 'nose' },
+                          { 'label': 'neck', 'value': 'neck' },
+                          { 'label': 'chest', 'value': 'chest' },
+                          { 'label': 'abdomen', 'value': 'abdomen' },
+                          { 'label': 'upper back', 'value': 'upper back' },
+                          { 'label': 'mid back', 'value': 'mid back' },
+                          { 'label': 'lower back', 'value': 'lower back' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Location of injury extremity Right',
+                        'options': [
+                          { 'label': 'R shoulder', 'value': 'right shoulder' },
+                          { 'label': 'R arm', 'value': 'right arm' },
+                          { 'label': 'R elbow', 'value': 'right elbow' },
+                          { 'label': 'R forearm', 'value': 'right forearm' },
+                          { 'label': 'R wrist', 'value': 'right wrist' },
+                          { 'label': 'R hand', 'value': 'right hand' },
+                          { 'label': 'R hip', 'value': 'right hip' },
+                          { 'label': 'R thigh', 'value': 'right thigh' },
+                          { 'label': 'R knee', 'value': 'right knee' },
+                          { 'label': 'R leg', 'value': 'right leg' },
+                          { 'label': 'R ankle', 'value': 'right ankle' },
+                          { 'label': 'R foot', 'value': 'right foot' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Location of injury left extremity',
+                        'options': [
+                          { 'label': 'L shoulder', 'value': 'left shoulder' },
+                          { 'label': 'L arm', 'value': 'left arm' },
+                          { 'label': 'L elbow', 'value': 'left elbow' },
+                          { 'label': 'L forearm', 'value': 'left forearm' },
+                          { 'label': 'L wrist', 'value': 'left wrist' },
+                          { 'label': 'L hand', 'value': 'left hand' },
+                          { 'label': 'L hip', 'value': 'left hip' },
+                          { 'label': 'L thigh', 'value': 'left thigh' },
+                          { 'label': 'L  knee', 'value': 'left knee' },
+                          { 'label': 'L leg', 'value': 'left leg' },
+                          { 'label': 'L ankle', 'value': 'left ankle' },
+                          { 'label': 'L foot', 'value': 'left foot' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}', 'label': '', 'value': '' } },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Pain is rated as {ENTRY}.',
+                        'label': 'Severity of pain ',
+                        'options': [
+                          { 'label': '0', 'value': '0/10' },
+                          { 'label': '1', 'value': '1/10' },
+                          { 'label': '2', 'value': '2/10' },
+                          { 'label': '3', 'value': '3/10' },
+                          { 'label': '4', 'value': '4/10' },
+                          { 'label': '5', 'value': '5/10' },
+                          { 'label': '6', 'value': '6/10' },
+                          { 'label': '7', 'value': '7/10' },
+                          { 'label': '8', 'value': '8/10' },
+                          { 'label': '9', 'value': '9/10' },
+                          { 'label': '10', 'value': '10/10' },
+                          { 'label': 'mild', 'value': 'mild' },
+                          { 'label': 'moderate', 'value': 'moderate' },
+                          { 'label': 'severe', 'value': 'severe' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Factors that make the pain worst:{ENTRY}.',
+                        'label': 'What makes pain worst?',
+                        'options': [
+                          { 'label': 'nothing', 'value': 'nothing' },
+                          { 'label': 'movement', 'value': 'movement' },
+                          { 'label': 'standing', 'value': 'standing' },
+                          { 'label': 'movement of extremity', 'value': 'movement of extremity' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Factors that makes the pain better:{ENTRY}.',
+                        'label': 'What makes pain better?',
+                        'options': [
+                          { 'label': 'nothing', 'value': 'nothing' },
+                          { 'label': 'resting extremity', 'value': 'resting extremity' },
+                          { 'label': 'remaining supine', 'value': 'remaining supine' },
+                          { 'label': 'OTC pain medication', 'value': 'OTC pain medication' }],
+                      },
+                    },
+                    {
+                      'textArea': {
+                        'sentence': ' {ENTRY}',
+                        'label': 'What makes pain better or worst?',
+                        'value': '',
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'Associated symptoms: {ENTRY}.',
+                        'label': 'Associated symptoms(Positive Symptoms)',
+                        'options': [
+                          { 'label': 'swelling', 'value': 'swelling' },
+                          { 'label': 'ecchymosis', 'value': 'ecchymosis' },
+                          { 'label': 'deformity', 'value': 'deformity of the extremity' },
+                          { 'label': 'numbness*', 'value': 'numbness *' },
+                          { 'label': 'weakness*', 'value': 'weakness*' },
+                          { 'label': 'fever', 'value': 'fever' },
+                          { 'label': 'erythema', 'value': 'erythema' },
+                          { 'label': 'seizure', 'value': 'seizure' },
+                          { 'label': 'lost of consciousness', 'value': 'lost of consciousness' },
+                          { 'label': 'altered mental status', 'value': 'altered mental status' },
+                          { 'label': 'vomiting', 'value': 'vomting' },
+                          { 'label': 'abdominal pain', 'value': 'abdominal pain' },
+                          { 'label': 'chest pain', 'value': 'chest pain' },
+                          { 'label': 'headache', 'value': 'headache' }],
+                      },
+                    },
+                    {
+                      'checkBoxes': {
+                        'sentence': 'No reported symptoms of  {ENTRY}.',
+                        'label': 'Associated symptoms(negative)',
+                        'options': [
+                          {
+                            'label': 'all negative',
+                            'value': 'swelling, ecchymosis, deformity, numbness, weakness, fever, erythema, seizure, lost of consciousness, altered mental status, vomiting, abdominal pain, chest pain, or headache',
+                          },
+                          { 'label': 'swelling', 'value': 'swelling' },
+                          { 'label': 'ecchymosis', 'value': 'ecchymosis' },
+                          { 'label': 'deformity', 'value': 'deformity' },
+                          { 'label': 'numbness', 'value': 'numbness' },
+                          { 'label': 'weakness', 'value': 'weakness' },
+                          { 'label': 'fever', 'value': 'fever' },
+                          { 'label': 'erythema', 'value': 'erythema' },
+                          { 'label': 'seizure', 'value': 'seizure' },
+                          { 'label': 'LOC', 'value': 'lost of consciousness' },
+                          { 'label': 'AMS', 'value': 'altered mental status' },
+                          { 'label': 'vomiting', 'value': 'vomiting' },
+                          { 'label': 'abdominal pain', 'value': 'abdominal pain' },
+                          { 'label': 'chest pain', 'value': 'chest pain' },
+                          { 'label': 'headache', 'value': 'headache' }],
+                      },
+                    },
+                    { 'textArea': { 'sentence': '{ENTRY}.', 'label': 'Associated symptoms', 'value': '' } },
+                    {
+                      'textArea': {
+                        'sentence': '{ENTRY}',
+                        'label': 'Patient seen prior to this visit?',
+                        'value': '',
+                      },
+                    },
+                    { 'textArea': { 'sentence': 'Surgery History: {ENTRY}', 'label': 'Surgery History', 'value': '' } }],
+                }</script>
+            </div> <!-- pad dngLeftContent-->
+            <div class="dngRightContent">
+                <div class="dngOutputBar">
+                    <textarea class="dngOutputContent" cols="100" id="dngClipBoardText" readonly="" rows="21">        </textarea>
+                    <div class="dngOutputComplete"> Edit Text</div>
+                    <div class="dngCopyToClipboard" data-clipboard-target="#dngClipBoardText" id="dngCopyToClipboard">
+                        <span class="dngIcon copy-text">            </span> Copy to Clipboard
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div><!-- dngRightContent --><!-- centercontent --><!-- dngContent-->

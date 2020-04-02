@@ -1,0 +1,18 @@
+{% extends 'admin/base.html' %}
+
+{% block title %}
+    Upload JSON File
+{% endblock %}
+
+{% block content %}
+    <div>
+        <form action="." method="POST" enctype="multipart/form-data">
+            {{ form.as_p }}
+            {% csrf_token %}
+
+            <button type="submit">Upload & Import</button>
+        </form>
+    </div>
+    <br/>
+
+{% endblock %}

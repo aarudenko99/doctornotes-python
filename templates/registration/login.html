@@ -1,0 +1,55 @@
+{% extends "base.html" %}
+
+{% block header %}{% endblock %}
+{% block container %}
+    <div class="container h-100">
+        <div class="row h-100">
+            <div class="col-12 col-sm-10 col-md-8 col-xl-6 mx-auto my-5 align-self-center align-self-sm-start align-self-md-center">
+                <div class="card bg-light">
+                    <div class="card-header bg-primary text-white">
+                        <div class="h5 d-flex mb-0">
+                            <i class="material-icons md-24 mr-1">assignment</i>
+                            <span>DoctorNotes</span>
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        {% if form.errors %}
+                            <div class="alert alert-danger" role="alert">
+                                Your username and password didn't match. Please try again.
+                            </div>
+                        {% endif %}
+                        {% if next %}
+                            {% if user.is_authenticated %}
+                                <div class="alert alert-danger" role="alert">
+                                    Your account doesn't have access to this page. To proceed,
+                                    please login with an account that has access.
+                                </div>
+                            {% else %}
+                                <div class="alert alert-danger" role="alert">
+                                    Please login to see this page.
+                                </div>
+                            {% endif %}
+                        {% endif %}
+                        <form method="post" action="{% url 'login' %}">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                {{ form.username.label_tag }}
+                                <input type="text" name="username" class="form-control" id="id_username" autocomplete="username" autocapitalize="none" maxlength="150" autofocus required>
+                            </div>
+                            <div class="form-group">
+                                {{ form.password.label_tag }}
+                                <input type="password" name="password" class="form-control" id="id_password" autocomplete="current-password" required>
+                            </div>
+                            <button type="submit" class="btn btn-primary w-100 mt-3">Login</button>
+                            <input type="hidden" name="next" value="{{ next }}">
+                        </form>
+                        {# Assumes you setup the password_reset view in your URLconf #}
+                        <div class="text-center mt-2">
+                            <small><a href="{% url 'password_reset' %}">Lost password?</a></small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

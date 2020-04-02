@@ -1,0 +1,10 @@
+{
+	"folders": [
+		{
+			"path": "/Users/ihormaslov/Documents/Projects/upwork/doctornotes"
+		}
+	],
+	"settings": {
+		"python.linting.pylintUseMinimalCheckers": false
+	}
+}
